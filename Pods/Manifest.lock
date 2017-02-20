@@ -1,0 +1,12 @@
+PODS:
+  - OnboardingKit (0.0.5)
+
+DEPENDENCIES:
+  - OnboardingKit
+
+SPEC CHECKSUMS:
+  OnboardingKit: 44b085c9e1e191a61fe1caea2bb581645fac1dc1
+
+PODFILE CHECKSUM: b23724d066e318e29132d883832b203ea44e3b4a
+
+COCOAPODS: 1.1.1
