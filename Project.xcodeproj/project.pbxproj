@@ -7,7 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8241EAE91E5AB47500D5B302 /* ScanBarCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EAE81E5AB47500D5B302 /* ScanBarCodeViewController.swift */; };
+		8207E2961E601226003ECD0A /* MyExpandableTableViewSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8207E2931E601226003ECD0A /* MyExpandableTableViewSectionHeader.swift */; };
+		8207E2971E601226003ECD0A /* MyExpandableTableViewSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8207E2941E601226003ECD0A /* MyExpandableTableViewSectionHeader.xib */; };
+		8207E2981E601226003ECD0A /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8207E2951E601226003ECD0A /* MyTableViewCell.swift */; };
+		8207E29D1E601238003ECD0A /* LUExpandableTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8207E2991E601238003ECD0A /* LUExpandableTableView.swift */; };
+		8207E29E1E601238003ECD0A /* LUExpandableTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8207E29A1E601238003ECD0A /* LUExpandableTableViewDataSource.swift */; };
+		8207E29F1E601238003ECD0A /* LUExpandableTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8207E29B1E601238003ECD0A /* LUExpandableTableViewDelegate.swift */; };
+		8207E2A01E601238003ECD0A /* LUExpandableTableViewSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8207E29C1E601238003ECD0A /* LUExpandableTableViewSectionHeader.swift */; };
+		8207E2A21E60127B003ECD0A /* OverviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8207E2A11E60127B003ECD0A /* OverviewVC.swift */; };
+		8241EAE91E5AB47500D5B302 /* ScanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EAE81E5AB47500D5B302 /* ScanVC.swift */; };
 		8241EAEB1E5AB69200D5B302 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EAEA1E5AB69200D5B302 /* MainViewController.swift */; };
 		82F4D9CA1E5EC65D00884D11 /* Scan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82F4D9C91E5EC65D00884D11 /* Scan.storyboard */; };
 		82F4D9CC1E5EC84800884D11 /* Overview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82F4D9CB1E5EC84800884D11 /* Overview.storyboard */; };
@@ -25,7 +33,15 @@
 		1D726027F491EB5F94A39602 /* Pods-Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Project/Pods-Project.debug.xcconfig"; sourceTree = "<group>"; };
 		4DB96FDB28B7143A0EC16652 /* Pods-Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project.release.xcconfig"; path = "Pods/Target Support Files/Pods-Project/Pods-Project.release.xcconfig"; sourceTree = "<group>"; };
 		7C8D19DE587CA1830D75049C /* Pods_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8241EAE81E5AB47500D5B302 /* ScanBarCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanBarCodeViewController.swift; sourceTree = "<group>"; };
+		8207E2931E601226003ECD0A /* MyExpandableTableViewSectionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyExpandableTableViewSectionHeader.swift; sourceTree = "<group>"; };
+		8207E2941E601226003ECD0A /* MyExpandableTableViewSectionHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyExpandableTableViewSectionHeader.xib; sourceTree = "<group>"; };
+		8207E2951E601226003ECD0A /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		8207E2991E601238003ECD0A /* LUExpandableTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LUExpandableTableView.swift; sourceTree = "<group>"; };
+		8207E29A1E601238003ECD0A /* LUExpandableTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LUExpandableTableViewDataSource.swift; sourceTree = "<group>"; };
+		8207E29B1E601238003ECD0A /* LUExpandableTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LUExpandableTableViewDelegate.swift; sourceTree = "<group>"; };
+		8207E29C1E601238003ECD0A /* LUExpandableTableViewSectionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LUExpandableTableViewSectionHeader.swift; sourceTree = "<group>"; };
+		8207E2A11E60127B003ECD0A /* OverviewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverviewVC.swift; sourceTree = "<group>"; };
+		8241EAE81E5AB47500D5B302 /* ScanVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanVC.swift; sourceTree = "<group>"; };
 		8241EAEA1E5AB69200D5B302 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		82F4D9C91E5EC65D00884D11 /* Scan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Scan.storyboard; sourceTree = "<group>"; };
 		82F4D9CB1E5EC84800884D11 /* Overview.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Overview.storyboard; sourceTree = "<group>"; };
@@ -69,6 +85,22 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		8207E2921E601219003ECD0A /* Overview */ = {
+			isa = PBXGroup;
+			children = (
+				8207E2991E601238003ECD0A /* LUExpandableTableView.swift */,
+				8207E29A1E601238003ECD0A /* LUExpandableTableViewDataSource.swift */,
+				8207E29B1E601238003ECD0A /* LUExpandableTableViewDelegate.swift */,
+				8207E29C1E601238003ECD0A /* LUExpandableTableViewSectionHeader.swift */,
+				8207E2931E601226003ECD0A /* MyExpandableTableViewSectionHeader.swift */,
+				8207E2941E601226003ECD0A /* MyExpandableTableViewSectionHeader.xib */,
+				82F4D9CB1E5EC84800884D11 /* Overview.storyboard */,
+				8207E2A11E60127B003ECD0A /* OverviewVC.swift */,
+				8207E2951E601226003ECD0A /* MyTableViewCell.swift */,
+			);
+			name = Overview;
+			sourceTree = "<group>";
+		};
 		FA26CEBA1E5A9F1C00982AB5 = {
 			isa = PBXGroup;
 			children = (
@@ -90,15 +122,15 @@
 		FA26CEC51E5A9F1C00982AB5 /* Project */ = {
 			isa = PBXGroup;
 			children = (
+				8207E2921E601219003ECD0A /* Overview */,
 				FA26CEC61E5A9F1C00982AB5 /* AppDelegate.swift */,
 				8241EAEA1E5AB69200D5B302 /* MainViewController.swift */,
 				FA26CED81E5AA28100982AB5 /* OnboardingViewController.swift */,
-				8241EAE81E5AB47500D5B302 /* ScanBarCodeViewController.swift */,
+				8241EAE81E5AB47500D5B302 /* ScanVC.swift */,
 				FA26CEDA1E5AA31400982AB5 /* DataModel.swift */,
 				FA26CEDB1E5AA31400982AB5 /* DeviceTarget.swift */,
 				FA26CECA1E5A9F1C00982AB5 /* Main.storyboard */,
 				82F4D9C91E5EC65D00884D11 /* Scan.storyboard */,
-				82F4D9CB1E5EC84800884D11 /* Overview.storyboard */,
 				FA26CECD1E5A9F1C00982AB5 /* Assets.xcassets */,
 				FA26CECF1E5A9F1C00982AB5 /* LaunchScreen.storyboard */,
 				FA26CED21E5A9F1C00982AB5 /* Info.plist */,
@@ -171,6 +203,7 @@
 			files = (
 				FA26CED11E5A9F1C00982AB5 /* LaunchScreen.storyboard in Resources */,
 				FA26CECE1E5A9F1C00982AB5 /* Assets.xcassets in Resources */,
+				8207E2971E601226003ECD0A /* MyExpandableTableViewSectionHeader.xib in Resources */,
 				FA26CECC1E5A9F1C00982AB5 /* Main.storyboard in Resources */,
 				82F4D9CC1E5EC84800884D11 /* Overview.storyboard in Resources */,
 				82F4D9CA1E5EC65D00884D11 /* Scan.storyboard in Resources */,
@@ -232,12 +265,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8241EAE91E5AB47500D5B302 /* ScanBarCodeViewController.swift in Sources */,
+				8241EAE91E5AB47500D5B302 /* ScanVC.swift in Sources */,
+				8207E2A01E601238003ECD0A /* LUExpandableTableViewSectionHeader.swift in Sources */,
+				8207E2981E601226003ECD0A /* MyTableViewCell.swift in Sources */,
 				FA26CEDC1E5AA31400982AB5 /* DataModel.swift in Sources */,
+				8207E29E1E601238003ECD0A /* LUExpandableTableViewDataSource.swift in Sources */,
+				8207E29D1E601238003ECD0A /* LUExpandableTableView.swift in Sources */,
 				FA26CED91E5AA28100982AB5 /* OnboardingViewController.swift in Sources */,
+				8207E29F1E601238003ECD0A /* LUExpandableTableViewDelegate.swift in Sources */,
+				8207E2A21E60127B003ECD0A /* OverviewVC.swift in Sources */,
 				FA26CEDD1E5AA31400982AB5 /* DeviceTarget.swift in Sources */,
 				8241EAEB1E5AB69200D5B302 /* MainViewController.swift in Sources */,
 				FA26CEC71E5A9F1C00982AB5 /* AppDelegate.swift in Sources */,
+				8207E2961E601226003ECD0A /* MyExpandableTableViewSectionHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

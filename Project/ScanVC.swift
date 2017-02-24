@@ -2,7 +2,7 @@
 import UIKit
 import AVFoundation
 
-class ScanBarCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
+class ScanVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
 
     @IBOutlet weak var previewView: UIView!
     @IBOutlet weak var label: UILabel!

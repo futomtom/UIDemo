@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Scan Bar Code View Controller-->
+        <!--ScanVC-->
         <scene sceneID="S19-4v-9rc">
             <objects>
-                <viewController storyboardIdentifier="scan" id="X3I-zi-qeJ" customClass="ScanBarCodeViewController" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="scan" id="X3I-zi-qeJ" customClass="ScanVC" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kgv-lR-4f4"/>
                         <viewControllerLayoutGuide type="bottom" id="vTC-CH-KA6"/>
@@ -40,7 +40,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ITF-2Y-kh3" id="l4M-XQ-sSu">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MvL-XR-2OJ">
