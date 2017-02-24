@@ -30,9 +30,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func processToMainPage(){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let mainVC = storyboard.instantiateViewController(withIdentifier: "main")
+        let loginVC = storyboard.instantiateViewController(withIdentifier: "login") as! LoginVC
         if let window = self.window{
-            window.rootViewController = mainVC
+            window.rootViewController = loginVC
         }
     }
 

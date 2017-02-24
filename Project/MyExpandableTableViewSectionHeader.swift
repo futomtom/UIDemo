@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import LUExpandableTableView
+
 
 final class MyExpandableTableViewSectionHeader: LUExpandableTableViewSectionHeader {
     // MARK: - Properties

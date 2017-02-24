@@ -10,7 +10,7 @@ import UIKit
 import LocalAuthentication
 
 
-class MainViewController: UIViewController {
+class TouchIDVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

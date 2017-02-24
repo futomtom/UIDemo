@@ -15,8 +15,19 @@
 		8207E29F1E601238003ECD0A /* LUExpandableTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8207E29B1E601238003ECD0A /* LUExpandableTableViewDelegate.swift */; };
 		8207E2A01E601238003ECD0A /* LUExpandableTableViewSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8207E29C1E601238003ECD0A /* LUExpandableTableViewSectionHeader.swift */; };
 		8207E2A21E60127B003ECD0A /* OverviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8207E2A11E60127B003ECD0A /* OverviewVC.swift */; };
+		8207E2A41E6014EA003ECD0A /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8207E2A31E6014EA003ECD0A /* MainVC.swift */; };
+		8207E2AB1E601592003ECD0A /* BudgeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8207E2A51E601592003ECD0A /* BudgeVC.swift */; };
+		8207E2AC1E601592003ECD0A /* ChooseIconVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8207E2A61E601592003ECD0A /* ChooseIconVC.swift */; };
+		8207E2AD1E601592003ECD0A /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8207E2A71E601592003ECD0A /* DetailVC.swift */; };
+		8207E2AE1E601592003ECD0A /* EmailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8207E2A81E601592003ECD0A /* EmailVC.swift */; };
+		8207E2AF1E601592003ECD0A /* GreatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8207E2A91E601592003ECD0A /* GreatVC.swift */; };
+		8207E2B01E601592003ECD0A /* IncomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8207E2AA1E601592003ECD0A /* IncomeVC.swift */; };
+		8207E2B21E6015E3003ECD0A /* Step1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8207E2B11E6015E3003ECD0A /* Step1VC.swift */; };
+		8207E2B41E6016A4003ECD0A /* PaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8207E2B31E6016A4003ECD0A /* PaymentVC.swift */; };
+		8207E2B61E601929003ECD0A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8207E2B51E601929003ECD0A /* LoginVC.swift */; };
+		8207E2B81E6022F2003ECD0A /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8207E2B71E6022F2003ECD0A /* BorderButton.swift */; };
 		8241EAE91E5AB47500D5B302 /* ScanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EAE81E5AB47500D5B302 /* ScanVC.swift */; };
-		8241EAEB1E5AB69200D5B302 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EAEA1E5AB69200D5B302 /* MainViewController.swift */; };
+		8241EAEB1E5AB69200D5B302 /* TouchIDVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EAEA1E5AB69200D5B302 /* TouchIDVC.swift */; };
 		82F4D9CA1E5EC65D00884D11 /* Scan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82F4D9C91E5EC65D00884D11 /* Scan.storyboard */; };
 		82F4D9CC1E5EC84800884D11 /* Overview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82F4D9CB1E5EC84800884D11 /* Overview.storyboard */; };
 		C1A65C10159A46C93BD62954 /* Pods_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C8D19DE587CA1830D75049C /* Pods_Project.framework */; };
@@ -41,8 +52,19 @@
 		8207E29B1E601238003ECD0A /* LUExpandableTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LUExpandableTableViewDelegate.swift; sourceTree = "<group>"; };
 		8207E29C1E601238003ECD0A /* LUExpandableTableViewSectionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LUExpandableTableViewSectionHeader.swift; sourceTree = "<group>"; };
 		8207E2A11E60127B003ECD0A /* OverviewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverviewVC.swift; sourceTree = "<group>"; };
+		8207E2A31E6014EA003ECD0A /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		8207E2A51E601592003ECD0A /* BudgeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgeVC.swift; sourceTree = "<group>"; };
+		8207E2A61E601592003ECD0A /* ChooseIconVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseIconVC.swift; sourceTree = "<group>"; };
+		8207E2A71E601592003ECD0A /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		8207E2A81E601592003ECD0A /* EmailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailVC.swift; sourceTree = "<group>"; };
+		8207E2A91E601592003ECD0A /* GreatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreatVC.swift; sourceTree = "<group>"; };
+		8207E2AA1E601592003ECD0A /* IncomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomeVC.swift; sourceTree = "<group>"; };
+		8207E2B11E6015E3003ECD0A /* Step1VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Step1VC.swift; sourceTree = "<group>"; };
+		8207E2B31E6016A4003ECD0A /* PaymentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentVC.swift; sourceTree = "<group>"; };
+		8207E2B51E601929003ECD0A /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		8207E2B71E6022F2003ECD0A /* BorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
 		8241EAE81E5AB47500D5B302 /* ScanVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanVC.swift; sourceTree = "<group>"; };
-		8241EAEA1E5AB69200D5B302 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		8241EAEA1E5AB69200D5B302 /* TouchIDVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchIDVC.swift; sourceTree = "<group>"; };
 		82F4D9C91E5EC65D00884D11 /* Scan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Scan.storyboard; sourceTree = "<group>"; };
 		82F4D9CB1E5EC84800884D11 /* Overview.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Overview.storyboard; sourceTree = "<group>"; };
 		FA26CEC31E5A9F1C00982AB5 /* Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,11 +146,22 @@
 			children = (
 				8207E2921E601219003ECD0A /* Overview */,
 				FA26CEC61E5A9F1C00982AB5 /* AppDelegate.swift */,
-				8241EAEA1E5AB69200D5B302 /* MainViewController.swift */,
+				8241EAEA1E5AB69200D5B302 /* TouchIDVC.swift */,
+				8207E2A31E6014EA003ECD0A /* MainVC.swift */,
 				FA26CED81E5AA28100982AB5 /* OnboardingViewController.swift */,
 				8241EAE81E5AB47500D5B302 /* ScanVC.swift */,
 				FA26CEDA1E5AA31400982AB5 /* DataModel.swift */,
 				FA26CEDB1E5AA31400982AB5 /* DeviceTarget.swift */,
+				8207E2A51E601592003ECD0A /* BudgeVC.swift */,
+				8207E2A61E601592003ECD0A /* ChooseIconVC.swift */,
+				8207E2B71E6022F2003ECD0A /* BorderButton.swift */,
+				8207E2B11E6015E3003ECD0A /* Step1VC.swift */,
+				8207E2A71E601592003ECD0A /* DetailVC.swift */,
+				8207E2B51E601929003ECD0A /* LoginVC.swift */,
+				8207E2A81E601592003ECD0A /* EmailVC.swift */,
+				8207E2A91E601592003ECD0A /* GreatVC.swift */,
+				8207E2AA1E601592003ECD0A /* IncomeVC.swift */,
+				8207E2B31E6016A4003ECD0A /* PaymentVC.swift */,
 				FA26CECA1E5A9F1C00982AB5 /* Main.storyboard */,
 				82F4D9C91E5EC65D00884D11 /* Scan.storyboard */,
 				FA26CECD1E5A9F1C00982AB5 /* Assets.xcassets */,
@@ -265,19 +298,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8207E2AC1E601592003ECD0A /* ChooseIconVC.swift in Sources */,
+				8207E2B01E601592003ECD0A /* IncomeVC.swift in Sources */,
 				8241EAE91E5AB47500D5B302 /* ScanVC.swift in Sources */,
+				8207E2AB1E601592003ECD0A /* BudgeVC.swift in Sources */,
+				8207E2AE1E601592003ECD0A /* EmailVC.swift in Sources */,
 				8207E2A01E601238003ECD0A /* LUExpandableTableViewSectionHeader.swift in Sources */,
+				8207E2AD1E601592003ECD0A /* DetailVC.swift in Sources */,
 				8207E2981E601226003ECD0A /* MyTableViewCell.swift in Sources */,
 				FA26CEDC1E5AA31400982AB5 /* DataModel.swift in Sources */,
 				8207E29E1E601238003ECD0A /* LUExpandableTableViewDataSource.swift in Sources */,
 				8207E29D1E601238003ECD0A /* LUExpandableTableView.swift in Sources */,
 				FA26CED91E5AA28100982AB5 /* OnboardingViewController.swift in Sources */,
 				8207E29F1E601238003ECD0A /* LUExpandableTableViewDelegate.swift in Sources */,
+				8207E2AF1E601592003ECD0A /* GreatVC.swift in Sources */,
+				8207E2B21E6015E3003ECD0A /* Step1VC.swift in Sources */,
 				8207E2A21E60127B003ECD0A /* OverviewVC.swift in Sources */,
 				FA26CEDD1E5AA31400982AB5 /* DeviceTarget.swift in Sources */,
-				8241EAEB1E5AB69200D5B302 /* MainViewController.swift in Sources */,
+				8207E2B41E6016A4003ECD0A /* PaymentVC.swift in Sources */,
+				8241EAEB1E5AB69200D5B302 /* TouchIDVC.swift in Sources */,
 				FA26CEC71E5A9F1C00982AB5 /* AppDelegate.swift in Sources */,
 				8207E2961E601226003ECD0A /* MyExpandableTableViewSectionHeader.swift in Sources */,
+				8207E2A41E6014EA003ECD0A /* MainVC.swift in Sources */,
+				8207E2B61E601929003ECD0A /* LoginVC.swift in Sources */,
+				8207E2B81E6022F2003ECD0A /* BorderButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

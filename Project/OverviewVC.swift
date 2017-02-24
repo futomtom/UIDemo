@@ -41,7 +41,7 @@ final class OverviewVC: UIViewController {
 
 // MARK: - LUExpandableTableViewDataSource
 
-extension ViewController: LUExpandableTableViewDataSource {
+extension OverviewVC: LUExpandableTableViewDataSource {
     func numberOfSections(in expandableTableView: LUExpandableTableView) -> Int {
         return 42
     }
@@ -75,7 +75,7 @@ extension ViewController: LUExpandableTableViewDataSource {
 
 // MARK: - LUExpandableTableViewDelegate
 
-extension ViewController: LUExpandableTableViewDelegate {
+extension OverviewVC: LUExpandableTableViewDelegate {
     func expandableTableView(_ expandableTableView: LUExpandableTableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         /// Returning `UITableViewAutomaticDimension` value on iOS 9 will cause reloading all cells due to an iOS 9 bug with automatic dimensions
         return 50
