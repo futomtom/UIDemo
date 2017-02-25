@@ -28,6 +28,10 @@
 		8207E2B81E6022F2003ECD0A /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8207E2B71E6022F2003ECD0A /* BorderButton.swift */; };
 		8241EAE91E5AB47500D5B302 /* ScanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EAE81E5AB47500D5B302 /* ScanVC.swift */; };
 		8241EAEB1E5AB69200D5B302 /* TouchIDVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EAEA1E5AB69200D5B302 /* TouchIDVC.swift */; };
+		829570D11E61413000DDB4C2 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829570D01E61413000DDB4C2 /* OnboardingViewController.swift */; };
+		829570D31E61452800DDB4C2 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829570D21E61452800DDB4C2 /* ItemCell.swift */; };
+		829570D51E61603400DDB4C2 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829570D41E61603400DDB4C2 /* DataModel.swift */; };
+		829570D71E61604000DDB4C2 /* DeviceTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829570D61E61604000DDB4C2 /* DeviceTarget.swift */; };
 		82F4D9CA1E5EC65D00884D11 /* Scan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82F4D9C91E5EC65D00884D11 /* Scan.storyboard */; };
 		82F4D9CC1E5EC84800884D11 /* Overview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82F4D9CB1E5EC84800884D11 /* Overview.storyboard */; };
 		C1A65C10159A46C93BD62954 /* Pods_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C8D19DE587CA1830D75049C /* Pods_Project.framework */; };
@@ -35,9 +39,6 @@
 		FA26CECC1E5A9F1C00982AB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA26CECA1E5A9F1C00982AB5 /* Main.storyboard */; };
 		FA26CECE1E5A9F1C00982AB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA26CECD1E5A9F1C00982AB5 /* Assets.xcassets */; };
 		FA26CED11E5A9F1C00982AB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA26CECF1E5A9F1C00982AB5 /* LaunchScreen.storyboard */; };
-		FA26CED91E5AA28100982AB5 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA26CED81E5AA28100982AB5 /* OnboardingViewController.swift */; };
-		FA26CEDC1E5AA31400982AB5 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA26CEDA1E5AA31400982AB5 /* DataModel.swift */; };
-		FA26CEDD1E5AA31400982AB5 /* DeviceTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA26CEDB1E5AA31400982AB5 /* DeviceTarget.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,10 @@
 		8207E2B71E6022F2003ECD0A /* BorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
 		8241EAE81E5AB47500D5B302 /* ScanVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanVC.swift; sourceTree = "<group>"; };
 		8241EAEA1E5AB69200D5B302 /* TouchIDVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchIDVC.swift; sourceTree = "<group>"; };
+		829570D01E61413000DDB4C2 /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		829570D21E61452800DDB4C2 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		829570D41E61603400DDB4C2 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		829570D61E61604000DDB4C2 /* DeviceTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceTarget.swift; sourceTree = "<group>"; };
 		82F4D9C91E5EC65D00884D11 /* Scan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Scan.storyboard; sourceTree = "<group>"; };
 		82F4D9CB1E5EC84800884D11 /* Overview.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Overview.storyboard; sourceTree = "<group>"; };
 		FA26CEC31E5A9F1C00982AB5 /* Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,9 +78,6 @@
 		FA26CECD1E5A9F1C00982AB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA26CED01E5A9F1C00982AB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA26CED21E5A9F1C00982AB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA26CED81E5AA28100982AB5 /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnboardingViewController.swift; path = "../../../ios10/OnboardingKit/Example/Athlee-Onboarding/OnboardingKit Swift3/OnboardingViewController.swift"; sourceTree = "<group>"; };
-		FA26CEDA1E5AA31400982AB5 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataModel.swift; path = "../../../ios10/OnboardingKit/Example/Athlee-Onboarding/OnboardingKit Swift3/DataModel.swift"; sourceTree = "<group>"; };
-		FA26CEDB1E5AA31400982AB5 /* DeviceTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceTarget.swift; path = "../../../ios10/OnboardingKit/Example/Athlee-Onboarding/OnboardingKit Swift3/DeviceTarget.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				8207E29B1E601238003ECD0A /* LUExpandableTableViewDelegate.swift */,
 				8207E29C1E601238003ECD0A /* LUExpandableTableViewSectionHeader.swift */,
 				8207E2931E601226003ECD0A /* MyExpandableTableViewSectionHeader.swift */,
+				829570D21E61452800DDB4C2 /* ItemCell.swift */,
 				8207E2941E601226003ECD0A /* MyExpandableTableViewSectionHeader.xib */,
 				82F4D9CB1E5EC84800884D11 /* Overview.storyboard */,
 				8207E2A11E60127B003ECD0A /* OverviewVC.swift */,
@@ -148,10 +151,10 @@
 				FA26CEC61E5A9F1C00982AB5 /* AppDelegate.swift */,
 				8241EAEA1E5AB69200D5B302 /* TouchIDVC.swift */,
 				8207E2A31E6014EA003ECD0A /* MainVC.swift */,
-				FA26CED81E5AA28100982AB5 /* OnboardingViewController.swift */,
+				829570D01E61413000DDB4C2 /* OnboardingViewController.swift */,
 				8241EAE81E5AB47500D5B302 /* ScanVC.swift */,
-				FA26CEDA1E5AA31400982AB5 /* DataModel.swift */,
-				FA26CEDB1E5AA31400982AB5 /* DeviceTarget.swift */,
+				829570D61E61604000DDB4C2 /* DeviceTarget.swift */,
+				829570D41E61603400DDB4C2 /* DataModel.swift */,
 				8207E2A51E601592003ECD0A /* BudgeVC.swift */,
 				8207E2A61E601592003ECD0A /* ChooseIconVC.swift */,
 				8207E2B71E6022F2003ECD0A /* BorderButton.swift */,
@@ -305,18 +308,19 @@
 				8207E2AE1E601592003ECD0A /* EmailVC.swift in Sources */,
 				8207E2A01E601238003ECD0A /* LUExpandableTableViewSectionHeader.swift in Sources */,
 				8207E2AD1E601592003ECD0A /* DetailVC.swift in Sources */,
+				829570D71E61604000DDB4C2 /* DeviceTarget.swift in Sources */,
 				8207E2981E601226003ECD0A /* MyTableViewCell.swift in Sources */,
-				FA26CEDC1E5AA31400982AB5 /* DataModel.swift in Sources */,
 				8207E29E1E601238003ECD0A /* LUExpandableTableViewDataSource.swift in Sources */,
 				8207E29D1E601238003ECD0A /* LUExpandableTableView.swift in Sources */,
-				FA26CED91E5AA28100982AB5 /* OnboardingViewController.swift in Sources */,
+				829570D11E61413000DDB4C2 /* OnboardingViewController.swift in Sources */,
 				8207E29F1E601238003ECD0A /* LUExpandableTableViewDelegate.swift in Sources */,
 				8207E2AF1E601592003ECD0A /* GreatVC.swift in Sources */,
 				8207E2B21E6015E3003ECD0A /* Step1VC.swift in Sources */,
 				8207E2A21E60127B003ECD0A /* OverviewVC.swift in Sources */,
-				FA26CEDD1E5AA31400982AB5 /* DeviceTarget.swift in Sources */,
 				8207E2B41E6016A4003ECD0A /* PaymentVC.swift in Sources */,
 				8241EAEB1E5AB69200D5B302 /* TouchIDVC.swift in Sources */,
+				829570D51E61603400DDB4C2 /* DataModel.swift in Sources */,
+				829570D31E61452800DDB4C2 /* ItemCell.swift in Sources */,
 				FA26CEC71E5A9F1C00982AB5 /* AppDelegate.swift in Sources */,
 				8207E2961E601226003ECD0A /* MyExpandableTableViewSectionHeader.swift in Sources */,
 				8207E2A41E6014EA003ECD0A /* MainVC.swift in Sources */,

@@ -14,7 +14,6 @@ final class OverviewVC: UIViewController {
     
     private let expandableTableView = LUExpandableTableView()
     
-    fileprivate let cellReuseIdentifier = "MyCell"
     fileprivate let sectionHeaderReuseIdentifier = "MySectionHeader"
 
     // MARK: - ViewController
@@ -23,19 +22,11 @@ final class OverviewVC: UIViewController {
         super.viewDidLoad()
         
         view.addSubview(expandableTableView)
-        
-        expandableTableView.register(MyTableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
+
         expandableTableView.register(UINib(nibName: "MyExpandableTableViewSectionHeader", bundle: Bundle.main), forHeaderFooterViewReuseIdentifier: sectionHeaderReuseIdentifier)
         
         expandableTableView.expandableTableViewDataSource = self
         expandableTableView.expandableTableViewDelegate = self
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        
-        expandableTableView.frame = view.bounds
-        expandableTableView.frame.origin.y += 20
     }
 }
 
@@ -51,12 +42,13 @@ extension OverviewVC: LUExpandableTableViewDataSource {
     }
     
     func expandableTableView(_ expandableTableView: LUExpandableTableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = expandableTableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as? MyTableViewCell else {
+        guard let cell = expandableTableView.dequeueReusableCell(withIdentifier: "itemcell") as? ItemCell else {
             assertionFailure("Cell shouldn't be nil")
             return UITableViewCell()
         }
         
-        cell.label.text = "Cell at row \(indexPath.row) section \(indexPath.section)"
+        cell.name.text = "eat"
+        cell.price.text = "$80"
         
         return cell
     }
