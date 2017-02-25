@@ -22,8 +22,8 @@ class Expenses {
 class IncomeVC: UIViewController {
     let sectionName = ["Dream Service","Fixed Expenses","Discretionary Money" ]
     
-    var fixed:[Expenses]=[Expenses(name:"play",price:100),Expenses(name:"play",price:200)]
-    var discret:[Expenses]=[Expenses(name:"play",price:100)]
+    var fixed:[Expenses]=[Expenses(name:"Eat",price:100),Expenses(name:"Rent",price:200)]
+    var discret:[Expenses]=[Expenses(name:"Commute",price:100),Expenses(name:"Entertainment",price:200)]
     // MARK: - Properties
     
     @IBOutlet weak var expandableTableView: LUExpandableTableView!
@@ -42,6 +42,14 @@ class IncomeVC: UIViewController {
         expandableTableView.expandableTableViewDataSource = self
         expandableTableView.expandableTableViewDelegate = self
     }
+    
+    
+    @IBAction func OkDidTap(_ sender: Any) {
+        tabBarController?.tabBar.items?[1].isEnabled = false
+        tabBarController?.tabBar.items?[2].isEnabled = true
+        tabBarController?.selectedIndex = 2
+    }
+    
 }
 
 // MARK: - LUExpandableTableViewDataSource

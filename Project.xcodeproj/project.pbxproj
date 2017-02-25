@@ -32,6 +32,7 @@
 		829570D31E61452800DDB4C2 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829570D21E61452800DDB4C2 /* ItemCell.swift */; };
 		829570D51E61603400DDB4C2 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829570D41E61603400DDB4C2 /* DataModel.swift */; };
 		829570D71E61604000DDB4C2 /* DeviceTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829570D61E61604000DDB4C2 /* DeviceTarget.swift */; };
+		829570D91E616C2A00DDB4C2 /* PerfectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829570D81E616C2A00DDB4C2 /* PerfectVC.swift */; };
 		82F4D9CA1E5EC65D00884D11 /* Scan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82F4D9C91E5EC65D00884D11 /* Scan.storyboard */; };
 		82F4D9CC1E5EC84800884D11 /* Overview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82F4D9CB1E5EC84800884D11 /* Overview.storyboard */; };
 		C1A65C10159A46C93BD62954 /* Pods_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C8D19DE587CA1830D75049C /* Pods_Project.framework */; };
@@ -70,6 +71,7 @@
 		829570D21E61452800DDB4C2 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		829570D41E61603400DDB4C2 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		829570D61E61604000DDB4C2 /* DeviceTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceTarget.swift; sourceTree = "<group>"; };
+		829570D81E616C2A00DDB4C2 /* PerfectVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfectVC.swift; sourceTree = "<group>"; };
 		82F4D9C91E5EC65D00884D11 /* Scan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Scan.storyboard; sourceTree = "<group>"; };
 		82F4D9CB1E5EC84800884D11 /* Overview.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Overview.storyboard; sourceTree = "<group>"; };
 		FA26CEC31E5A9F1C00982AB5 /* Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,6 +167,7 @@
 				8207E2A91E601592003ECD0A /* GreatVC.swift */,
 				8207E2AA1E601592003ECD0A /* IncomeVC.swift */,
 				8207E2B31E6016A4003ECD0A /* PaymentVC.swift */,
+				829570D81E616C2A00DDB4C2 /* PerfectVC.swift */,
 				FA26CECA1E5A9F1C00982AB5 /* Main.storyboard */,
 				82F4D9C91E5EC65D00884D11 /* Scan.storyboard */,
 				FA26CECD1E5A9F1C00982AB5 /* Assets.xcassets */,
@@ -305,6 +308,7 @@
 				8207E2B01E601592003ECD0A /* IncomeVC.swift in Sources */,
 				8241EAE91E5AB47500D5B302 /* ScanVC.swift in Sources */,
 				8207E2AB1E601592003ECD0A /* BudgeVC.swift in Sources */,
+				829570D91E616C2A00DDB4C2 /* PerfectVC.swift in Sources */,
 				8207E2AE1E601592003ECD0A /* EmailVC.swift in Sources */,
 				8207E2A01E601238003ECD0A /* LUExpandableTableViewSectionHeader.swift in Sources */,
 				8207E2AD1E601592003ECD0A /* DetailVC.swift in Sources */,
