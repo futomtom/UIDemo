@@ -12,15 +12,18 @@ class Expenses {
     var name:String = ""
     var price:Int = 0
     
-    init(name:)
+    init(name:String, price:Int) {
+        self.name = name
+        self.price = price
+    }
     
 }
 
 class IncomeVC: UIViewController {
     let sectionName = ["Dream Service","Fixed Expenses","Discretionary Money" ]
     
-    var fixed:[Expenses]=[Expenses(name = " ")]
-    var discret:[Expenses]=[]
+    var fixed:[Expenses]=[Expenses(name:"play",price:100),Expenses(name:"play",price:200)]
+    var discret:[Expenses]=[Expenses(name:"play",price:100)]
     // MARK: - Properties
     
     @IBOutlet weak var expandableTableView: LUExpandableTableView!
