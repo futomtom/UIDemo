@@ -13,7 +13,7 @@
         <!--ScanVC-->
         <scene sceneID="S19-4v-9rc">
             <objects>
-                <viewController storyboardIdentifier="scan" id="X3I-zi-qeJ" customClass="ScanVC" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="X3I-zi-qeJ" customClass="ScanVC" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kgv-lR-4f4"/>
                         <viewControllerLayoutGuide type="bottom" id="vTC-CH-KA6"/>
@@ -27,7 +27,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan Barcode " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hV0-x3-NEd">
-                                <rect key="frame" x="5" y="170" width="365" height="21"/>
+                                <rect key="frame" x="5" y="214" width="365" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -40,7 +40,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ITF-2Y-kh3" id="l4M-XQ-sSu">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MvL-XR-2OJ">
@@ -83,13 +83,14 @@
                             <constraint firstItem="hV0-x3-NEd" firstAttribute="leading" secondItem="o9B-pH-S4S" secondAttribute="leading" constant="5" id="oTx-K3-5Kt"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="lxb-Da-5FC"/>
                     <connections>
                         <outlet property="previewView" destination="Drs-FI-4qB" id="ndY-fB-cMi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VKN-ty-bvS" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="572" y="692.20389805097454"/>
+            <point key="canvasLocation" x="1511.2" y="692.20389805097454"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="vgB-GR-iaR">
@@ -107,7 +108,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cQS-ws-P8R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1289" y="695"/>
+            <point key="canvasLocation" x="2228" y="694.90254872563719"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="MEl-E3-axe">
@@ -125,7 +126,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rJL-kS-JyI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1991" y="695"/>
+            <point key="canvasLocation" x="2928.8000000000002" y="694.90254872563719"/>
         </scene>
         <!--MainView Controller-->
         <scene sceneID="l4t-f2-pzT">
@@ -134,6 +135,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pix-x1-5qF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="476" y="1430"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BrW-QB-AdL">
+            <objects>
+                <navigationController storyboardIdentifier="scan" automaticallyAdjustsScrollViewInsets="NO" id="nei-65-SaU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DAj-Ef-mg7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="X3I-zi-qeJ" kind="relationship" relationship="rootViewController" id="mIt-qQ-Vp5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HnX-xT-k7C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="572" y="692.20389805097454"/>
         </scene>
     </scenes>
 </document>

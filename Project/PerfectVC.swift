@@ -16,5 +16,11 @@ class PerfectVC: UIViewController {
         navigationController?.navigationBar.isHidden = true
     }
 
+    @IBAction func OKDidTap(_ sender: Any) {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.processToMenuPage()
+        
+        
+    }
   
 }

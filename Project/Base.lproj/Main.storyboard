@@ -1047,10 +1047,10 @@ per month in the next 6 months.</string>
             </objects>
             <point key="canvasLocation" x="642" y="105"/>
         </scene>
-        <!--View Controller-->
+        <!--PerfectVC-->
         <scene sceneID="pZa-1J-BWW">
             <objects>
-                <viewController id="Be0-yc-ZK6" sceneMemberID="viewController">
+                <viewController id="Be0-yc-ZK6" customClass="PerfectVC" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zOW-p8-fgy"/>
                         <viewControllerLayoutGuide type="bottom" id="owS-xI-enQ"/>
@@ -1150,6 +1150,9 @@ per month in the next 6 months.</string>
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="OKDidTap:" destination="Be0-yc-ZK6" eventType="touchUpInside" id="mUI-JR-GO8"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

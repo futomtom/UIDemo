@@ -35,6 +35,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window.rootViewController = loginVC
         }
     }
+    
+    func processToMenuPage(){
+        let storyboard = UIStoryboard(name: "Scan", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "scan") as! UINavigationController
+        if let window = self.window{
+            window.rootViewController = vc
+        }
+    }
+    
+    
 
 
     func applicationWillEnterForeground(_ application: UIApplication) {

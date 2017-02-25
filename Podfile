@@ -7,6 +7,7 @@ target 'Project' do
 
   # Pods for Project
   pod 'OnboardingKit'
+  pod 'SideMenu'
   
   
 end
