@@ -36,9 +36,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
-    func processToMenuPage(){
+    func processToHomePage(){
         let storyboard = UIStoryboard(name: "Scan", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "scan") as! UINavigationController
+        let vc = storyboard.instantiateViewController(withIdentifier: "homepage") as! UINavigationController
         if let window = self.window{
             window.rootViewController = vc
         }

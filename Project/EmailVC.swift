@@ -19,7 +19,7 @@ class EmailVC: UIViewController {
    
 
     @IBAction func createDidTap(_ sender: Any) {
-        let mainTabVC = storyboard?.instantiateViewController(withIdentifier: "maintab") as! UITabBarController
+        let mainTabVC = storyboard?.instantiateViewController(withIdentifier: "step1") as! UINavigationController
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         if let window = appDelegate.window{
             window.rootViewController = mainTabVC

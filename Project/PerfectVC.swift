@@ -12,13 +12,20 @@ class PerfectVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         navigationController?.navigationBar.isHidden = true
     }
 
     @IBAction func OKDidTap(_ sender: Any) {
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.processToMenuPage()
+        let confettiView = SAConfettiView(frame: self.view.bounds)
+        confettiView.type = .triangle
+        self.view.addSubview(confettiView)
+
+        confettiView.startConfetti()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            appDelegate.processToHomePage()        }
+        
         
         
     }

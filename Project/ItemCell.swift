@@ -18,6 +18,12 @@ class ItemCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    func displayItem(item:Expenses) {
+        
+        name.text = item.name
+        price.text = "\(item.price)"
+    }
 
   
 }

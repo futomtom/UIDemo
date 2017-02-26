@@ -2,18 +2,25 @@
 import UIKit
 import AVFoundation
 
-class ScanVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
 
+
+class ScanVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate,UITableViewDataSource{
+
+    @IBOutlet weak var tableview: UITableView!
     @IBOutlet weak var previewView: UIView!
-    @IBOutlet weak var label: UILabel!
-    
+    var Items:[Expenses]=[Expenses(name:"Drink",price:10),Expenses(name:"Noodle",price:20),Expenses(name:"Ice Cream",price:8)]
+    var tableviewItems:[Expenses] = []
     let detectionArea = UIView()
     var timer: Timer!
     var counter = 0
     var isDetected = false
+    var currentItem = ""
+    var total = 0
     
+    @IBOutlet weak var totalPrice: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableview.tableFooterView = UIView()
         
      
         let captureSession = AVCaptureSession()
@@ -36,12 +43,12 @@ class ScanVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
         let y: CGFloat = 0.3
         let width: CGFloat = 0.9
         let height: CGFloat = 0.2
-        
+        /*
         detectionArea.frame = CGRect(x: view.frame.size.width * x, y: view.frame.size.height * y, width: view.frame.size.width * width, height: view.frame.size.height * height)
         detectionArea.layer.borderColor = UIColor.red.cgColor
         detectionArea.layer.borderWidth = 3
         view.addSubview(detectionArea)
-
+        */
       
         metadataOutput.rectOfInterest = CGRect(x: y,y: 1-x-width,width: height,height: width)
         
@@ -57,8 +64,8 @@ class ScanVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
             captureSession.startRunning()
         }
         
-        timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(self.update), userInfo: nil, repeats: true)
-        timer.fire()
+//        timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(self.update), userInfo: nil, repeats: true)
+//        timer.fire()
     }
     
     func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [Any]!, from connection: AVCaptureConnection!) {
@@ -67,31 +74,72 @@ class ScanVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
         
             if metadata.type == AVMetadataObjectTypeEAN13Code || metadata.type == AVMetadataObjectTypeEAN8Code{
                 if metadata.stringValue != nil {
-               
-                    counter = 0
-                    if !isDetected || label.text != metadata.stringValue! {
-                        isDetected = true
-                        AudioServicesPlaySystemSound(kSystemSoundID_Vibrate) // バイブレーション
-                        label.text = metadata.stringValue!
-                        detectionArea.layer.borderColor = UIColor.white.cgColor
-                        detectionArea.layer.borderWidth = 5
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                            self.dismiss(animated: true, completion: nil)
+                        AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
+                        print(metadata.stringValue!)
+                    
+                    if metadata.stringValue == currentItem {
+                        return
+                    }
+                        switch metadata.stringValue! {
+                        case "0855111003279":
+                           tableviewItems.insert(Items[0], at: 0)
+                            currentItem = "0855111003279"
+                        case "0070470409610":
+                             tableviewItems.insert(Items[1], at: 0)
+                            currentItem = "0070470409610"
+                        case "1":
+                            tableviewItems.insert(Items[2], at: 0)
+                            currentItem = "1"
+                        default:
+                            break
                         }
+                        tableview.reloadData()
+                    
+                    for item in tableviewItems {
+                        total = total + item.price
+                    }
+                    
+                    totalPrice.text = "\(total)"
+//                        detectionArea.layer.borderColor = UIColor.white.cgColor
+//                        detectionArea.layer.borderWidth = 5
+//                        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+//                            self.dismiss(animated: true, completion: nil)
+//                        }
                     }
                 }
             }
         }
+
+    
+    @IBAction func done(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "paymoney") as! PayMoneyVC
+        vc.total = total
+        present(vc, animated: true, completion: nil)
     }
     
-    func update(tm: Timer) {
-        counter += 1
-        print(counter)
-        if 1 < counter {
-            detectionArea.layer.borderColor = UIColor.red.cgColor
-            detectionArea.layer.borderWidth = 3
-            label.text = ""
-        }
+    override func viewDidDisappear(_ animated: Bool) {
+     total = 0 
     }
+
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ItemCell
+        
+        cell.displayItem(item: tableviewItems[indexPath.row])
+        
+        return cell
+
+        
+        
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return tableviewItems.count
+    }
+    
+    
+    
 }
+
+
 
