@@ -44,22 +44,32 @@ class IncomeVC: UIViewController {
         
         expandableTableView.expandableTableViewDataSource = self
         expandableTableView.expandableTableViewDelegate = self
+        expandableTableView.tableFooterView = UIView()
     }
   
+    @IBAction func addNewItem(_ sender: UIButton) {
+        
+        
+        if sender.tag == 1 {
+            
+        } else {
+            
+            
+        }
+    }
+
     
     override func viewWillAppear(_ animated: Bool) {
         title = ""
     }
-
     
-    
-    
-    @IBAction func OkDidTap(_ sender: Any) {
-        tabBarController?.tabBar.items?[1].isEnabled = false
-        tabBarController?.tabBar.items?[2].isEnabled = true
-        tabBarController?.selectedIndex = 2
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool
+    {
+       textField.resignFirstResponder()
+        return true
     }
-    
+
+
 }
 
 // MARK: - LUExpandableTableViewDataSource
@@ -72,26 +82,47 @@ extension IncomeVC: LUExpandableTableViewDataSource {
     func expandableTableView(_ expandableTableView: LUExpandableTableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 1:
-            return fixed.count
+            return fixed.count + 1
         case 2:
-            return discret.count
+            return discret.count + 1 
         default:
             return 0
         }
     }
     
     func expandableTableView(_ expandableTableView: LUExpandableTableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = expandableTableView.dequeueReusableCell(withIdentifier: "itemcell") as? ItemCell else {
-            assertionFailure("Cell shouldn't be nil")
-            return UITableViewCell()
+        
+        
+        
+        if indexPath.section == 1 {
+            if indexPath.row == fixed.count {
+                let cell = expandableTableView.dequeueReusableCell(withIdentifier: "buttoncell") as! ButtonCell
+                cell.addButton.tag = 1
+                return  cell
+                
+            } else {
+                let cell = expandableTableView.dequeueReusableCell(withIdentifier: "itemcell") as! ItemCell
+                cell.displayItem(item: fixed[indexPath.row])
+                return  cell
+                }
+        } else {
+            if indexPath.row == fixed.count {
+                let cell = expandableTableView.dequeueReusableCell(withIdentifier: "buttoncell")  as! ButtonCell
+                 cell.addButton.tag = 2
+                return  cell
+                
+            } else {
+                let cell = expandableTableView.dequeueReusableCell(withIdentifier: "itemcell") as! ItemCell
+                cell.displayItem(item: discret[indexPath.row])
+                return  cell
+            }
         }
-        
-        cell.name.text = "movie"
-        cell.price.text = "$100"
-        
-        
-        return cell
+
+        return UITableViewCell()
     }
+    
+    
+    
     
     func expandableTableView(_ expandableTableView: LUExpandableTableView, sectionHeaderOfSection section: Int) -> LUExpandableTableViewSectionHeader {
         guard let sectionHeader = expandableTableView.dequeueReusableHeaderFooterView(withIdentifier: sectionHeaderReuseIdentifier) as? MyExpandableTableViewSectionHeader else {

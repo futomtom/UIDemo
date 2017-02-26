@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EmailVC: UIViewController {
+class EmailVC: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +24,18 @@ class EmailVC: UIViewController {
         title = ""
     }
 
-   
+ 
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool
+    {
+        if let nextField = view.viewWithTag(textField.tag + 1) as? UITextField {
+            nextField.becomeFirstResponder()
+        } else {
+            // Not found, so remove keyboard.
+            textField.resignFirstResponder()
+        }
+    
+        return false
+    }
 
   
 }

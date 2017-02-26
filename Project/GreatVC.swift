@@ -10,6 +10,8 @@ import UIKit
 
 class GreatVC: UIViewController {
 
+    @IBOutlet weak var label: UILabel!
+    var setting = Setting.share
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -17,6 +19,11 @@ class GreatVC: UIViewController {
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.isTranslucent = true
         navigationController?.navigationBar.tintColor = UIColor(red:0.659,  green:0.792,  blue:0.812, alpha:1)
+       
+        let saving = setting.duration > 0 ? Int(ceil(Double(setting.price / setting.duration))):0
+        
+        
+        label.text =  "You should save at least $\(saving) per month in the next \(setting.duration) months."
     }
     
     override func viewWillAppear(_ animated: Bool) {

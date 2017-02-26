@@ -28,6 +28,7 @@
 		8207E2B81E6022F2003ECD0A /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8207E2B71E6022F2003ECD0A /* BorderButton.swift */; };
 		8241EAE91E5AB47500D5B302 /* ScanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EAE81E5AB47500D5B302 /* ScanVC.swift */; };
 		8241EAEB1E5AB69200D5B302 /* TouchIDVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EAEA1E5AB69200D5B302 /* TouchIDVC.swift */; };
+		8287E5DE1E63049C007FADF6 /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8287E5DD1E63049C007FADF6 /* ButtonCell.swift */; };
 		829570D31E61452800DDB4C2 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829570D21E61452800DDB4C2 /* ItemCell.swift */; };
 		829570D91E616C2A00DDB4C2 /* PerfectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829570D81E616C2A00DDB4C2 /* PerfectVC.swift */; };
 		82F4D9CA1E5EC65D00884D11 /* Scan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82F4D9C91E5EC65D00884D11 /* Scan.storyboard */; };
@@ -70,6 +71,7 @@
 		8207E2B71E6022F2003ECD0A /* BorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
 		8241EAE81E5AB47500D5B302 /* ScanVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanVC.swift; sourceTree = "<group>"; };
 		8241EAEA1E5AB69200D5B302 /* TouchIDVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchIDVC.swift; sourceTree = "<group>"; };
+		8287E5DD1E63049C007FADF6 /* ButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonCell.swift; sourceTree = "<group>"; };
 		829570D21E61452800DDB4C2 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		829570D81E616C2A00DDB4C2 /* PerfectVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfectVC.swift; sourceTree = "<group>"; };
 		82F4D9C91E5EC65D00884D11 /* Scan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Scan.storyboard; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				8207E29C1E601238003ECD0A /* LUExpandableTableViewSectionHeader.swift */,
 				8207E2931E601226003ECD0A /* MyExpandableTableViewSectionHeader.swift */,
 				829570D21E61452800DDB4C2 /* ItemCell.swift */,
+				8287E5DD1E63049C007FADF6 /* ButtonCell.swift */,
 				8207E2941E601226003ECD0A /* MyExpandableTableViewSectionHeader.xib */,
 				8207E2A11E60127B003ECD0A /* OverviewVC.swift */,
 				8207E2951E601226003ECD0A /* MyTableViewCell.swift */,
@@ -345,6 +348,7 @@
 				8241EAEB1E5AB69200D5B302 /* TouchIDVC.swift in Sources */,
 				829570D31E61452800DDB4C2 /* ItemCell.swift in Sources */,
 				FA26CEC71E5A9F1C00982AB5 /* AppDelegate.swift in Sources */,
+				8287E5DE1E63049C007FADF6 /* ButtonCell.swift in Sources */,
 				8207E2961E601226003ECD0A /* MyExpandableTableViewSectionHeader.swift in Sources */,
 				8207E2A41E6014EA003ECD0A /* MainVC.swift in Sources */,
 				FAB2AF551E62373900EDF204 /* MenuItemCell.swift in Sources */,
@@ -474,7 +478,7 @@
 				DEVELOPMENT_TEAM = 6A7K9VGHXX;
 				INFOPLIST_FILE = Project/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.aau..Project;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aau.Project;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -488,7 +492,7 @@
 				DEVELOPMENT_TEAM = 6A7K9VGHXX;
 				INFOPLIST_FILE = Project/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.aau..Project;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aau.Project;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
