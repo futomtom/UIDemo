@@ -10,6 +10,7 @@ import UIKit
 import SideMenu
     
     class ProgressVC: UIViewController {
+       
         
         override func viewDidLoad() {
             super.viewDidLoad()

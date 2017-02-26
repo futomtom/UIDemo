@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Step1VC: UIViewController {
+class SetPaymentVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,9 +22,5 @@ class Step1VC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         title = ""
     }
-   
 
-    
-
-   
 }

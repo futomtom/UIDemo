@@ -100,7 +100,7 @@ class ScanVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate,UITableVi
                     }
                     
                     totalPrice.text = "\(total)"
-//                        detectionArea.layer.borderColor = UIColor.white.cgColor
+//                        detectionArea.layer.borderColor = UIColorUIColor(red:0.659,  green:0.792,  blue:0.812, alpha:1).cgColor
 //                        detectionArea.layer.borderWidth = 5
 //                        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
 //                            self.dismiss(animated: true, completion: nil)
