@@ -225,7 +225,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fGa-F4-znf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2463" y="683"/>
+            <point key="canvasLocation" x="2820" y="723"/>
         </scene>
         <!--OverviewVC-->
         <scene sceneID="vgB-GR-iaR">
@@ -263,11 +263,62 @@
                         <viewControllerLayoutGuide type="top" id="3nF-Nl-1OK"/>
                         <viewControllerLayoutGuide type="bottom" id="nrh-VP-TGN"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="yiW-fT-4tM">
+                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="yiW-fT-4tM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aqa-S7-ax4">
+                                <rect key="frame" x="0.0" y="20" width="375" height="603"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aMb-L1-aPX" userLabel="Progress">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="301.5"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ring" translatesAutoresizingMaskIntoConstraints="NO" id="1Pk-ll-m3Y">
+                                                <rect key="frame" x="117.5" y="41" width="140" height="140"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="140" id="AqH-Vb-39t"/>
+                                                    <constraint firstAttribute="width" constant="140" id="DEF-EZ-32q"/>
+                                                </constraints>
+                                            </imageView>
+                                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YOZ-b4-168" userLabel="Mask">
+                                                <rect key="frame" x="117.5" y="41" width="140" height="140"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="140" id="0HO-Gq-bCh"/>
+                                                    <constraint firstAttribute="width" constant="140" id="EkR-BS-KWG"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="YOZ-b4-168" firstAttribute="centerY" secondItem="aMb-L1-aPX" secondAttribute="centerY" constant="-40" id="IEm-pa-is7"/>
+                                            <constraint firstItem="1Pk-ll-m3Y" firstAttribute="centerX" secondItem="aMb-L1-aPX" secondAttribute="centerX" id="RI9-Zh-uQO"/>
+                                            <constraint firstItem="1Pk-ll-m3Y" firstAttribute="centerY" secondItem="aMb-L1-aPX" secondAttribute="centerY" constant="-40" id="obG-fZ-oep"/>
+                                            <constraint firstItem="YOZ-b4-168" firstAttribute="centerX" secondItem="aMb-L1-aPX" secondAttribute="centerX" id="u0P-Qm-Bcj"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OQi-W9-t3v" userLabel="Chart">
+                                        <rect key="frame" x="67.5" y="301.5" width="240" height="301.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="aMb-L1-aPX" secondAttribute="trailing" id="E6e-An-WeW"/>
+                                    <constraint firstItem="aMb-L1-aPX" firstAttribute="leading" secondItem="aqa-S7-ax4" secondAttribute="leading" id="WIe-U3-ERU"/>
+                                    <constraint firstItem="aMb-L1-aPX" firstAttribute="top" secondItem="aqa-S7-ax4" secondAttribute="top" id="cC9-7x-PfO"/>
+                                    <constraint firstItem="OQi-W9-t3v" firstAttribute="top" secondItem="aMb-L1-aPX" secondAttribute="bottom" id="e5Y-iI-p40"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nrh-VP-TGN" firstAttribute="top" secondItem="aqa-S7-ax4" secondAttribute="bottom" id="EgC-3Z-00K"/>
+                            <constraint firstAttribute="trailing" secondItem="aqa-S7-ax4" secondAttribute="trailing" id="Hfs-Y5-y9c"/>
+                            <constraint firstItem="aqa-S7-ax4" firstAttribute="leading" secondItem="yiW-fT-4tM" secondAttribute="leading" id="dyc-CF-uNX"/>
+                            <constraint firstItem="aqa-S7-ax4" firstAttribute="top" secondItem="3nF-Nl-1OK" secondAttribute="bottom" id="l6W-dz-4KW"/>
+                        </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="JzT-pR-EKC">
                         <barButtonItem key="leftBarButtonItem" image="menu" id="CTb-6I-vDP">
@@ -281,7 +332,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rJL-kS-JyI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1921" y="-913"/>
+            <point key="canvasLocation" x="1920.8" y="-913.49325337331345"/>
         </scene>
         <!--MainView Controller-->
         <scene sceneID="l4t-f2-pzT">
@@ -386,7 +437,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bag-Wj-TCr">
-                                <rect key="frame" x="48" y="120" width="280" height="280"/>
+                                <rect key="frame" x="48" y="164" width="280" height="280"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ring" translatesAutoresizingMaskIntoConstraints="NO" id="aUB-Q6-SNR">
                                         <rect key="frame" x="0.0" y="0.0" width="280" height="280"/>
