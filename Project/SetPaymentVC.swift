@@ -9,6 +9,11 @@
 import UIKit
 
 class SetPaymentVC: UIViewController {
+     let setting = Setting.share
+    
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -21,6 +21,10 @@ class Expenses {
 
 class IncomeVC: UIViewController {
     let sectionName = ["Dream Service","Fixed Expenses","Discretionary Money" ]
+    var setting = Setting.share
+    
+    @IBOutlet weak var incomeField: UITextField!
+    
     
     var fixed:[Expenses]=[Expenses(name:"Eat",price:100),Expenses(name:"Rent",price:200)]
     var discret:[Expenses]=[Expenses(name:"Commute",price:100),Expenses(name:"Entertainment",price:200)]
@@ -67,6 +71,14 @@ class IncomeVC: UIViewController {
     {
        textField.resignFirstResponder()
         return true
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "flow3" {
+            setting.income = Int(incomeField.text!) ?? 0
+            setting.fix = 600
+            setting.discret = 200
+        }
     }
 
 

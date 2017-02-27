@@ -20,78 +20,77 @@ class Setting {
     var discret = 0
     var income = 0
     var icon = 0
-    var image:URL?
+    var image: URL?
 }
 
 class DetailVC: UIViewController {
     @IBOutlet weak var picker: UIPickerView!
-   var setting = Setting.share
-    
+    var setting = Setting.share
+
     @IBOutlet weak var IconImageView: UIImageView!
     @IBOutlet weak var chooseButton: UIButton!
     @IBOutlet weak var dreamField: UITextField!
-    
+
     @IBOutlet weak var pickerView: UIPickerView!
     @IBOutlet weak var priceField: UITextField!
-    var iconChoosed:Bool  {
+    var iconChoosed: Bool {
         set {
             doneButton.isHidden = !iconChoosed
             fillImage()
-           
+
         }
         get {
             return true
         }
     }
-    
+
     @IBOutlet weak var doneButton: BorderButton!
-    
-    
-    func  fillImage() {
+
+
+    func fillImage() {
         if setting.icon == 0 {
             let imagePath = getDocumentsDirectory().appendingPathComponent("goal.jpg")
-        
+
             IconImageView.image = UIImage(contentsOfFile: imagePath.path)
             chooseButton.setTitle("", for: .normal)
-            
+
         } else {
-            IconImageView.image = UIImage(named:"dream\(setting.icon)")
+            IconImageView.image = UIImage(named: "dream\(setting.icon)")
             chooseButton.setTitle("", for: .normal)
         }
-        
-        
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.isTranslucent = true
-        navigationController?.navigationBar.tintColor = UIColor(red:0.659,  green:0.792,  blue:0.812, alpha:1)
-        
+        navigationController?.navigationBar.tintColor = UIColor(red: 0.659, green: 0.792, blue: 0.812, alpha: 1)
+
         let setting = Setting.share
     }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         title = ""
     }
-    
-   
+
+
 
     @IBAction func ChooseIcon(_ sender: Any) {
-       let vc = storyboard?.instantiateViewController(withIdentifier: "chooseicon") as! ChooseIconVC
+        let vc = storyboard?.instantiateViewController(withIdentifier: "chooseicon") as! ChooseIconVC
         vc.parentVC = self
-       present(vc, animated: true)
-        
+        present(vc, animated: true)
+
     }
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "great" {
             setting.dream = dreamField.text!
             setting.price = Int(priceField.text!) ?? 0
         }
     }
-    
+
     func getDocumentsDirectory() -> URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         let documentsDirectory = paths[0]
@@ -103,19 +102,19 @@ extension DetailVC: UIPickerViewDataSource, UIPickerViewDelegate {
     public func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
-    
-    
+
+
     func pickerView (_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        
+
         return 6
     }
-    
+
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return "\(row+1) month"
+        return "\(row + 1) month"
     }
-    
+
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         setting.duration = row + 1
     }
-    
+
 }
