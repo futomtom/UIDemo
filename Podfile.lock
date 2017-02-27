@@ -1,12 +1,18 @@
 PODS:
+  - PieCharts (0.0.4)
   - SideMenu (2.2.0)
+  - SwiftValidate (2.0.1)
 
 DEPENDENCIES:
+  - PieCharts
   - SideMenu
+  - SwiftValidate
 
 SPEC CHECKSUMS:
+  PieCharts: 5303e2b21f9c4a3f2def74ab10b7718577432958
   SideMenu: eeff6b85456c5c6e14165655691d2033f6b24969
+  SwiftValidate: b25159abe77d99690c628a9060e2f6ac43409cad
 
-PODFILE CHECKSUM: 819a239bd5d64731d2d89869598a78c57a8b34cc
+PODFILE CHECKSUM: 5ed2ca2b4c20a3bbf34a696f72cf0f64a56fd8a5
 
 COCOAPODS: 1.1.1

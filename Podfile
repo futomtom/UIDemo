@@ -7,4 +7,6 @@ target 'Project' do
 
   # Pods for Project
   pod 'SideMenu'
+  pod 'PieCharts'
+  pod 'SwiftValidate'
 end
