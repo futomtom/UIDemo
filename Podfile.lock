@@ -1,18 +1,28 @@
 PODS:
   - PieCharts (0.0.4)
   - SideMenu (2.2.0)
-  - SwiftValidate (2.0.1)
+  - SwiftValidator (4.0.0)
 
 DEPENDENCIES:
   - PieCharts
   - SideMenu
-  - SwiftValidate
+  - SwiftValidator (from `https://github.com/jpotts18/SwiftValidator.git`, branch `swift-3`)
+
+EXTERNAL SOURCES:
+  SwiftValidator:
+    :branch: swift-3
+    :git: https://github.com/jpotts18/SwiftValidator.git
+
+CHECKOUT OPTIONS:
+  SwiftValidator:
+    :commit: 5721426cbcffef7efc3b27a9077b9e9451ac5574
+    :git: https://github.com/jpotts18/SwiftValidator.git
 
 SPEC CHECKSUMS:
   PieCharts: 5303e2b21f9c4a3f2def74ab10b7718577432958
   SideMenu: eeff6b85456c5c6e14165655691d2033f6b24969
-  SwiftValidate: b25159abe77d99690c628a9060e2f6ac43409cad
+  SwiftValidator: 25ded5ca1f10c05adf57f6ac82a72d28ac8d91af
 
-PODFILE CHECKSUM: 5ed2ca2b4c20a3bbf34a696f72cf0f64a56fd8a5
+PODFILE CHECKSUM: e9ff8749cf562547a9846dc7ca19e0af61d2869c
 
 COCOAPODS: 1.1.1

@@ -29,7 +29,7 @@
 		8241EAE91E5AB47500D5B302 /* ScanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EAE81E5AB47500D5B302 /* ScanVC.swift */; };
 		8241EAEB1E5AB69200D5B302 /* TouchIDVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EAEA1E5AB69200D5B302 /* TouchIDVC.swift */; };
 		8287E5DE1E63049C007FADF6 /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8287E5DD1E63049C007FADF6 /* ButtonCell.swift */; };
-		829570D31E61452800DDB4C2 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829570D21E61452800DDB4C2 /* ItemCell.swift */; };
+		829570D31E61452800DDB4C2 /* QuotaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829570D21E61452800DDB4C2 /* QuotaCell.swift */; };
 		829570D91E616C2A00DDB4C2 /* PerfectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829570D81E616C2A00DDB4C2 /* PerfectVC.swift */; };
 		82F4D9CA1E5EC65D00884D11 /* Scan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82F4D9C91E5EC65D00884D11 /* Scan.storyboard */; };
 		C1A65C10159A46C93BD62954 /* Pods_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C8D19DE587CA1830D75049C /* Pods_Project.framework */; };
@@ -72,7 +72,7 @@
 		8241EAE81E5AB47500D5B302 /* ScanVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanVC.swift; sourceTree = "<group>"; };
 		8241EAEA1E5AB69200D5B302 /* TouchIDVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchIDVC.swift; sourceTree = "<group>"; };
 		8287E5DD1E63049C007FADF6 /* ButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonCell.swift; sourceTree = "<group>"; };
-		829570D21E61452800DDB4C2 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		829570D21E61452800DDB4C2 /* QuotaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotaCell.swift; sourceTree = "<group>"; };
 		829570D81E616C2A00DDB4C2 /* PerfectVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfectVC.swift; sourceTree = "<group>"; };
 		82F4D9C91E5EC65D00884D11 /* Scan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Scan.storyboard; sourceTree = "<group>"; };
 		FA26CEC31E5A9F1C00982AB5 /* Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,7 +127,6 @@
 				8207E29B1E601238003ECD0A /* LUExpandableTableViewDelegate.swift */,
 				8207E29C1E601238003ECD0A /* LUExpandableTableViewSectionHeader.swift */,
 				8207E2931E601226003ECD0A /* MyExpandableTableViewSectionHeader.swift */,
-				829570D21E61452800DDB4C2 /* ItemCell.swift */,
 				8287E5DD1E63049C007FADF6 /* ButtonCell.swift */,
 				8207E2941E601226003ECD0A /* MyExpandableTableViewSectionHeader.xib */,
 				8207E2A11E60127B003ECD0A /* OverviewVC.swift */,
@@ -164,6 +163,7 @@
 				8241EAE81E5AB47500D5B302 /* ScanVC.swift */,
 				FA90D5A01E62521F0068B233 /* task1 */,
 				FA90D59A1E623C100068B233 /* ProgressVC.swift */,
+				829570D21E61452800DDB4C2 /* QuotaCell.swift */,
 				8207E2B71E6022F2003ECD0A /* BorderButton.swift */,
 				FA90D59E1E6241F10068B233 /* PayMoneyVC.swift */,
 				FAB2AF501E622F3B00EDF204 /* HomePageVC.swift */,
@@ -346,7 +346,7 @@
 				8207E2A21E60127B003ECD0A /* OverviewVC.swift in Sources */,
 				8207E2B41E6016A4003ECD0A /* PaymentVC.swift in Sources */,
 				8241EAEB1E5AB69200D5B302 /* TouchIDVC.swift in Sources */,
-				829570D31E61452800DDB4C2 /* ItemCell.swift in Sources */,
+				829570D31E61452800DDB4C2 /* QuotaCell.swift in Sources */,
 				FA26CEC71E5A9F1C00982AB5 /* AppDelegate.swift in Sources */,
 				8287E5DE1E63049C007FADF6 /* ButtonCell.swift in Sources */,
 				8207E2961E601226003ECD0A /* MyExpandableTableViewSectionHeader.swift in Sources */,

@@ -19,7 +19,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SwiftValidate.xcscheme</key>
+		<key>SwiftValidator.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,22 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>29C49925DBB3AE3E74CD649786889BF5</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2B46D28ED0C015D86595874591BFEA4B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>35FE2D82BB3E48EAE91DA1D334BB0163</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>449ADE30325901573B01076E92AD557C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5A3CC56A99E3338D496BEF072EC69915</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>833D5EF896402299A8D8D3D3B2F8CC19</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E03070A7089EF74C9C23CB13904D7B1A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'E03070A7089EF74C9C23CB13904D7B1A'
-               BlueprintName = 'SideMenu'
+               BlueprintIdentifier = '5A3CC56A99E3338D496BEF072EC69915'
+               BlueprintName = 'SwiftValidator'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'SideMenu.framework'>
+               BuildableName = 'SwiftValidator.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

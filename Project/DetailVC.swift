@@ -19,8 +19,23 @@ class Setting {
     var fix = 0
     var discret = 0
     var income = 0
+    var saving = 0 
     var icon = 0
     var image: URL?
+    var fixexQuota = [ Quota(name:"Rent",limit:800),Quota(name:"Cell phone",limit:40),Quota(name:"Transportation",limit:60) ]
+    var discretQuota = [ Quota(name:"Gas",limit:45),Quota(name:"Eating Out",limit:80),Quota(name:"Entertainment",limit:200),Quota(name:"Utilities",limit:200) ]
+    var expenses = [[Expenses(name:"Shell",price:30),Expenses(name:"Chevron",price:25)],
+                    [Expenses(name:"Dim Sum",price:60),Expenses(name:"Burger King",price:10)],
+                    [Expenses(name:"shopping",price:45),Expenses(name:"movie",price:16)]
+                    ]
+    func  getTotal(_ quota:[Quota]) -> Int {
+        var total = 0
+        for item in quota {
+            total = total + item.limit
+        }
+        return total
+    }
+    
 }
 
 class DetailVC: UIViewController {

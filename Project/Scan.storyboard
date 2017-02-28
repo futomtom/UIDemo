@@ -37,7 +37,7 @@
                                 <rect key="frame" x="0.0" y="200" width="375" height="334"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="ITF-2Y-kh3" customClass="ItemCell" customModule="Project" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="ITF-2Y-kh3" customClass="ExpenseCell" customModule="Project" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ITF-2Y-kh3" id="l4M-XQ-sSu">
@@ -263,7 +263,7 @@
                         <viewControllerLayoutGuide type="top" id="3nF-Nl-1OK"/>
                         <viewControllerLayoutGuide type="bottom" id="nrh-VP-TGN"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="yiW-fT-4tM">
+                    <view key="view" contentMode="scaleToFill" id="yiW-fT-4tM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -271,17 +271,17 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="603"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aMb-L1-aPX" userLabel="Progress">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="301.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="302"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ring" translatesAutoresizingMaskIntoConstraints="NO" id="1Pk-ll-m3Y">
-                                                <rect key="frame" x="117.5" y="41" width="140" height="140"/>
+                                                <rect key="frame" x="118" y="41" width="140" height="140"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="140" id="AqH-Vb-39t"/>
                                                     <constraint firstAttribute="width" constant="140" id="DEF-EZ-32q"/>
                                                 </constraints>
                                             </imageView>
                                             <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YOZ-b4-168" userLabel="Mask">
-                                                <rect key="frame" x="117.5" y="41" width="140" height="140"/>
+                                                <rect key="frame" x="118" y="41" width="140" height="140"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="140" id="0HO-Gq-bCh"/>
@@ -298,7 +298,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OQi-W9-t3v" userLabel="Chart">
-                                        <rect key="frame" x="67.5" y="301.5" width="240" height="301.5"/>
+                                        <rect key="frame" x="68" y="302" width="240" height="301"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>

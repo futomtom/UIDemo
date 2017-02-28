@@ -21,6 +21,7 @@ class GreatVC: UIViewController {
         navigationController?.navigationBar.tintColor = UIColor(red:0.659,  green:0.792,  blue:0.812, alpha:1)
        
         let saving = setting.duration > 0 ? Int(ceil(Double(setting.price / setting.duration))):0
+        setting.saving = saving 
         
         
         label.text =  "You should save at least $\(saving) per month in the next \(setting.duration) months."

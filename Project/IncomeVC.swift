@@ -16,18 +16,23 @@ class Expenses {
         self.name = name
         self.price = price
     }
-    
 }
 
-class IncomeVC: UIViewController {
-    let sectionName = ["Dream Service","Fixed Expenses","Discretionary Money" ]
+class Quota {
+    var name:String = ""
+    var limit:Int = 0
+    
+    init(name:String, limit:Int) {
+        self.name = name
+        self.limit = limit
+    }
+}
+
+class IncomeVC: UIViewController, UITextFieldDelegate {
+    let sectionName = ["Dream Saving","Fixed Expenses","Discretionary Money" ]
     var setting = Setting.share
-    
+    var editmode = 0
     @IBOutlet weak var incomeField: UITextField!
-    
-    
-    var fixed:[Expenses]=[Expenses(name:"Eat",price:100),Expenses(name:"Rent",price:200)]
-    var discret:[Expenses]=[Expenses(name:"Commute",price:100),Expenses(name:"Entertainment",price:200)]
     // MARK: - Properties
     
     @IBOutlet weak var expandableTableView: LUExpandableTableView!
@@ -52,14 +57,14 @@ class IncomeVC: UIViewController {
     }
   
     @IBAction func addNewItem(_ sender: UIButton) {
-        
-        
         if sender.tag == 1 {
-            
+            setting.fixexQuota.append(Quota(name: "", limit: 0))
+            expandableTableView.reloadSections(IndexSet(integer: 1), with: .fade)
         } else {
-            
-            
+            setting.discretQuota.append(Quota(name: "", limit: 0))
+            expandableTableView.reloadSections(IndexSet(integer: 2), with: .fade)
         }
+        editmode = sender.tag
     }
 
     
@@ -80,6 +85,27 @@ class IncomeVC: UIViewController {
             setting.discret = 200
         }
     }
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if textField.tag == 1 {
+            if editmode == 1 {
+                let quota = setting.fixexQuota.last!
+                quota.name = textField.text!
+            } else {
+                let quota = setting.discretQuota.last!
+                quota.name = textField.text!
+            }
+        } else {
+            if editmode == 1 {
+                let quota = setting.fixexQuota.last!
+                quota.limit = Int(textField.text!) ?? 0
+                expandableTableView.reloadData()
+            } else {
+                let quota = setting.discretQuota.last!
+                quota.limit = Int(textField.text!) ?? 0
+                expandableTableView.reloadData()
+            }
+        }
+    }
 
 
 }
@@ -94,38 +120,42 @@ extension IncomeVC: LUExpandableTableViewDataSource {
     func expandableTableView(_ expandableTableView: LUExpandableTableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 1:
-            return fixed.count + 1
+            return   setting.fixexQuota.count + 1
+            
         case 2:
-            return discret.count + 1 
+            return  setting.discretQuota.count + 1
         default:
             return 0
         }
     }
     
     func expandableTableView(_ expandableTableView: LUExpandableTableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+        let fixedQuota = setting.fixexQuota
+        let discretQuota = setting.discretQuota
         
         
         if indexPath.section == 1 {
-            if indexPath.row == fixed.count {
+            if indexPath.row == fixedQuota.count {
                 let cell = expandableTableView.dequeueReusableCell(withIdentifier: "buttoncell") as! ButtonCell
                 cell.addButton.tag = 1
                 return  cell
                 
             } else {
-                let cell = expandableTableView.dequeueReusableCell(withIdentifier: "itemcell") as! ItemCell
-                cell.displayItem(item: fixed[indexPath.row])
+                let cell = expandableTableView.dequeueReusableCell(withIdentifier: "itemcell") as! QuotaCell
+                cell.displayItem(item: fixedQuota[indexPath.row])
                 return  cell
                 }
-        } else {
-            if indexPath.row == fixed.count {
+        }
+        
+        if indexPath.section == 2 {
+            if indexPath.row == discretQuota.count {
                 let cell = expandableTableView.dequeueReusableCell(withIdentifier: "buttoncell")  as! ButtonCell
                  cell.addButton.tag = 2
                 return  cell
                 
             } else {
-                let cell = expandableTableView.dequeueReusableCell(withIdentifier: "itemcell") as! ItemCell
-                cell.displayItem(item: discret[indexPath.row])
+                let cell = expandableTableView.dequeueReusableCell(withIdentifier: "itemcell") as! QuotaCell
+                cell.displayItem(item: discretQuota[indexPath.row])
                 return  cell
             }
         }
@@ -142,7 +172,19 @@ extension IncomeVC: LUExpandableTableViewDataSource {
             return LUExpandableTableViewSectionHeader()
         }
         
+        var amount = 0
+        switch section {
+        case 0:
+            amount = setting.saving
+        case 1:
+            amount = setting.getTotal(setting.fixexQuota)
+        case 2:
+            amount = setting.getTotal(setting.discretQuota)
+        default:
+           break
+        }
         sectionHeader.label.text = sectionName[section]
+        sectionHeader.expandCollapseButton.setTitle("\(amount)", for: .normal)
         
         return sectionHeader
     }

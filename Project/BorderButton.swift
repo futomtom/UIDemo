@@ -21,6 +21,8 @@ class BorderButton: UIButton {
         layer.cornerRadius = 4
         layer.borderWidth = 1
         layer.borderColor = UIColor(red:0.545,  green:0.694,  blue:0.718, alpha:1).cgColor
+        backgroundColor = UIColor(red:0.545,  green:0.694,  blue:0.718, alpha:1)
+        setTitleColor(.white, for: .normal)
         
         //return self
     }

@@ -123,7 +123,7 @@ class ScanVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate,UITableVi
 
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ItemCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ExpenseCell
         
         cell.displayItem(item: tableviewItems[indexPath.row])
         
