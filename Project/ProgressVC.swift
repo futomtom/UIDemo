@@ -13,6 +13,7 @@ import SideMenu
 import PieCharts
     
     class ProgressVC: UIViewController , PieChartDelegate{
+        let setting = Setting.share
        
         @IBOutlet weak var chartView: PieChart!
         @IBOutlet weak var imageView: UIImageView!
@@ -75,13 +76,16 @@ import PieCharts
         
         fileprivate func createModels() -> [PieSliceModel] {
             
-            let models = [
-                PieSliceModel(value: 1, color: colors[0]),
-                PieSliceModel(value: 2, color: colors[1]),
-                PieSliceModel(value: 1.5, color: colors[2]),
-                PieSliceModel(value: 1, color: colors[3]),
-                PieSliceModel(value: 1.6, color: colors[4])
-            ]
+            let count = setting.expenses.count
+            var models:[PieSliceModel]=[]
+            
+            var subtotal:[Int]=Array(repeating: 0, count: count)
+            for i in 0..<count {
+                for item in setting.expenses[i] {
+                     subtotal[i] += item.price
+                }
+                models.append(PieSliceModel(value: Double(subtotal[i]), color: colors[i]))
+            }
             
             currentColorIndex = models.count
             return models

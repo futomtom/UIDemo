@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>PieCharts.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>Pods-Project.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -19,10 +24,30 @@
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
+		<key>SwiftValidator.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>1C9B99B39D255B25679D29659331049F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>449ADE30325901573B01076E92AD557C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5A3CC56A99E3338D496BEF072EC69915</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>833D5EF896402299A8D8D3D3B2F8CC19</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -33,6 +58,11 @@
 			<true/>
 		</dict>
 		<key>DEE9C13CA4FB8BEA6100D84BA22C7A11</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E03070A7089EF74C9C23CB13904D7B1A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
