@@ -22,7 +22,7 @@ class ViewController: UIViewController {
          self.textView.drawText("Siqi")
          self.textView2.drawText("Chen")
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(5)) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4)) {
             self.toLogin()
         }
         
