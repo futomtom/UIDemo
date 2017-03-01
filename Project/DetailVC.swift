@@ -125,21 +125,20 @@ class DetailVC: UIViewController {
 
 extension DetailVC: UIPickerViewDataSource, UIPickerViewDelegate {
     public func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
+        return 2
     }
 
-
     func pickerView (_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-
-        return 6
+        return component == 0 ? 10 :11
     }
 
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return "\(row + 1) month"
+        
+        return component == 0 ? "\(row ) year":"\(row + 1) month"
     }
 
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        setting.duration = row + 1
+      setting.duration = pickerView.selectedRow(inComponent: 0) * 12 +  pickerView.selectedRow(inComponent: 1) + 1
+        print(setting.duration)
     }
-
 }
