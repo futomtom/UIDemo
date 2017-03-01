@@ -38,6 +38,8 @@
 		FA26CECC1E5A9F1C00982AB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA26CECA1E5A9F1C00982AB5 /* Main.storyboard */; };
 		FA26CECE1E5A9F1C00982AB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA26CECD1E5A9F1C00982AB5 /* Assets.xcassets */; };
 		FA26CED11E5A9F1C00982AB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA26CECF1E5A9F1C00982AB5 /* LaunchScreen.storyboard */; };
+		FA49A9DE1E66992F007445E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49A9DD1E66992F007445E5 /* ViewController.swift */; };
+		FA49A9E01E669936007445E5 /* StencilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49A9DF1E669936007445E5 /* StencilView.swift */; };
 		FA90D59B1E623C100068B233 /* ProgressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90D59A1E623C100068B233 /* ProgressVC.swift */; };
 		FA90D59F1E6241F10068B233 /* PayMoneyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90D59E1E6241F10068B233 /* PayMoneyVC.swift */; };
 		FA90D5A61E625CF10068B233 /* SAConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90D5A51E625CF10068B233 /* SAConfettiView.swift */; };
@@ -83,6 +85,8 @@
 		FA26CECD1E5A9F1C00982AB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA26CED01E5A9F1C00982AB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA26CED21E5A9F1C00982AB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA49A9DD1E66992F007445E5 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA49A9DF1E669936007445E5 /* StencilView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StencilView.swift; sourceTree = "<group>"; };
 		FA90D59A1E623C100068B233 /* ProgressVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressVC.swift; sourceTree = "<group>"; };
 		FA90D59E1E6241F10068B233 /* PayMoneyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayMoneyVC.swift; sourceTree = "<group>"; };
 		FA90D5A51E625CF10068B233 /* SAConfettiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAConfettiView.swift; sourceTree = "<group>"; };
@@ -184,6 +188,8 @@
 		FA90D5A01E62521F0068B233 /* task1 */ = {
 			isa = PBXGroup;
 			children = (
+				FA49A9DF1E669936007445E5 /* StencilView.swift */,
+				FA49A9DD1E66992F007445E5 /* ViewController.swift */,
 				8207E2A71E601592003ECD0A /* DetailVC.swift */,
 				FA90D5A51E625CF10068B233 /* SAConfettiView.swift */,
 				829570D81E616C2A00DDB4C2 /* PerfectVC.swift */,
@@ -341,9 +347,11 @@
 				8207E2981E601226003ECD0A /* MyTableViewCell.swift in Sources */,
 				8207E29E1E601238003ECD0A /* LUExpandableTableViewDataSource.swift in Sources */,
 				FA90D59F1E6241F10068B233 /* PayMoneyVC.swift in Sources */,
+				FA49A9DE1E66992F007445E5 /* ViewController.swift in Sources */,
 				8207E29D1E601238003ECD0A /* LUExpandableTableView.swift in Sources */,
 				8207E29F1E601238003ECD0A /* LUExpandableTableViewDelegate.swift in Sources */,
 				FA90D59B1E623C100068B233 /* ProgressVC.swift in Sources */,
+				FA49A9E01E669936007445E5 /* StencilView.swift in Sources */,
 				8207E2AF1E601592003ECD0A /* GreatVC.swift in Sources */,
 				8207E2B21E6015E3003ECD0A /* Step1VC.swift in Sources */,
 				8207E2A21E60127B003ECD0A /* OverviewVC.swift in Sources */,
