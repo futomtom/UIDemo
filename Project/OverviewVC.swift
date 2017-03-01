@@ -10,6 +10,9 @@ import UIKit
 import SideMenu
     
     class OverviewVC: UIViewController {
+         let setting = Setting.share
+        var expenses = [26,62,23,42,0,12    ]
+        
         
         @IBOutlet weak var tableView: UITableView!
         override func viewDidLoad() {
@@ -38,18 +41,19 @@ extension OverviewVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let cell = tableView.dequeueReusableCell(withIdentifier: "headcell") as! ListHeaderCell
+        cell.remain = setting.getRemain()
         cell.displayItem()
         return cell
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return expenses.count
         
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ListCell
         
-        cell.displayItem()
+        cell.displayItem(setting.discretQuota[indexPath.row],expense: expenses[indexPath.row])
         
         return cell
     }

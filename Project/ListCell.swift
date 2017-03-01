@@ -9,13 +9,14 @@
 import UIKit
 
 class ListHeaderCell: UITableViewCell {
+   var remain = 0
     
     @IBOutlet weak var money: UILabel!
     @IBOutlet weak var date: UILabel!
     
     func displayItem() {
-        money.text = "600"
-        date.text = "2/2017"
+        money.text = "\(remain)"
+        date.text = "4/2017"
       
     }
     
@@ -26,17 +27,17 @@ class ListHeaderCell: UITableViewCell {
 class ListCell: UITableViewCell {
 
     @IBOutlet weak var first: UILabel!
-    @IBOutlet weak var second: UILabel!
+   
     @IBOutlet weak var used: UILabel!
     @IBOutlet weak var remain: UILabel!
     
     
     
-    func displayItem() {
-        first.text = "600"
-        second.text = "2/2017"
-        used.text = "100"
-        remain.text = "140"
+    func displayItem(_ quota:Quota,expense:Int) {
+        first.text = quota.name
+        used.text = "\(expense)"
+        let remainMoney = quota.limit - expense
+        remain.text = "\(remainMoney)/\(quota.limit)"
     }
 
 }
