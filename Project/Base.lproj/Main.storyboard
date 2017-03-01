@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Be0-yc-ZK6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zbz-Ph-lJw">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -174,7 +174,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eps-47-Mcu">
-                                <rect key="frame" x="254" y="69" width="100" height="40"/>
+                                <rect key="frame" x="254" y="25" width="100" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="5Kw-6J-c2x"/>
                                     <constraint firstAttribute="height" constant="40" id="WO5-91-NxD"/>
@@ -187,7 +187,7 @@
                                 </connections>
                             </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mIx-CC-yqj" customClass="LUExpandableTableView" customModule="Project" customModuleProvider="target">
-                                <rect key="frame" x="20" y="134" width="335" height="383"/>
+                                <rect key="frame" x="20" y="90" width="335" height="427"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                 <prototypes>
@@ -239,10 +239,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MWM-ko-tQf">
-                                                    <rect key="frame" x="0.0" y="0.0" width="315" height="44"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="315" height="43"/>
                                                     <subviews>
                                                         <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X2g-nD-TD4" userLabel="ItemField">
-                                                            <rect key="frame" x="0.0" y="0.0" width="215" height="44"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="215" height="43"/>
                                                             <nil key="textColor"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
@@ -251,7 +251,7 @@
                                                             </connections>
                                                         </textField>
                                                         <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4pH-mN-wkN">
-                                                            <rect key="frame" x="215" y="0.0" width="100" height="44"/>
+                                                            <rect key="frame" x="215" y="0.0" width="100" height="43"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="100" id="zUj-Rn-cDM"/>
                                                             </constraints>
@@ -354,7 +354,7 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Income" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNq-ka-tyT">
-                                <rect key="frame" x="21" y="69" width="100" height="30"/>
+                                <rect key="frame" x="21" y="25" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="V8p-Ab-EBr"/>
                                     <constraint firstAttribute="height" constant="30" id="Yx5-NE-rHF"/>
@@ -1389,7 +1389,7 @@ per month in the next 6 months.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ja-IW-ZCv" userLabel="Row1">
-                                <rect key="frame" x="36" y="114" width="303" height="30"/>
+                                <rect key="frame" x="36" y="70" width="303" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dream" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PRL-Uy-xAZ">
                                         <rect key="frame" x="0.0" y="0.0" width="254" height="30"/>
@@ -1412,7 +1412,7 @@ per month in the next 6 months.</string>
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="w4L-od-VfS" userLabel="Row2">
-                                <rect key="frame" x="36" y="164" width="303" height="80"/>
+                                <rect key="frame" x="36" y="120" width="303" height="80"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Icon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QYP-Pg-OmC">
                                         <rect key="frame" x="0.0" y="30" width="191" height="20.5"/>
@@ -1452,7 +1452,7 @@ per month in the next 6 months.</string>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="fQg-eW-qfp" userLabel="Row3">
-                                <rect key="frame" x="36" y="264" width="303" height="293"/>
+                                <rect key="frame" x="36" y="220" width="303" height="337"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="MBf-5K-Hse">
                                         <rect key="frame" x="0.0" y="0.0" width="303" height="20.5"/>
@@ -1475,7 +1475,7 @@ per month in the next 6 months.</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xa3-Vl-NGI">
-                                        <rect key="frame" x="0.0" y="54.5" width="303" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="63.5" width="303" height="20.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0L7-md-D9p">
                                                 <rect key="frame" x="0.0" y="0.0" width="183" height="20.5"/>
@@ -1495,7 +1495,7 @@ per month in the next 6 months.</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Zp-ip-GPK">
-                                        <rect key="frame" x="0.0" y="109" width="303" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="126.5" width="303" height="20.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Income" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQr-gb-uJd">
                                                 <rect key="frame" x="0.0" y="0.0" width="183" height="20.5"/>
@@ -1515,7 +1515,7 @@ per month in the next 6 months.</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZPI-Ra-Zwj">
-                                        <rect key="frame" x="0.0" y="163.5" width="303" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="190" width="303" height="20.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fixed Expenses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6EM-CV-YyJ">
                                                 <rect key="frame" x="0.0" y="0.0" width="183" height="20.5"/>
@@ -1541,7 +1541,7 @@ per month in the next 6 months.</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bnI-Ed-4Ay">
-                                        <rect key="frame" x="0.0" y="218" width="303" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="253" width="303" height="20.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discretionary Money " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1j-jm-Ln2">
                                                 <rect key="frame" x="0.0" y="0.0" width="183" height="20.5"/>
@@ -1561,7 +1561,7 @@ per month in the next 6 months.</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qu3-5Z-Rro">
-                                        <rect key="frame" x="0.0" y="272.5" width="303" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="316.5" width="303" height="20.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Method to Pay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RsS-TZ-gdV">
                                                 <rect key="frame" x="0.0" y="0.0" width="183" height="20.5"/>
@@ -1645,7 +1645,7 @@ per month in the next 6 months.</string>
         <!--Navigation Controller-->
         <scene sceneID="shq-Qx-MwR">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RSj-10-QSw" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="rootnavi" automaticallyAdjustsScrollViewInsets="NO" id="RSj-10-QSw" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4s0-Sv-hhO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -1659,6 +1659,55 @@ per month in the next 6 months.</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VXP-Oi-dwn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2057" y="-1428"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Xkf-3h-jmK">
+            <objects>
+                <viewController id="zbz-Ph-lJw" customClass="ViewController" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dcc-kR-d6a"/>
+                        <viewControllerLayoutGuide type="bottom" id="Uqn-Q2-9gq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8wc-UP-Kqi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="omz-vm-6nM">
+                                <rect key="frame" x="68" y="206" width="240" height="256"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iFP-Km-KcR" customClass="StencilView" customModule="Project" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="9xZ-4j-Try"/>
+                                            <constraint firstAttribute="height" constant="128" id="hAv-rJ-RkK"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gEf-FL-KuD" customClass="StencilView" customModule="Project" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="128" width="240" height="128"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="a4I-ek-2GJ"/>
+                                            <constraint firstAttribute="height" constant="128" id="duQ-gU-T6y"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="omz-vm-6nM" firstAttribute="centerY" secondItem="8wc-UP-Kqi" secondAttribute="centerY" id="Sj3-Qq-nBF"/>
+                            <constraint firstItem="omz-vm-6nM" firstAttribute="centerX" secondItem="8wc-UP-Kqi" secondAttribute="centerX" id="Xu4-mM-vEf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="iFP-Km-KcR" id="B50-M1-kgg"/>
+                        <outlet property="textView2" destination="gEf-FL-KuD" id="qA7-Dh-KVs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DSn-9L-Jng" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2823" y="-1428"/>
         </scene>
     </scenes>
     <resources>
