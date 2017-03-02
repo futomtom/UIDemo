@@ -22,8 +22,8 @@ class Setting {
     var saving = 0 
     var icon = 0
     var image: URL?
-    var fixexQuota = [ Quota(name:"Rent",limit:800),Quota(name:"Cell phone",limit:40),Quota(name:"Transportation",limit:60) ]
-    var discretQuota = [ Quota(name:"Eating Out",limit:80),Quota(name:"Groceries",limit:150),Quota(name:"Entertainment",limit:200),Quota(name:"Car",limit:100),Quota(name:"Clothes & shoes",limit:200),Quota(name:"Household",limit:200) ]
+    var fixexQuota:[Quota] = []
+    var discretQuota:[Quota] = []
     
     var expenses = [[Expenses(name:"Shell",price:30),Expenses(name:"Chevron",price:25)],
                     [Expenses(name:"Dim Sum",price:60),Expenses(name:"Burger King",price:10)],
@@ -49,11 +49,13 @@ class Setting {
 }
 
 class DetailVC: UIViewController {
+    
     @IBOutlet weak var picker: UIPickerView!
     var setting = Setting.share
 
     @IBOutlet weak var IconImageView: UIImageView!
     @IBOutlet weak var chooseButton: UIButton!
+    @IBOutlet weak var incomeField: UITextField!
     @IBOutlet weak var dreamField: UITextField!
 
     @IBOutlet weak var pickerView: UIPickerView!
@@ -85,6 +87,12 @@ class DetailVC: UIViewController {
         }
     }
     
+    override var prefersStatusBarHidden: Bool {
+        get {
+            return true
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -92,6 +100,7 @@ class DetailVC: UIViewController {
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.isTranslucent = true
         navigationController?.navigationBar.tintColor = UIColor(red: 0.659, green: 0.792, blue: 0.812, alpha: 1)
+         
 
         let setting = Setting.share
     }
@@ -99,8 +108,7 @@ class DetailVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         title = ""
     }
-
-
+    
 
     @IBAction func ChooseIcon(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "chooseicon") as! ChooseIconVC
@@ -111,6 +119,7 @@ class DetailVC: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "great" {
+            setting.income = Int(incomeField.text!) ?? 0
             setting.dream = dreamField.text!
             setting.price = Int(priceField.text!) ?? 0
         }
@@ -138,6 +147,7 @@ extension DetailVC: UIPickerViewDataSource, UIPickerViewDelegate {
     }
 
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        print (component)
       setting.duration = pickerView.selectedRow(inComponent: 0) * 12 +  pickerView.selectedRow(inComponent: 1) + 1
         print(setting.duration)
     }

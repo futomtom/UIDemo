@@ -25,18 +25,17 @@ class ExpenseCell: UITableViewCell {
 
 class QuotaCell: UITableViewCell {
     
+    @IBOutlet weak var name: UILabel!
 
-    @IBOutlet weak var ItemField: UITextField!
-    
-    @IBOutlet weak var moneyField: UITextField!
+    @IBOutlet weak var quota: UILabel!
+  
   
     
-    
-    
     func displayItem(item:Quota) {
-        
-        ItemField.text = item.name
-        moneyField.text = "\(item.limit)"
+ //       ItemField.tag = indexPath.section*100 + indexPath.row * 10
+//        moneyField.tag = indexPath.section*100 + indexPath.row * 10 + 1
+        name.text = item.name
+        quota.text = "\(item.limit)"
     }
 }
 

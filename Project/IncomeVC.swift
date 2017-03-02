@@ -32,12 +32,14 @@ class IncomeVC: UIViewController, UITextFieldDelegate {
     let sectionName = ["Dream Saving","Fixed Expenses","Discretionary Money" ]
     var setting = Setting.share
     var editmode = 0
-    @IBOutlet weak var incomeField: UITextField!
+ 
+    @IBOutlet weak var IncomeLabel: UILabel!
     // MARK: - Properties
     
     @IBOutlet weak var expandableTableView: LUExpandableTableView!
     
     fileprivate let sectionHeaderReuseIdentifier = "MySectionHeader"
+    let popup = VKPopupView(backgroundStyle: .dark, contentViewStyle: .extraLight)
     
     // MARK: - ViewController
     
@@ -54,9 +56,16 @@ class IncomeVC: UIViewController, UITextFieldDelegate {
         expandableTableView.expandableTableViewDataSource = self
         expandableTableView.expandableTableViewDelegate = self
         expandableTableView.tableFooterView = UIView()
+        IncomeLabel.text = "$\(setting.income)"
     }
   
     @IBAction func addNewItem(_ sender: UIButton) {
+        let contentView: DateView = Bundle.main.loadNibNamed("DateView",
+                                                            owner: nil,
+                                                            options: nil)?.first as! DateView
+        popup.show(contentView: contentView, withTitle: "", fromRect: sender.frame)
+        
+   /*
         if sender.tag == 1 {
             setting.fixexQuota.append(Quota(name: "", limit: 0))
             expandableTableView.reloadSections(IndexSet(integer: 1), with: .fade)
@@ -65,6 +74,7 @@ class IncomeVC: UIViewController, UITextFieldDelegate {
             expandableTableView.reloadSections(IndexSet(integer: 2), with: .fade)
         }
         editmode = sender.tag
+ */
     }
 
     
@@ -80,33 +90,17 @@ class IncomeVC: UIViewController, UITextFieldDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "flow3" {
-            setting.income = Int(incomeField.text!) ?? 0
+     //       setting.income = Int(incomeField.text!) ?? 0
             setting.fix = 600
             setting.discret = 200
         }
     }
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        if textField.tag == 1 {
-            if editmode == 1 {
-                let quota = setting.fixexQuota.last!
-                quota.name = textField.text!
-            } else {
-                let quota = setting.discretQuota.last!
-                quota.name = textField.text!
-            }
-        } else {
-            if editmode == 1 {
-                let quota = setting.fixexQuota.last!
-                quota.limit = Int(textField.text!) ?? 0
-                expandableTableView.reloadData()
-            } else {
-                let quota = setting.discretQuota.last!
-                quota.limit = Int(textField.text!) ?? 0
-                expandableTableView.reloadData()
-            }
-        }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        let index = textField.tag
     }
-
+    
+  
 
 }
 
@@ -143,6 +137,7 @@ extension IncomeVC: LUExpandableTableViewDataSource {
             } else {
                 let cell = expandableTableView.dequeueReusableCell(withIdentifier: "itemcell") as! QuotaCell
                 cell.displayItem(item: fixedQuota[indexPath.row])
+            
                 return  cell
                 }
         }
@@ -156,6 +151,7 @@ extension IncomeVC: LUExpandableTableViewDataSource {
             } else {
                 let cell = expandableTableView.dequeueReusableCell(withIdentifier: "itemcell") as! QuotaCell
                 cell.displayItem(item: discretQuota[indexPath.row])
+               
                 return  cell
             }
         }
@@ -203,24 +199,5 @@ extension IncomeVC: LUExpandableTableViewDelegate {
         return 69
     }
     
-    // MARK: - Optional
-    
-    func expandableTableView(_ expandableTableView: LUExpandableTableView, didSelectRowAt indexPath: IndexPath) {
-        
-        
-        print("Did select cell at section \(indexPath.section) row \(indexPath.row)")
-    }
-    
-    func expandableTableView(_ expandableTableView: LUExpandableTableView, didSelectSectionHeader sectionHeader: LUExpandableTableViewSectionHeader, atSection section: Int) {
-        print("Did select cection header at section \(section)")
-    }
-    
-    func expandableTableView(_ expandableTableView: LUExpandableTableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        print("Will display cell at section \(indexPath.section) row \(indexPath.row)")
-    }
-    
-    func expandableTableView(_ expandableTableView: LUExpandableTableView, willDisplaySectionHeader sectionHeader: LUExpandableTableViewSectionHeader, forSection section: Int) {
-        print("Will display section header for section \(section)")
-    }
-}
+  }
 
