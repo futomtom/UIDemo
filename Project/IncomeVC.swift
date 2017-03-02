@@ -9,98 +9,108 @@
 import UIKit
 
 class Expenses {
-    var name:String = ""
-    var price:Int = 0
-    
-    init(name:String, price:Int) {
+    var name: String = ""
+    var price: Int = 0
+
+    init(name: String, price: Int) {
         self.name = name
         self.price = price
     }
 }
 
 class Quota {
-    var name:String = ""
-    var limit:Int = 0
-    
-    init(name:String, limit:Int) {
+    var name: String = ""
+    var limit: Int = 0
+
+    init(name: String, limit: Int) {
         self.name = name
         self.limit = limit
     }
 }
 
-class IncomeVC: UIViewController, UITextFieldDelegate {
-    let sectionName = ["Dream Saving","Fixed Expenses","Discretionary Money" ]
+class IncomeVC: UIViewController {
+    let sectionName = ["Dream Saving", "Fixed Expenses", "Discretionary Money"]
     var setting = Setting.share
     var editmode = 0
- 
+
     @IBOutlet weak var IncomeLabel: UILabel!
     // MARK: - Properties
-    
+
     @IBOutlet weak var expandableTableView: LUExpandableTableView!
-    
+
     fileprivate let sectionHeaderReuseIdentifier = "MySectionHeader"
-    let popup = VKPopupView(backgroundStyle: .dark, contentViewStyle: .extraLight)
-    
+
+
     // MARK: - ViewController
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.isTranslucent = true
-        navigationController?.navigationBar.tintColor = UIColor(red:0.659,  green:0.792,  blue:0.812, alpha:1)
+        navigationController?.navigationBar.tintColor = UIColor(red: 0.659, green: 0.792, blue: 0.812, alpha: 1)
         navigationController?.navigationItem.title = "Income"
         view.addSubview(expandableTableView)
         expandableTableView.register(UINib(nibName: "MyExpandableTableViewSectionHeader", bundle: Bundle.main), forHeaderFooterViewReuseIdentifier: sectionHeaderReuseIdentifier)
-        
+
         expandableTableView.expandableTableViewDataSource = self
         expandableTableView.expandableTableViewDelegate = self
         expandableTableView.tableFooterView = UIView()
         IncomeLabel.text = "$\(setting.income)"
     }
-  
+
     @IBAction func addNewItem(_ sender: UIButton) {
-        let contentView: DateView = Bundle.main.loadNibNamed("DateView",
-                                                            owner: nil,
-                                                            options: nil)?.first as! DateView
-        popup.show(contentView: contentView, withTitle: "", fromRect: sender.frame)
         
-   /*
-        if sender.tag == 1 {
-            setting.fixexQuota.append(Quota(name: "", limit: 0))
-            expandableTableView.reloadSections(IndexSet(integer: 1), with: .fade)
-        } else {
-            setting.discretQuota.append(Quota(name: "", limit: 0))
-            expandableTableView.reloadSections(IndexSet(integer: 2), with: .fade)
+        print(sender.tag)
+        let alertPopUp = UIAlertController(title: "qouta", message: "", preferredStyle: .alert)
+
+
+        alertPopUp.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+
+
+        let okAction = UIAlertAction(title: "OK", style: .default) { action -> Void in
+            let nameField = alertPopUp.textFields![0]
+            let quotaField = alertPopUp.textFields![1]
+            
+            let name = nameField.text!
+    //        print("\(name)!")
+            let quota = Int(quotaField.text!)!
+   //         print("\(quota)!")
+            if sender.tag == 1 {
+                self.setting.fixexQuota.append(Quota(name: name, limit: quota))
+            }
+            
+            if sender.tag == 2 {
+                self.setting.discretQuota.append(Quota(name: name, limit: quota))
+               
+            }
+             self.expandableTableView.reloadData()
         }
-        editmode = sender.tag
- */
+        alertPopUp.addAction(okAction)
+        alertPopUp.addTextField { (textField) in
+            textField.placeholder = "name"
+        }
+        alertPopUp.addTextField { (textField) in
+            textField.placeholder = "quota"
+        }
+        alertPopUp.view.tintColor = .blue
+        self.present(alertPopUp, animated: true, completion: nil)
     }
 
-    
-    override func viewWillAppear(_ animated: Bool) {
-        title = ""
+
+override func viewWillAppear(_ animated: Bool) {
+    title = ""
+}
+
+
+
+override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if segue.identifier == "flow3" {
+        //       setting.income = Int(incomeField.text!) ?? 0
+        setting.fix = 600
+        setting.discret = 200
     }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool
-    {
-       textField.resignFirstResponder()
-        return true
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "flow3" {
-     //       setting.income = Int(incomeField.text!) ?? 0
-            setting.fix = 600
-            setting.discret = 200
-        }
-    }
-    
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        let index = textField.tag
-    }
-    
-  
+}
 
 }
 
@@ -110,64 +120,64 @@ extension IncomeVC: LUExpandableTableViewDataSource {
     func numberOfSections(in expandableTableView: LUExpandableTableView) -> Int {
         return 3
     }
-    
+
     func expandableTableView(_ expandableTableView: LUExpandableTableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 1:
-            return   setting.fixexQuota.count + 1
-            
+            return setting.fixexQuota.count + 1
+
         case 2:
-            return  setting.discretQuota.count + 1
+            return setting.discretQuota.count + 1
         default:
             return 0
         }
     }
-    
+
     func expandableTableView(_ expandableTableView: LUExpandableTableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let fixedQuota = setting.fixexQuota
         let discretQuota = setting.discretQuota
-        
-        
+
+
         if indexPath.section == 1 {
             if indexPath.row == fixedQuota.count {
                 let cell = expandableTableView.dequeueReusableCell(withIdentifier: "buttoncell") as! ButtonCell
                 cell.addButton.tag = 1
-                return  cell
-                
+                return cell
+
             } else {
                 let cell = expandableTableView.dequeueReusableCell(withIdentifier: "itemcell") as! QuotaCell
                 cell.displayItem(item: fixedQuota[indexPath.row])
-            
-                return  cell
-                }
+
+                return cell
+            }
         }
-        
+
         if indexPath.section == 2 {
             if indexPath.row == discretQuota.count {
-                let cell = expandableTableView.dequeueReusableCell(withIdentifier: "buttoncell")  as! ButtonCell
-                 cell.addButton.tag = 2
-                return  cell
-                
+                let cell = expandableTableView.dequeueReusableCell(withIdentifier: "buttoncell") as! ButtonCell
+                cell.addButton.tag = 2
+                return cell
+
             } else {
                 let cell = expandableTableView.dequeueReusableCell(withIdentifier: "itemcell") as! QuotaCell
                 cell.displayItem(item: discretQuota[indexPath.row])
-               
-                return  cell
+
+                return cell
             }
         }
 
         return UITableViewCell()
     }
-    
-    
-    
-    
+
+
+
+
     func expandableTableView(_ expandableTableView: LUExpandableTableView, sectionHeaderOfSection section: Int) -> LUExpandableTableViewSectionHeader {
         guard let sectionHeader = expandableTableView.dequeueReusableHeaderFooterView(withIdentifier: sectionHeaderReuseIdentifier) as? MyExpandableTableViewSectionHeader else {
             assertionFailure("Section header shouldn't be nil")
             return LUExpandableTableViewSectionHeader()
         }
-        
+
         var amount = 0
         switch section {
         case 0:
@@ -177,13 +187,64 @@ extension IncomeVC: LUExpandableTableViewDataSource {
         case 2:
             amount = setting.getTotal(setting.discretQuota)
         default:
-           break
+            break
         }
         sectionHeader.label.text = sectionName[section]
         sectionHeader.expandCollapseButton.setTitle("\(amount)", for: .normal)
-        
+
         return sectionHeader
     }
+    
+    func expandableTableView(_ expandableTableView: LUExpandableTableView, didSelectRowAt indexPath: IndexPath) {
+        let row = indexPath.row
+        
+        let alertPopUp = UIAlertController(title: "qouta", message: "", preferredStyle: .alert)
+        
+        
+        alertPopUp.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        
+        
+        let okAction = UIAlertAction(title: "OK", style: .default) { action -> Void in
+            let nameField = alertPopUp.textFields![0]
+            let quotaField = alertPopUp.textFields![1]
+            
+            let name = nameField.text!
+            //        print("\(name)!")
+            let quota = Int(quotaField.text!)!
+            //         print("\(quota)!")
+            if indexPath.section == 1 {
+                self.setting.fixexQuota[row] = Quota(name: name, limit: quota)
+            }
+            
+            if indexPath.section == 2 {
+                self.setting.discretQuota[row] = Quota(name: name, limit: quota)
+                
+            }
+            self.expandableTableView.reloadData()
+        }
+        alertPopUp.addAction(okAction)
+        
+        var quota = Quota(name: "", limit: 0)
+        if indexPath.section == 1 {
+            quota = setting.fixexQuota[indexPath.row]
+        } else if indexPath.section == 2 {
+            quota = setting.discretQuota[indexPath.row]
+        }
+        
+        
+        
+        alertPopUp.addTextField { (textField) in
+            textField.text = quota.name
+        }
+        alertPopUp.addTextField { (textField) in
+            textField.text = "\(quota.limit)"
+        }
+        alertPopUp.view.tintColor = .blue
+        self.present(alertPopUp, animated: true, completion: nil)
+
+    }
+    
+    
 }
 
 // MARK: - LUExpandableTableViewDelegate
@@ -193,11 +254,11 @@ extension IncomeVC: LUExpandableTableViewDelegate {
         /// Returning `UITableViewAutomaticDimension` value on iOS 9 will cause reloading all cells due to an iOS 9 bug with automatic dimensions
         return 50
     }
-    
+
     func expandableTableView(_ expandableTableView: LUExpandableTableView, heightForHeaderInSection section: Int) -> CGFloat {
         /// Returning `UITableViewAutomaticDimension` value on iOS 9 will cause reloading all cells due to an iOS 9 bug with automatic dimensions
         return 69
     }
-    
-  }
+
+}
 
