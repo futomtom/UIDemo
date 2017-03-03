@@ -55,7 +55,7 @@ class DetailVC: UIViewController {
 
     @IBOutlet weak var IconImageView: UIImageView!
     @IBOutlet weak var chooseButton: UIButton!
-    @IBOutlet weak var incomeField: UITextField!
+ //   @IBOutlet weak var incomeField: UITextField!
     @IBOutlet weak var dreamField: UITextField!
 
     @IBOutlet weak var pickerView: UIPickerView!
@@ -119,7 +119,7 @@ class DetailVC: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "great" {
-            setting.income = Int(incomeField.text!) ?? 0
+    //        setting.income = Int(incomeField.text!) ?? 0
             setting.dream = dreamField.text!
             setting.price = Int(priceField.text!) ?? 0
         }

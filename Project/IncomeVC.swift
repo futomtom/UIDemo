@@ -28,12 +28,12 @@ class Quota {
     }
 }
 
-class IncomeVC: UIViewController {
+class IncomeVC: UIViewController , UITextFieldDelegate{
     let sectionName = ["Dream Saving", "Fixed Expenses", "Discretionary Money"]
     var setting = Setting.share
     var editmode = 0
 
-    @IBOutlet weak var IncomeLabel: UILabel!
+    @IBOutlet weak var incomeField: UITextField!
     // MARK: - Properties
 
     @IBOutlet weak var expandableTableView: LUExpandableTableView!
@@ -56,7 +56,7 @@ class IncomeVC: UIViewController {
         expandableTableView.expandableTableViewDataSource = self
         expandableTableView.expandableTableViewDelegate = self
         expandableTableView.tableFooterView = UIView()
-        IncomeLabel.text = "$\(setting.income)"
+        
     }
 
     @IBAction func addNewItem(_ sender: UIButton) {
@@ -101,14 +101,20 @@ class IncomeVC: UIViewController {
 override func viewWillAppear(_ animated: Bool) {
     title = ""
 }
+    
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool
+    {
+            textField.resignFirstResponder()
+        return false
+    }
+    
 
 
 
 override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "flow3" {
-        //       setting.income = Int(incomeField.text!) ?? 0
-        setting.fix = 600
-        setting.discret = 200
+        setting.income = Int(incomeField.text!) ?? 0
     }
 }
 
