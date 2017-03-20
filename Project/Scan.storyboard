@@ -28,7 +28,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan Barcode " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hV0-x3-NEd">
-                                <rect key="frame" x="5" y="214" width="365" height="21"/>
+                                <rect key="frame" x="5" y="170" width="365" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="0.59877091650000003" green="0.74957263470000002" blue="0.76725918049999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -160,7 +160,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="applepay" translatesAutoresizingMaskIntoConstraints="NO" id="UNV-G6-4AI">
-                                <rect key="frame" x="143.5" y="164" width="87" height="107"/>
+                                <rect key="frame" x="143.5" y="120" width="87" height="107"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="107" id="Suw-Qu-tAt"/>
                                     <constraint firstAttribute="width" constant="87" id="w9X-vK-sUn"/>
@@ -383,7 +383,7 @@
                         <viewControllerLayoutGuide type="top" id="3nF-Nl-1OK"/>
                         <viewControllerLayoutGuide type="bottom" id="nrh-VP-TGN"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="yiW-fT-4tM">
+                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="yiW-fT-4tM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -391,7 +391,7 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="603"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aMb-L1-aPX" userLabel="Progress">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="301.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="302"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Ring" translatesAutoresizingMaskIntoConstraints="NO" id="1Pk-ll-m3Y">
                                                 <rect key="frame" x="118" y="41" width="140" height="140"/>
@@ -425,7 +425,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OQi-W9-t3v" userLabel="Chart" customClass="PieChart" customModule="PieCharts">
-                                        <rect key="frame" x="0.0" y="301.5" width="375" height="301.5"/>
+                                        <rect key="frame" x="0.0" y="302" width="375" height="301"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="innerRadius">
                                                 <real key="value" value="70"/>
@@ -660,7 +660,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bag-Wj-TCr">
-                                <rect key="frame" x="48" y="164" width="280" height="280"/>
+                                <rect key="frame" x="48" y="120" width="280" height="280"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ring" translatesAutoresizingMaskIntoConstraints="NO" id="aUB-Q6-SNR">
                                         <rect key="frame" x="0.0" y="0.0" width="280" height="280"/>

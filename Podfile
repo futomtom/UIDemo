@@ -8,5 +8,6 @@ target 'Project' do
   # Pods for Project
   pod 'SideMenu'
   pod 'PieCharts'
+  pod 'TextFieldEffects'
   pod 'SwiftValidator', :git => 'https://github.com/jpotts18/SwiftValidator.git' ,:branch => 'swift-3'
 end

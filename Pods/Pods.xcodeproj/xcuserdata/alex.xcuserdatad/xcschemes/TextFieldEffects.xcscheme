@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '48DB3D35B718796641AE900D8D25F3BC'
-               BlueprintName = 'SideMenu'
+               BlueprintIdentifier = '151F46980F37E9D90A1F76C171B036B7'
+               BlueprintName = 'TextFieldEffects'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'SideMenu.framework'>
+               BuildableName = 'TextFieldEffects.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

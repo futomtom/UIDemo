@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import TextFieldEffects
 
 
 
@@ -56,10 +57,10 @@ class DetailVC: UIViewController {
     @IBOutlet weak var IconImageView: UIImageView!
     @IBOutlet weak var chooseButton: UIButton!
  //   @IBOutlet weak var incomeField: UITextField!
-    @IBOutlet weak var dreamField: UITextField!
+    @IBOutlet weak var dreamField: JiroTextField!
 
     @IBOutlet weak var pickerView: UIPickerView!
-    @IBOutlet weak var priceField: UITextField!
+    @IBOutlet weak var priceField: JiroTextField!
     var iconChoosed: Bool {
         set {
             doneButton.isHidden = !iconChoosed
