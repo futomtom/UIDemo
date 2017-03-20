@@ -503,10 +503,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abf-Y5-mtk">
-                                <rect key="frame" x="37" y="203.5" width="300" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abf-Y5-mtk">
+                                <rect key="frame" x="37" y="143.5" width="300" height="180"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="WD0-us-cT9"/>
+                                    <constraint firstAttribute="height" constant="180" id="WD0-us-cT9"/>
                                 </constraints>
                                 <string key="text">You should save at least $660 
 per month in the next 6 months.</string>
@@ -519,7 +519,7 @@ per month in the next 6 months.</string>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Eon-Yd-yam"/>
                                 </constraints>
-                                <state key="normal" title="Great">
+                                <state key="normal" title="Sounds Good">
                                     <color key="titleColor" red="0.53333333329999999" green="0.69803921570000005" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
