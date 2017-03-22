@@ -197,8 +197,10 @@ extension IncomeVC: LUExpandableTableViewDataSource {
             amount = setting.saving
         case 1:
             amount = setting.getTotal(setting.fixexQuota)
+            setting.fix = amount
         case 2:
             amount = setting.getTotal(setting.discretQuota)
+            setting.discret = amount
         default:
             break
         }
