@@ -40,6 +40,7 @@
 		FA26CED11E5A9F1C00982AB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA26CECF1E5A9F1C00982AB5 /* LaunchScreen.storyboard */; };
 		FA49A9DE1E66992F007445E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49A9DD1E66992F007445E5 /* ViewController.swift */; };
 		FA49A9E01E669936007445E5 /* StencilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49A9DF1E669936007445E5 /* StencilView.swift */; };
+		FA5BBE441E7F945E002808B1 /* ExpensePopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5BBE431E7F945E002808B1 /* ExpensePopVC.swift */; };
 		FA90D59B1E623C100068B233 /* ProgressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90D59A1E623C100068B233 /* ProgressVC.swift */; };
 		FA90D59F1E6241F10068B233 /* PayMoneyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90D59E1E6241F10068B233 /* PayMoneyVC.swift */; };
 		FA90D5A61E625CF10068B233 /* SAConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90D5A51E625CF10068B233 /* SAConfettiView.swift */; };
@@ -87,6 +88,7 @@
 		FA26CED21E5A9F1C00982AB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA49A9DD1E66992F007445E5 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FA49A9DF1E669936007445E5 /* StencilView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StencilView.swift; sourceTree = "<group>"; };
+		FA5BBE431E7F945E002808B1 /* ExpensePopVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpensePopVC.swift; sourceTree = "<group>"; };
 		FA90D59A1E623C100068B233 /* ProgressVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressVC.swift; sourceTree = "<group>"; };
 		FA90D59E1E6241F10068B233 /* PayMoneyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayMoneyVC.swift; sourceTree = "<group>"; };
 		FA90D5A51E625CF10068B233 /* SAConfettiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAConfettiView.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				8207E2B51E601929003ECD0A /* LoginVC.swift */,
 				8207E2A81E601592003ECD0A /* EmailVC.swift */,
 				8207E2A91E601592003ECD0A /* GreatVC.swift */,
+				FA5BBE431E7F945E002808B1 /* ExpensePopVC.swift */,
 				8207E2A61E601592003ECD0A /* ChooseIconVC.swift */,
 				8207E2B11E6015E3003ECD0A /* Step1VC.swift */,
 				8207E2A51E601592003ECD0A /* BudgeVC.swift */,
@@ -356,6 +359,7 @@
 				8207E2B21E6015E3003ECD0A /* Step1VC.swift in Sources */,
 				8207E2A21E60127B003ECD0A /* OverviewVC.swift in Sources */,
 				FA004F541E654DEF00BADC47 /* ListCell.swift in Sources */,
+				FA5BBE441E7F945E002808B1 /* ExpensePopVC.swift in Sources */,
 				8207E2B41E6016A4003ECD0A /* PaymentVC.swift in Sources */,
 				8241EAEB1E5AB69200D5B302 /* TouchIDVC.swift in Sources */,
 				829570D31E61452800DDB4C2 /* QuotaCell.swift in Sources */,

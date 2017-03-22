@@ -12,14 +12,41 @@ import UIKit
     
     // MARK: - Settings
     
+    /// Inner radius of slices - set this to 0 for "no gap".
     @IBInspectable public var innerRadius: CGFloat = 50
+    
+    /// Outer radius of slices.
     @IBInspectable public var outerRadius: CGFloat = 100
+    
+    /// Stroke (border) color of slices.
     @IBInspectable public var strokeColor: UIColor = UIColor.black
+    
+    /// Stroke (border) width of slices.
     @IBInspectable public var strokeWidth: CGFloat = 0
+    
+    /// Pt that will be added to (inner/outer)radius of slice when selecting it.
     @IBInspectable public var selectedOffset: CGFloat = 30
+    
+    /// Duration it takes to slices to expand.
     @IBInspectable public var animDuration: Double = 0.5
     
-    var referenceAngle: CGFloat = 0
+    /// Start angle of chart, in degrees, clockwise. 0 is 3 o'clock, 90 is 6 o'clock, etc.
+    @IBInspectable public var referenceAngle: CGFloat = 0 {
+        didSet {
+            for layer in layers {
+                layer.clear()
+            }
+            
+            let delta = (referenceAngle - oldValue).degreesToRadians
+            for slice in slices {
+                slice.view.angles = (slice.view.startAngle + delta, slice.view.endAngle + delta)
+            }
+            
+            for slice in slices {
+                slice.view.present(animated: false)
+            }
+        }
+    }
     
     var animated: Bool {
         return animDuration > 0
@@ -101,7 +128,7 @@ import UIKit
         slice.view.animDuration = animDuration
         slice.view.strokeColor = strokeColor
         slice.view.strokeWidth = strokeWidth
-        slice.view.referenceAngle = referenceAngle
+        slice.view.referenceAngle = referenceAngle.degreesToRadians
         
         slice.view.sliceDelegate = self
      
@@ -153,6 +180,7 @@ import UIKit
         let (_, slice) = generateSlice(model: model, index: index, lastEndAngle: currentSliceAtIndexEndAngle, totalValue: model.value + totalValue)
         
         container.addSublayer(slice.view)
+        slice.view.rotate(angle: slice.view.referenceAngle)
         
         slice.view.presentEndAngle(angle: slice.view.startAngle, animated: false)
         slice.view.present(animated: animated)

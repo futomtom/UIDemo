@@ -60,7 +60,10 @@ class IncomeVC: UIViewController , UITextFieldDelegate{
     }
 
     @IBAction func addNewItem(_ sender: UIButton) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "expensevc") as! ExpensePopVC
+        present(vc, animated: true, completion: nil)
         
+  /*
         print(sender.tag)
         let alertPopUp = UIAlertController(title: "qouta", message: "", preferredStyle: .alert)
 
@@ -95,6 +98,7 @@ class IncomeVC: UIViewController , UITextFieldDelegate{
         }
         alertPopUp.view.tintColor = .blue
         self.present(alertPopUp, animated: true, completion: nil)
+ */
     }
 
 
@@ -202,6 +206,7 @@ extension IncomeVC: LUExpandableTableViewDataSource {
     }
     
     func expandableTableView(_ expandableTableView: LUExpandableTableView, didSelectRowAt indexPath: IndexPath) {
+        
         let row = indexPath.row
         
         let alertPopUp = UIAlertController(title: "qouta", message: "", preferredStyle: .alert)
@@ -247,7 +252,6 @@ extension IncomeVC: LUExpandableTableViewDataSource {
         }
         alertPopUp.view.tintColor = .blue
         self.present(alertPopUp, animated: true, completion: nil)
-
     }
     
     
