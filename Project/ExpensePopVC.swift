@@ -10,6 +10,10 @@ import UIKit
 
 class ExpensePopVC: UIViewController {
 
+    @IBOutlet weak var expenseField: UITextField!
+    var expenseType = 0
+    let names = ["Rent","Groceries","Eating Out","Utilities","Cellphone","Car","Fun","Costume","Travel","Household","Cosmetics","Healthcare","Gifts","Social","Investment","Other"]
+    var name = ""
   
     var setting = Setting.share
     override func viewDidLoad() {
@@ -26,9 +30,25 @@ class ExpensePopVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         title = ""
     }
-
-
+    
+    @IBAction func CategoryDidSelected(_ sender: UIButton) {
+     
+        name = names[sender.tag]
+        
+    }
+ 
     @IBAction func closedidTapped(_ sender: Any) {
+        let quota = Int(expenseField.text!) ?? 0
+        if expenseType == 1 {
+            setting.fixexQuota.append(Quota(name: name, limit: quota))
+        }
+        
+        if expenseType == 2 {
+            setting.discretQuota.append(Quota(name: name, limit: quota))
+            
+        }
+
+        
         dismiss(animated: true, completion: nil)
     }
 

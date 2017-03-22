@@ -61,6 +61,8 @@ class IncomeVC: UIViewController , UITextFieldDelegate{
 
     @IBAction func addNewItem(_ sender: UIButton) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "expensevc") as! ExpensePopVC
+        vc.expenseType = sender.tag
+              
         present(vc, animated: true, completion: nil)
         
   /*
@@ -104,6 +106,7 @@ class IncomeVC: UIViewController , UITextFieldDelegate{
 
 override func viewWillAppear(_ animated: Bool) {
     title = ""
+    expandableTableView.reloadData()
 }
     
     
