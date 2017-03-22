@@ -52,8 +52,11 @@ extension OverviewVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ListCell
+        let quota = Quota(name: "rent", limit: 100)
+       
         
-        cell.displayItem(setting.discretQuota[indexPath.row],expense: expenses[indexPath.row])
+    //    cell.displayItem(setting.discretQuota[indexPath.row],expense: expenses[indexPath.row])
+        cell.displayItem(quota,expense:300 )
         
         return cell
     }

@@ -14,6 +14,7 @@ class ExpensePopVC: UIViewController {
     var expenseType = 0
     let names = ["Rent","Groceries","Eating Out","Utilities","Cellphone","Car","Fun","Costume","Travel","Household","Cosmetics","Healthcare","Gifts","Social","Investment","Other"]
     var name = ""
+    var previousButton:UIButton?
   
     var setting = Setting.share
     override func viewDidLoad() {
@@ -32,7 +33,8 @@ class ExpensePopVC: UIViewController {
     }
     
     @IBAction func CategoryDidSelected(_ sender: UIButton) {
-     
+        
+        sender.isSelected = true
         name = names[sender.tag]
         
     }
