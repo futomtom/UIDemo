@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="RSj-10-QSw">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="RSj-10-QSw">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -106,13 +106,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="303" height="130"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Icon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYp-mN-VKh">
-                                                <rect key="frame" x="0.0" y="55" width="153" height="21"/>
+                                                <rect key="frame" x="0.0" y="55" width="153" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.53333333329999999" green="0.69803921570000005" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5v8-Tr-m3c" userLabel="iconContainer">
-                                                <rect key="frame" x="153" y="17" width="150" height="97"/>
+                                                <rect key="frame" x="153" y="16.5" width="150" height="97"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dLe-45-iod">
                                                         <rect key="frame" x="10" y="10" width="130" height="77"/>
@@ -154,7 +154,7 @@
                                         <rect key="frame" x="0.0" y="150" width="303" height="184"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9B-NA-JPa">
-                                                <rect key="frame" x="0.0" y="82" width="103" height="21"/>
+                                                <rect key="frame" x="0.0" y="82" width="103" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.53333333329999999" green="0.69803921570000005" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -311,7 +311,7 @@
                                         <rect key="frame" x="0.0" y="28" width="335" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uEa-T5-RSL" id="EJR-7D-eW8">
-                                            <rect key="frame" x="0.0" y="0.0" width="335" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="335" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gC9-Vm-PDh">
@@ -351,7 +351,7 @@
                                         <rect key="frame" x="0.0" y="72" width="335" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1IZ-UZ-I3x" id="NIl-zf-9c1">
-                                            <rect key="frame" x="0.0" y="0.0" width="335" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="335" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MWM-ko-tQf">
@@ -388,7 +388,7 @@
                                         <rect key="frame" x="0.0" y="116" width="335" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5PN-AY-oMm" id="uvS-PB-G9G">
-                                            <rect key="frame" x="0.0" y="0.0" width="335" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="335" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBH-74-bkO">
@@ -517,7 +517,9 @@
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmb-kJ-U28">
                                                                 <rect key="frame" x="24" y="0.0" width="43" height="85"/>
+                                                                <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <state key="normal" image="Rent"/>
+                                                                <state key="selected" image="Car"/>
                                                                 <connections>
                                                                     <action selector="CategoryDidSelected:" destination="GLc-IG-9Wv" eventType="touchUpInside" id="SCE-x8-HBk"/>
                                                                 </connections>
@@ -547,20 +549,20 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HuC-eU-HzX" userLabel="ButtonView">
-                                                <rect key="frame" x="95" y="0.0" width="91" height="107"/>
+                                                <rect key="frame" x="95" y="0.0" width="90.5" height="107"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oEc-IQ-aCq">
-                                                        <rect key="frame" x="0.0" y="0.0" width="91" height="107"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="90.5" height="107"/>
                                                         <subviews>
                                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBU-KP-rVK">
-                                                                <rect key="frame" x="23" y="0.0" width="45" height="85"/>
+                                                                <rect key="frame" x="22.5" y="0.0" width="45" height="85"/>
                                                                 <state key="normal" image="Groceries"/>
                                                                 <connections>
                                                                     <action selector="CategoryDidSelected:" destination="GLc-IG-9Wv" eventType="touchUpInside" id="ifN-RG-ulT"/>
                                                                 </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Groceries" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4MD-OR-lxn">
-                                                                <rect key="frame" x="0.0" y="85" width="91" height="22"/>
+                                                                <rect key="frame" x="0.0" y="85" width="90.5" height="22"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="22" id="lkd-KS-59A"/>
                                                                 </constraints>
@@ -584,20 +586,20 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eRT-ne-bLC" userLabel="ButtonView">
-                                                <rect key="frame" x="190" y="0.0" width="90" height="94"/>
+                                                <rect key="frame" x="189.5" y="0.0" width="91" height="94"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="g0D-2b-dym">
-                                                        <rect key="frame" x="0.0" y="0.0" width="90" height="94"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="91" height="94"/>
                                                         <subviews>
                                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOY-Wv-DvE">
-                                                                <rect key="frame" x="25" y="0.0" width="40" height="72"/>
+                                                                <rect key="frame" x="25.5" y="0.0" width="40" height="72"/>
                                                                 <state key="normal" image="Eating Out"/>
                                                                 <connections>
                                                                     <action selector="CategoryDidSelected:" destination="GLc-IG-9Wv" eventType="touchUpInside" id="zef-1Q-U4H"/>
                                                                 </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eating Out" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYh-Gd-iWw">
-                                                                <rect key="frame" x="0.0" y="72" width="90" height="22"/>
+                                                                <rect key="frame" x="0.0" y="72" width="91" height="22"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="22" id="Exz-RA-BUG"/>
                                                                 </constraints>
@@ -621,20 +623,20 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cpz-YP-rOy" userLabel="ButtonView">
-                                                <rect key="frame" x="284" y="0.0" width="91" height="107"/>
+                                                <rect key="frame" x="284.5" y="0.0" width="90.5" height="107"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LRT-Uf-26h">
-                                                        <rect key="frame" x="0.0" y="0.0" width="91" height="107"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="90.5" height="107"/>
                                                         <subviews>
                                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3v3-SB-XAk">
-                                                                <rect key="frame" x="26" y="0.0" width="39" height="85"/>
+                                                                <rect key="frame" x="25.5" y="0.0" width="39" height="85"/>
                                                                 <state key="normal" image="Utilities"/>
                                                                 <connections>
                                                                     <action selector="CategoryDidSelected:" destination="GLc-IG-9Wv" eventType="touchUpInside" id="V4y-8Y-Y2z"/>
                                                                 </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Utilities" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdP-kx-aus">
-                                                                <rect key="frame" x="0.0" y="85" width="91" height="22"/>
+                                                                <rect key="frame" x="0.0" y="85" width="90.5" height="22"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="22" id="6uX-oc-kTJ"/>
                                                                 </constraints>
@@ -663,7 +665,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Hch-IS-CCO">
-                                        <rect key="frame" x="0.0" y="107" width="375" height="107"/>
+                                        <rect key="frame" x="0.0" y="107" width="375" height="106.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bMF-cQ-pRZ" userLabel="ButtonView">
                                                 <rect key="frame" x="0.0" y="0.0" width="91" height="106"/>
@@ -703,20 +705,20 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OYt-tB-1R7" userLabel="ButtonView">
-                                                <rect key="frame" x="95" y="0.0" width="91" height="84"/>
+                                                <rect key="frame" x="95" y="0.0" width="90.5" height="84"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="q01-Xw-Acq">
-                                                        <rect key="frame" x="0.0" y="0.0" width="91" height="84"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="90.5" height="84"/>
                                                         <subviews>
                                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdi-MT-DSZ">
-                                                                <rect key="frame" x="22" y="0.0" width="47" height="62"/>
+                                                                <rect key="frame" x="21.5" y="0.0" width="47" height="62"/>
                                                                 <state key="normal" image="Car"/>
                                                                 <connections>
                                                                     <action selector="CategoryDidSelected:" destination="GLc-IG-9Wv" eventType="touchUpInside" id="RWr-0n-8wM"/>
                                                                 </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Car" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMS-bz-TRo">
-                                                                <rect key="frame" x="0.0" y="62" width="91" height="22"/>
+                                                                <rect key="frame" x="0.0" y="62" width="90.5" height="22"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="22" id="qLH-o1-G09"/>
                                                                 </constraints>
@@ -740,20 +742,20 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="saf-C2-HLe" userLabel="ButtonView">
-                                                <rect key="frame" x="190" y="0.0" width="90" height="84"/>
+                                                <rect key="frame" x="189.5" y="0.0" width="91" height="84"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="S8J-m9-FU2">
-                                                        <rect key="frame" x="0.0" y="0.0" width="90" height="84"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="91" height="84"/>
                                                         <subviews>
                                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WG0-RP-WXp">
-                                                                <rect key="frame" x="22" y="0.0" width="45" height="62"/>
+                                                                <rect key="frame" x="23" y="0.0" width="45" height="62"/>
                                                                 <state key="normal" image="Fun"/>
                                                                 <connections>
                                                                     <action selector="CategoryDidSelected:" destination="GLc-IG-9Wv" eventType="touchUpInside" id="sAf-iI-1XC"/>
                                                                 </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fun" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZfO-ft-dC5">
-                                                                <rect key="frame" x="0.0" y="62" width="90" height="22"/>
+                                                                <rect key="frame" x="0.0" y="62" width="91" height="22"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="22" id="AHV-z8-XyP"/>
                                                                 </constraints>
@@ -777,20 +779,20 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2u1-5s-xeJ" userLabel="ButtonView">
-                                                <rect key="frame" x="284" y="0.0" width="91" height="102"/>
+                                                <rect key="frame" x="284.5" y="0.0" width="90.5" height="102"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Q4B-Jo-AJF">
-                                                        <rect key="frame" x="0.0" y="0.0" width="91" height="102"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="90.5" height="102"/>
                                                         <subviews>
                                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Esb-yh-X6o">
-                                                                <rect key="frame" x="24" y="0.0" width="43" height="80"/>
+                                                                <rect key="frame" x="23.5" y="0.0" width="43" height="80"/>
                                                                 <state key="normal" image="Coscume"/>
                                                                 <connections>
                                                                     <action selector="CategoryDidSelected:" destination="GLc-IG-9Wv" eventType="touchUpInside" id="KQg-rq-NLu"/>
                                                                 </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Costume" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iaf-gb-Ync">
-                                                                <rect key="frame" x="0.0" y="80" width="91" height="22"/>
+                                                                <rect key="frame" x="0.0" y="80" width="90.5" height="22"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="22" id="Ooe-EI-Kne"/>
                                                                 </constraints>
@@ -819,7 +821,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="aDV-cR-Nx5">
-                                        <rect key="frame" x="0.0" y="214" width="375" height="106"/>
+                                        <rect key="frame" x="0.0" y="213.5" width="375" height="107"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="phJ-h0-78H" userLabel="ButtonView">
                                                 <rect key="frame" x="0.0" y="0.0" width="91" height="106"/>
@@ -859,20 +861,20 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hvZ-Gs-lif" userLabel="ButtonView">
-                                                <rect key="frame" x="95" y="0.0" width="91" height="106"/>
+                                                <rect key="frame" x="95" y="0.0" width="90.5" height="106"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QXL-uY-uXr">
-                                                        <rect key="frame" x="0.0" y="0.0" width="91" height="106"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="90.5" height="106"/>
                                                         <subviews>
                                                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJV-fC-V3L">
-                                                                <rect key="frame" x="30" y="0.0" width="31" height="84"/>
+                                                                <rect key="frame" x="29.5" y="0.0" width="31" height="84"/>
                                                                 <state key="normal" image="Household"/>
                                                                 <connections>
                                                                     <action selector="CategoryDidSelected:" destination="GLc-IG-9Wv" eventType="touchUpInside" id="uRY-bl-kUe"/>
                                                                 </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Household" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmJ-0m-UFg">
-                                                                <rect key="frame" x="0.0" y="84" width="91" height="22"/>
+                                                                <rect key="frame" x="0.0" y="84" width="90.5" height="22"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="22" id="WgV-Oc-aIc"/>
                                                                 </constraints>
@@ -896,20 +898,20 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IOi-5u-2nd" userLabel="ButtonView">
-                                                <rect key="frame" x="190" y="0.0" width="90" height="106"/>
+                                                <rect key="frame" x="189.5" y="0.0" width="91" height="106"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="30G-Zr-Z0z">
-                                                        <rect key="frame" x="0.0" y="0.0" width="90" height="106"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="91" height="106"/>
                                                         <subviews>
                                                             <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iym-S6-HWY">
-                                                                <rect key="frame" x="35" y="0.0" width="20" height="84"/>
+                                                                <rect key="frame" x="35.5" y="0.0" width="20" height="84"/>
                                                                 <state key="normal" image="Cosmetics"/>
                                                                 <connections>
                                                                     <action selector="CategoryDidSelected:" destination="GLc-IG-9Wv" eventType="touchUpInside" id="xX0-Lb-Aog"/>
                                                                 </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cosmetics" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBD-ey-x4w">
-                                                                <rect key="frame" x="0.0" y="84" width="90" height="22"/>
+                                                                <rect key="frame" x="0.0" y="84" width="91" height="22"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="22" id="wSE-8o-gZT"/>
                                                                 </constraints>
@@ -933,20 +935,20 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="geN-NW-lZD" userLabel="ButtonView">
-                                                <rect key="frame" x="284" y="0.0" width="91" height="100"/>
+                                                <rect key="frame" x="284.5" y="0.0" width="90.5" height="100"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8f3-Q3-7pr">
-                                                        <rect key="frame" x="0.0" y="0.0" width="91" height="100"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="90.5" height="100"/>
                                                         <subviews>
                                                             <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jlh-8r-XLC">
-                                                                <rect key="frame" x="29" y="0.0" width="34" height="78"/>
+                                                                <rect key="frame" x="28" y="0.0" width="34" height="78"/>
                                                                 <state key="normal" image="Healthcare"/>
                                                                 <connections>
                                                                     <action selector="CategoryDidSelected:" destination="GLc-IG-9Wv" eventType="touchUpInside" id="GI9-C7-gFA"/>
                                                                 </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Healthcare" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O0t-1B-4OP">
-                                                                <rect key="frame" x="0.0" y="78" width="91" height="22"/>
+                                                                <rect key="frame" x="0.0" y="78" width="90.5" height="22"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="22" id="wYK-jq-nez"/>
                                                                 </constraints>
@@ -975,7 +977,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="JGL-YF-9q2">
-                                        <rect key="frame" x="0.0" y="320" width="375" height="107"/>
+                                        <rect key="frame" x="0.0" y="320.5" width="375" height="106.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VSp-dx-vTU" userLabel="ButtonView">
                                                 <rect key="frame" x="0.0" y="0.0" width="91" height="100"/>
@@ -984,7 +986,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="91" height="100"/>
                                                         <subviews>
                                                             <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hny-ed-PPt">
-                                                                <rect key="frame" x="31" y="0.0" width="28" height="78"/>
+                                                                <rect key="frame" x="31.5" y="0.0" width="28" height="78"/>
                                                                 <state key="normal" image="Gifts"/>
                                                                 <connections>
                                                                     <action selector="CategoryDidSelected:" destination="GLc-IG-9Wv" eventType="touchUpInside" id="r0e-HP-5kE"/>
@@ -1015,20 +1017,20 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7nI-Cu-cUw" userLabel="ButtonView">
-                                                <rect key="frame" x="95" y="0.0" width="91" height="107"/>
+                                                <rect key="frame" x="95" y="0.0" width="90.5" height="106.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RsO-w2-Ith">
-                                                        <rect key="frame" x="0.0" y="0.0" width="91" height="107"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="90.5" height="106.5"/>
                                                         <subviews>
                                                             <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLV-wE-VFn">
-                                                                <rect key="frame" x="27" y="0.0" width="37" height="85"/>
+                                                                <rect key="frame" x="26.5" y="0.0" width="37" height="84.5"/>
                                                                 <state key="normal" image="Social"/>
                                                                 <connections>
                                                                     <action selector="CategoryDidSelected:" destination="GLc-IG-9Wv" eventType="touchUpInside" id="7vB-b9-rSp"/>
                                                                 </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Social" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtR-3I-t5p">
-                                                                <rect key="frame" x="0.0" y="85" width="91" height="22"/>
+                                                                <rect key="frame" x="0.0" y="84.5" width="90.5" height="22"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="22" id="DV8-XO-pAf"/>
                                                                 </constraints>
@@ -1052,20 +1054,20 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jfj-4e-P27" userLabel="ButtonView">
-                                                <rect key="frame" x="190" y="0.0" width="90" height="107"/>
+                                                <rect key="frame" x="189.5" y="0.0" width="91" height="106.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4UB-kQ-Jr5">
-                                                        <rect key="frame" x="0.0" y="0.0" width="90" height="107"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="91" height="106.5"/>
                                                         <subviews>
                                                             <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrm-lJ-6uY">
-                                                                <rect key="frame" x="22" y="0.0" width="45" height="85"/>
+                                                                <rect key="frame" x="23" y="0.0" width="45" height="84.5"/>
                                                                 <state key="normal" image="Investment"/>
                                                                 <connections>
                                                                     <action selector="CategoryDidSelected:" destination="GLc-IG-9Wv" eventType="touchUpInside" id="qgv-Lr-VJf"/>
                                                                 </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Investment" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GrM-xo-5iM">
-                                                                <rect key="frame" x="0.0" y="85" width="90" height="22"/>
+                                                                <rect key="frame" x="0.0" y="84.5" width="91" height="22"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="22" id="aeo-Br-TYI"/>
                                                                 </constraints>
@@ -1089,20 +1091,20 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N25-qM-inO" userLabel="ButtonView">
-                                                <rect key="frame" x="284" y="0.0" width="91" height="92"/>
+                                                <rect key="frame" x="284.5" y="0.0" width="90.5" height="92"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UQk-13-18W">
-                                                        <rect key="frame" x="0.0" y="0.0" width="91" height="92"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="90.5" height="92"/>
                                                         <subviews>
                                                             <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8FV-Kk-nLC">
-                                                                <rect key="frame" x="26" y="0.0" width="39" height="70"/>
+                                                                <rect key="frame" x="25.5" y="0.0" width="39" height="70"/>
                                                                 <state key="normal" image="Other"/>
                                                                 <connections>
                                                                     <action selector="CategoryDidSelected:" destination="GLc-IG-9Wv" eventType="touchUpInside" id="rxl-GW-yNE"/>
                                                                 </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FU1-NY-Dw8">
-                                                                <rect key="frame" x="0.0" y="70" width="91" height="22"/>
+                                                                <rect key="frame" x="0.0" y="70" width="90.5" height="22"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="22" id="oXG-EM-9Uv"/>
                                                                 </constraints>
@@ -1144,7 +1146,7 @@
                                     <constraint firstAttribute="width" constant="50" id="Te4-pz-Fkw"/>
                                     <constraint firstAttribute="height" constant="49" id="bRJ-sr-nZV"/>
                                 </constraints>
-                                <state key="normal" title="Close"/>
+                                <state key="normal" title="OK"/>
                                 <connections>
                                     <action selector="closedidTapped:" destination="GLc-IG-9Wv" eventType="touchUpInside" id="pZj-xr-MrE"/>
                                 </connections>
@@ -1170,6 +1172,22 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="button0" destination="wmb-kJ-U28" id="hkd-fS-ogQ"/>
+                        <outlet property="button1" destination="XBU-KP-rVK" id="9Jh-Tm-6q0"/>
+                        <outlet property="button10" destination="Iym-S6-HWY" id="6ef-DZ-cGv"/>
+                        <outlet property="button11" destination="Jlh-8r-XLC" id="pzW-YU-E0u"/>
+                        <outlet property="button12" destination="Hny-ed-PPt" id="cw1-bB-v9G"/>
+                        <outlet property="button13" destination="TLV-wE-VFn" id="bQ2-P4-bx7"/>
+                        <outlet property="button14" destination="hrm-lJ-6uY" id="rlS-Wa-RCf"/>
+                        <outlet property="button15" destination="8FV-Kk-nLC" id="hMr-at-ghH"/>
+                        <outlet property="button2" destination="FOY-Wv-DvE" id="B7V-Kc-bt5"/>
+                        <outlet property="button3" destination="3v3-SB-XAk" id="pjn-1Y-fz9"/>
+                        <outlet property="button4" destination="D9B-cK-xU8" id="MXc-3G-qu3"/>
+                        <outlet property="button5" destination="xdi-MT-DSZ" id="R73-s9-gNw"/>
+                        <outlet property="button6" destination="WG0-RP-WXp" id="guf-w9-Wk6"/>
+                        <outlet property="button7" destination="Esb-yh-X6o" id="v5K-jN-6am"/>
+                        <outlet property="button8" destination="3sV-UK-qc4" id="yMO-1c-lMZ"/>
+                        <outlet property="button9" destination="CJV-fC-V3L" id="sOv-h5-gSm"/>
                         <outlet property="expenseField" destination="MPo-4z-VBX" id="uo1-RZ-hOz"/>
                     </connections>
                 </viewController>
