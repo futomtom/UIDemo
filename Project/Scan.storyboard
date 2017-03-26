@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -372,19 +372,19 @@
                                                     <rect key="frame" x="10" y="0.0" width="345" height="43.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdY-AI-dII" userLabel="620">
-                                                            <rect key="frame" x="0.0" y="0.0" width="153" height="43.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="153.5" height="43.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="0.59877091650000003" green="0.74957263470000002" blue="0.76725918049999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="used" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOL-tg-r4l">
-                                                            <rect key="frame" x="153" y="0.0" width="77" height="43.5"/>
+                                                            <rect key="frame" x="153.5" y="0.0" width="77" height="43.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="remain" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v6c-Wd-694">
-                                                            <rect key="frame" x="230" y="0.0" width="115" height="43.5"/>
+                                                            <rect key="frame" x="230.5" y="0.0" width="114.5" height="43.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="0.59877091650000003" green="0.74957263470000002" blue="0.76725918049999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -462,7 +462,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1200/2400" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LYS-zV-EB9">
-                                                <rect key="frame" x="0.0" y="0.0" width="84.5" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="85" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -631,7 +631,8 @@
                         <outlet property="chartView" destination="OQi-W9-t3v" id="rVU-oR-y1y"/>
                         <outlet property="highConstrain" destination="jXa-Ne-X5H" id="L6m-6F-EIX"/>
                         <outlet property="imageView" destination="1Pk-ll-m3Y" id="uYG-pi-kEq"/>
-                        <outlet property="maskView" destination="YOZ-b4-168" id="xAJ-8W-jS6"/>
+                        <outlet property="maskView" destination="YOZ-b4-168" id="JAw-SY-Boq"/>
+                        <outlet property="progressLabel" destination="LD7-aT-PFj" id="6g1-I4-W2j"/>
                         <outlet property="tableView" destination="Fjq-r2-PIv" id="QrR-k6-lh2"/>
                     </connections>
                 </viewController>
@@ -760,6 +761,7 @@
                         <segue destination="r4l-hJ-NSe" kind="show" identifier="progress" id="4Nc-mw-qHg"/>
                         <segue destination="WKb-gZ-CmR" kind="show" identifier="overview" id="cm4-gF-Sau"/>
                         <segue destination="baP-UX-eJ5" kind="show" identifier="home" id="Nqm-6Y-lza"/>
+                        <segue destination="JZc-MW-jQd" kind="show" identifier="logout" id="elh-tO-PsP"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GAH-1u-TNI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -851,6 +853,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7rV-qx-xyW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2936.8000000000002" y="-161.46926536731635"/>
+        </scene>
+        <!--LogoutVC-->
+        <scene sceneID="eZp-iH-o8e">
+            <objects>
+                <viewController id="JZc-MW-jQd" customClass="LogoutVC" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pEv-jf-rWb"/>
+                        <viewControllerLayoutGuide type="bottom" id="8sh-2d-8M5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tOU-Dz-SWa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HkJ-wp-tnt">
+                                <rect key="frame" x="163" y="294" width="48" height="30"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="Logout:" destination="JZc-MW-jQd" eventType="touchUpInside" id="IDH-Uo-AqR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HkJ-wp-tnt" firstAttribute="centerX" secondItem="tOU-Dz-SWa" secondAttribute="centerX" id="jZ9-PK-Q7f"/>
+                            <constraint firstItem="HkJ-wp-tnt" firstAttribute="centerY" secondItem="tOU-Dz-SWa" secondAttribute="centerY" id="yQl-5R-pZN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NCv-mo-mow" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1228" y="616"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jFx-0E-iNh">

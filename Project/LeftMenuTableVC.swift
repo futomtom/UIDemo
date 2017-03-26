@@ -14,7 +14,7 @@ class LeftMenuTableVC: UITableViewController {
     let menuItems = [menuItem(name: "Dream Saver", iconName: "home", sequeID: "home"),
                      menuItem(name: "Overview", iconName: "overview", sequeID: "overview"),
                      menuItem(name: "Progress", iconName: "progress", sequeID: "progress"),
-                     menuItem(name: "Account", iconName: "account", sequeID: "account"),
+                     menuItem(name: "Account", iconName: "account", sequeID: "logout"),
 
     ]
 
@@ -46,10 +46,7 @@ class LeftMenuTableVC: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.row == 3 {
-            return 
-        }
-        
+           
         performSegue(withIdentifier: menuItems[indexPath.row].sequeID, sender: nil)
 
 

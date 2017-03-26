@@ -39,6 +39,7 @@
 		FA26CECC1E5A9F1C00982AB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA26CECA1E5A9F1C00982AB5 /* Main.storyboard */; };
 		FA26CECE1E5A9F1C00982AB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA26CECD1E5A9F1C00982AB5 /* Assets.xcassets */; };
 		FA26CED11E5A9F1C00982AB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA26CECF1E5A9F1C00982AB5 /* LaunchScreen.storyboard */; };
+		FA369B1F1E887EEF001774B9 /* LogoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA369B1E1E887EEF001774B9 /* LogoutVC.swift */; };
 		FA49A9DE1E66992F007445E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49A9DD1E66992F007445E5 /* ViewController.swift */; };
 		FA49A9E01E669936007445E5 /* StencilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49A9DF1E669936007445E5 /* StencilView.swift */; };
 		FA5BBE441E7F945E002808B1 /* ExpensePopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5BBE431E7F945E002808B1 /* ExpensePopVC.swift */; };
@@ -89,6 +90,7 @@
 		FA26CECD1E5A9F1C00982AB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA26CED01E5A9F1C00982AB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA26CED21E5A9F1C00982AB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA369B1E1E887EEF001774B9 /* LogoutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutVC.swift; sourceTree = "<group>"; };
 		FA49A9DD1E66992F007445E5 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FA49A9DF1E669936007445E5 /* StencilView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StencilView.swift; sourceTree = "<group>"; };
 		FA5BBE431E7F945E002808B1 /* ExpensePopVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpensePopVC.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 				FA99D39A1E62784E00706B93 /* SetPaymentVC.swift */,
 				8207E2AA1E601592003ECD0A /* IncomeVC.swift */,
 				8207E2B51E601929003ECD0A /* LoginVC.swift */,
+				FA369B1E1E887EEF001774B9 /* LogoutVC.swift */,
 				FAC4729A1E87692F00AD8AF1 /* SignInVC.swift */,
 				8207E2A81E601592003ECD0A /* EmailVC.swift */,
 				8207E2A91E601592003ECD0A /* GreatVC.swift */,
@@ -359,6 +362,7 @@
 				FA90D59F1E6241F10068B233 /* PayMoneyVC.swift in Sources */,
 				FA49A9DE1E66992F007445E5 /* ViewController.swift in Sources */,
 				8207E29D1E601238003ECD0A /* LUExpandableTableView.swift in Sources */,
+				FA369B1F1E887EEF001774B9 /* LogoutVC.swift in Sources */,
 				8207E29F1E601238003ECD0A /* LUExpandableTableViewDelegate.swift in Sources */,
 				FA90D59B1E623C100068B233 /* ProgressVC.swift in Sources */,
 				FA49A9E01E669936007445E5 /* StencilView.swift in Sources */,
