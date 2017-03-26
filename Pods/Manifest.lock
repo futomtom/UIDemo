@@ -1,13 +1,17 @@
 PODS:
+  - Alamofire (4.4.0)
   - PieCharts (0.0.5)
   - SideMenu (2.3.0)
   - SwiftValidator (4.0.0)
+  - SwiftyJSON (3.1.4)
   - TextFieldEffects (1.3.1)
 
 DEPENDENCIES:
+  - Alamofire
   - PieCharts
   - SideMenu
   - SwiftValidator (from `https://github.com/jpotts18/SwiftValidator.git`, branch `swift-3`)
+  - SwiftyJSON
   - TextFieldEffects
 
 EXTERNAL SOURCES:
@@ -21,11 +25,13 @@ CHECKOUT OPTIONS:
     :git: https://github.com/jpotts18/SwiftValidator.git
 
 SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   PieCharts: a0fb4784a3460088c8ba7dfb00b89784ddaa7e70
   SideMenu: 43d092cf615cf472f105c5b9867a21beff9fc269
   SwiftValidator: 25ded5ca1f10c05adf57f6ac82a72d28ac8d91af
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   TextFieldEffects: faa47d428ee8eafb781a8413ac4345420d2328c4
 
-PODFILE CHECKSUM: e2ede0b72ae3b07107117a3618af8cb5002cfcce
+PODFILE CHECKSUM: 9d2039aa1dbeae47f9bccae8955df2de1bf4d15a
 
 COCOAPODS: 1.1.1

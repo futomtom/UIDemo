@@ -48,6 +48,7 @@
 		FAB2AF511E622F3B00EDF204 /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2AF501E622F3B00EDF204 /* HomePageVC.swift */; };
 		FAB2AF531E6235BC00EDF204 /* LeftMenuTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2AF521E6235BC00EDF204 /* LeftMenuTableVC.swift */; };
 		FAB2AF551E62373900EDF204 /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2AF541E62373900EDF204 /* MenuItemCell.swift */; };
+		FAC4729B1E87692F00AD8AF1 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4729A1E87692F00AD8AF1 /* SignInVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +97,7 @@
 		FAB2AF501E622F3B00EDF204 /* HomePageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
 		FAB2AF521E6235BC00EDF204 /* LeftMenuTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuTableVC.swift; sourceTree = "<group>"; };
 		FAB2AF541E62373900EDF204 /* MenuItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
+		FAC4729A1E87692F00AD8AF1 /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +201,7 @@
 				FA99D39A1E62784E00706B93 /* SetPaymentVC.swift */,
 				8207E2AA1E601592003ECD0A /* IncomeVC.swift */,
 				8207E2B51E601929003ECD0A /* LoginVC.swift */,
+				FAC4729A1E87692F00AD8AF1 /* SignInVC.swift */,
 				8207E2A81E601592003ECD0A /* EmailVC.swift */,
 				8207E2A91E601592003ECD0A /* GreatVC.swift */,
 				FA5BBE431E7F945E002808B1 /* ExpensePopVC.swift */,
@@ -364,6 +367,7 @@
 				8241EAEB1E5AB69200D5B302 /* TouchIDVC.swift in Sources */,
 				829570D31E61452800DDB4C2 /* QuotaCell.swift in Sources */,
 				FA26CEC71E5A9F1C00982AB5 /* AppDelegate.swift in Sources */,
+				FAC4729B1E87692F00AD8AF1 /* SignInVC.swift in Sources */,
 				8287E5DE1E63049C007FADF6 /* ButtonCell.swift in Sources */,
 				8207E2961E601226003ECD0A /* MyExpandableTableViewSectionHeader.swift in Sources */,
 				8207E2A41E6014EA003ECD0A /* MainVC.swift in Sources */,

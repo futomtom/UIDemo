@@ -1,6 +1,8 @@
 
 import UIKit
 import AVFoundation
+import Alamofire
+import SwiftyJSON
 
 
 
@@ -80,36 +82,45 @@ class ScanVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate,UITableVi
                     if metadata.stringValue == currentItem {
                         return
                     }
-                        switch metadata.stringValue! {
-                        case "0855111003279":
-                           tableviewItems.insert(Items[0], at: 0)
-                            currentItem = "0855111003279"
-                        case "0070470409610":
-                             tableviewItems.insert(Items[1], at: 0)
-                            currentItem = "0070470409610"
-                        case "1":
-                            tableviewItems.insert(Items[2], at: 0)
-                            currentItem = "1"
-                        default:
-                            break
+                    currentItem =  metadata.stringValue
+                  //0855111003279
+                    getInfoby( metadata.stringValue!)
+                            { name in
+              
+                        self.tableviewItems.insert(Expenses(name: name, price: 100), at: 0)
+                        self.tableview.reloadData()
+                        for item in self.tableviewItems {
+                            self.total = self.total + item.price
                         }
-                        tableview.reloadData()
-                    
-                    for item in tableviewItems {
-                        total = total + item.price
-                    }
-                    
-                    totalPrice.text = "\(total)"
-//                        detectionArea.layer.borderColor = UIColorUIColor(red:0.659,  green:0.792,  blue:0.812, alpha:1).cgColor
-//                        detectionArea.layer.borderWidth = 5
-//                        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-//                            self.dismiss(animated: true, completion: nil)
-//                        }
+                        
+                        self.totalPrice.text = "\(self.total)"
+                        
+                        }
                     }
                 }
             }
         }
 
+    func getInfoby(_ barCode:String, handle:@escaping ((String) -> Void)) {
+        let urlParams = ["upc": barCode]
+        Alamofire.request("https://api.upcitemdb.com/prod/trial/lookup", method: .get, parameters: urlParams, encoding: URLEncoding.default, headers: nil)
+            .validate(statusCode: 200..<300)
+            .responseJSON { response in
+                switch response.result {
+                case .success(let value):
+                    let json = JSON(value)
+                    let name = json["items"][0]["title"].string
+                    print(name!)
+                    handle(name!)
+
+                    
+                case .failure(let error):
+                    print(error)
+                }
+        }
+
+      
+    }
     
     @IBAction func done(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "paymoney") as! PayMoneyVC

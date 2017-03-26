@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>PieCharts.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -24,6 +29,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>TextFieldEffects.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,12 +42,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>151F46980F37E9D90A1F76C171B036B7</key>
+		<key>072157D4187A52ED663B2AB040D3D532</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>48DB3D35B718796641AE900D8D25F3BC</key>
+		<key>433B9835D84ED6033D464EEAA944668E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>56D81FE912168B5BCED5FCAE322B3073</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,12 +62,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A98CB30E812D3CDA348A930075862FAB</key>
+		<key>84B9DFFD3CAF5B7F7803559F7C42AD16</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E50F75CA9CD58CC58B14C10F0E18F4C5</key>
+		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>95B7E9CD47B810BF176DDD88C6FDA862</key>
 		<dict>
 			<key>primary</key>
 			<true/>
