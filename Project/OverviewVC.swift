@@ -8,14 +8,17 @@
 
 import UIKit
 import SideMenu
-    
+
     class OverviewVC: UIViewController {
          let setting = Setting.share
-        var expenses = [26,62,23,42,0,12    ]
-        
+        var itemNames = ["Eating Out", "Groceries","Entertainment","Car","Clothes & Shoes","Household","" ]
+        var used = [27,62,23,42,0,12,166]
+        var limits = [100,150,120,100,100,50,620]
         
         @IBOutlet weak var tableView: UITableView!
         override func viewDidLoad() {
+    
+            
             super.viewDidLoad()
             setupSideMenu()
             tableView.sectionHeaderHeight = 44
@@ -46,17 +49,19 @@ extension OverviewVC: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return expenses.count
-        
+
+        return setting.oldUser ? itemNames.count:0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ListCell
-        let quota = Quota(name: "rent", limit: 100)
-       
+        let quota = Quota(name: itemNames[indexPath.row], limit: limits[indexPath.row])
+        if indexPath.row == itemNames.count - 1 {
+            cell.displayItem2(quota,expense:used[indexPath.row])
+        } else {
+            cell.displayItem(quota,expense:used[indexPath.row])
+        }
         
-    //    cell.displayItem(setting.discretQuota[indexPath.row],expense: expenses[indexPath.row])
-        cell.displayItem(quota,expense:300 )
         
         return cell
     }

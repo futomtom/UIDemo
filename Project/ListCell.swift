@@ -15,8 +15,12 @@ class ListHeaderCell: UITableViewCell {
     @IBOutlet weak var date: UILabel!
     
     func displayItem() {
-        money.text = "\(remain)"
-        date.text = "4/2017"
+        money.text = "" // "\(remain)"
+        let date = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd.MM.yyyy"
+        let result = formatter.string(from: date)
+        self.date.text = result
       
     }
     
@@ -35,9 +39,19 @@ class ListCell: UITableViewCell {
     
     func displayItem(_ quota:Quota,expense:Int) {
         first.text = quota.name
-        used.text = "\(expense)"
+        used.text = "$\(expense)"
         let remainMoney = quota.limit - expense
-        remain.text = "\(remainMoney)/\(quota.limit)"
+        remain.text = "$\(remainMoney)/$\(quota.limit)"
+    }
+    
+    func displayItem2(_ quota:Quota,expense:Int) {
+        first.font =  UIFont.boldSystemFont(ofSize: 20.0)
+        first.text = quota.name
+        used.font =  UIFont.boldSystemFont(ofSize: 20.0)
+        used.text = "$\(expense)"
+        let remainMoney = quota.limit - expense
+        remain.font =  UIFont.boldSystemFont(ofSize: 20.0)
+        remain.text = "$\(remainMoney)/$\(quota.limit)"
     }
 
 }

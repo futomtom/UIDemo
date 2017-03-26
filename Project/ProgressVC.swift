@@ -12,14 +12,21 @@ import UIKit
 import SideMenu
 import PieCharts
     
-    class ProgressVC: UIViewController , PieChartDelegate{
+    class ProgressVC: UIViewController , PieChartDelegate {
         let setting = Setting.share
        
         @IBOutlet weak var chartView: PieChart!
         @IBOutlet weak var imageView: UIImageView!
         @IBOutlet weak var maskView: UIView!
         @IBOutlet weak var highConstrain: NSLayoutConstraint!
+        @IBOutlet weak var tableView: UITableView!
+        
+        
         fileprivate static let alpha: CGFloat = 0.5
+        var itemNames = ["Eating Out", "Groceries","Entertainment","Car","Clothes & Shoes","Household" ]
+        var used = ["27/100","62/150","23/120","42/100","0/50","12/50"]
+        
+
         let colors = [
             UIColor.yellow.withAlphaComponent(alpha),
             UIColor.green.withAlphaComponent(alpha),
@@ -140,4 +147,25 @@ extension UIColor {
         return UIColor(red: .random(), green: .random(), blue: .random(), alpha: 1.0)
     }
 }
+
+extension ProgressVC: UITableViewDataSource {
+
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return setting.oldUser ? itemNames.count:0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ExpenseCell
+      cell.name.text = itemNames[indexPath.row]
+      cell.price.text = used[indexPath.row]
+        
+        return cell
+    }
+    
+    
+    
+}
+
 
