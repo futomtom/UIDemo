@@ -28,6 +28,7 @@
 		8207E2B81E6022F2003ECD0A /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8207E2B71E6022F2003ECD0A /* BorderButton.swift */; };
 		8241EAE91E5AB47500D5B302 /* ScanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EAE81E5AB47500D5B302 /* ScanVC.swift */; };
 		8241EAEB1E5AB69200D5B302 /* TouchIDVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8241EAEA1E5AB69200D5B302 /* TouchIDVC.swift */; };
+		8280C0BC1E879E8C00586101 /* ItemListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8280C0BB1E879E8C00586101 /* ItemListVC.swift */; };
 		8287E5DE1E63049C007FADF6 /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8287E5DD1E63049C007FADF6 /* ButtonCell.swift */; };
 		829570D31E61452800DDB4C2 /* QuotaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829570D21E61452800DDB4C2 /* QuotaCell.swift */; };
 		829570D91E616C2A00DDB4C2 /* PerfectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829570D81E616C2A00DDB4C2 /* PerfectVC.swift */; };
@@ -76,6 +77,7 @@
 		8207E2B71E6022F2003ECD0A /* BorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
 		8241EAE81E5AB47500D5B302 /* ScanVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanVC.swift; sourceTree = "<group>"; };
 		8241EAEA1E5AB69200D5B302 /* TouchIDVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchIDVC.swift; sourceTree = "<group>"; };
+		8280C0BB1E879E8C00586101 /* ItemListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListVC.swift; sourceTree = "<group>"; };
 		8287E5DD1E63049C007FADF6 /* ButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonCell.swift; sourceTree = "<group>"; };
 		829570D21E61452800DDB4C2 /* QuotaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotaCell.swift; sourceTree = "<group>"; };
 		829570D81E616C2A00DDB4C2 /* PerfectVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfectVC.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				FAB2AF541E62373900EDF204 /* MenuItemCell.swift */,
 				FAB2AF521E6235BC00EDF204 /* LeftMenuTableVC.swift */,
 				82F4D9C91E5EC65D00884D11 /* Scan.storyboard */,
+				8280C0BB1E879E8C00586101 /* ItemListVC.swift */,
 				FA26CECD1E5A9F1C00982AB5 /* Assets.xcassets */,
 				FA26CECF1E5A9F1C00982AB5 /* LaunchScreen.storyboard */,
 				FA26CED21E5A9F1C00982AB5 /* Info.plist */,
@@ -352,6 +355,7 @@
 				8207E2AD1E601592003ECD0A /* DetailVC.swift in Sources */,
 				8207E2981E601226003ECD0A /* MyTableViewCell.swift in Sources */,
 				8207E29E1E601238003ECD0A /* LUExpandableTableViewDataSource.swift in Sources */,
+				8280C0BC1E879E8C00586101 /* ItemListVC.swift in Sources */,
 				FA90D59F1E6241F10068B233 /* PayMoneyVC.swift in Sources */,
 				FA49A9DE1E66992F007445E5 /* ViewController.swift in Sources */,
 				8207E29D1E601238003ECD0A /* LUExpandableTableView.swift in Sources */,

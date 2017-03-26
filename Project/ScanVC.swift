@@ -86,8 +86,8 @@ class ScanVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate,UITableVi
                   //0855111003279
                     getInfoby( metadata.stringValue!)
                             { name in
-              
-                        self.tableviewItems.insert(Expenses(name: name, price: 100), at: 0)
+                                let price = Int(arc4random_uniform(300))
+                        self.tableviewItems.insert(Expenses(name: name, price: price), at: 0)
                         self.tableview.reloadData()
                         for item in self.tableviewItems {
                             self.total = self.total + item.price
@@ -123,9 +123,10 @@ class ScanVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate,UITableVi
     }
     
     @IBAction func done(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "paymoney") as! PayMoneyVC
-        vc.total = total
-        present(vc, animated: true, completion: nil)
+        let vc = storyboard?.instantiateViewController(withIdentifier: "itemlist") as! ItemListVC
+        vc.tableviewItems = tableviewItems
+        navigationController?.pushViewController(vc, animated: true)
+       
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -151,6 +152,8 @@ class ScanVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate,UITableVi
     
     
 }
+
+
 
 
 
