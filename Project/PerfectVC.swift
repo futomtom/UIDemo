@@ -70,7 +70,6 @@ class PerfectVC: UIViewController {
         let confettiView = SAConfettiView(frame: self.view.bounds)
         confettiView.type = .triangle
         self.view.addSubview(confettiView)
-
         confettiView.startConfetti()
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             let appDelegate = UIApplication.shared.delegate as! AppDelegate

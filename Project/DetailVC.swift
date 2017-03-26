@@ -20,7 +20,8 @@ class Setting {
     var fix = 0
     var discret = 0
     var income = 0
-    var saving = 0 
+    var saving = 0
+    var oldUser:Bool = false
     var icon = 0
     var image: URL?
     var fixexQuota:[Quota] = []

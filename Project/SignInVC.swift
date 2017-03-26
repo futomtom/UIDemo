@@ -12,7 +12,7 @@ import UIKit
 class SignInVC: UIViewController, UITextFieldDelegate {
 
     
- 
+    var setting = Setting.share
     @IBOutlet weak var userNameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
@@ -37,6 +37,7 @@ class SignInVC: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func okDidTap(_ sender: UIButton) {
+        setting.oldUser = true 
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.processToHomePage()
         

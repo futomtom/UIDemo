@@ -25,10 +25,11 @@ class EmailVC: UIViewController, UITextFieldDelegate,ValidationDelegate {
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var passwordLabel: UILabel!
     @IBOutlet weak var comfirmLabel: UILabel!
+    var setting = Setting.share
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setting.oldUser = false
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.isTranslucent = true
