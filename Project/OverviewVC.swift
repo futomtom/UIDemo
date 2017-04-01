@@ -22,12 +22,16 @@ import SideMenu
             super.viewDidLoad()
             setupSideMenu()
             tableView.sectionHeaderHeight = 44
-            
+            tableView.tableFooterView = UIView() 
         }
 
         @IBAction func openMenu(_ sender: Any) {
             present(SideMenuManager.menuLeftNavigationController!, animated: true, completion: nil)
             // present(SideMenuManager.menuRightNavigationController!, animated: true, completion: nil)
+        }
+        
+        override func viewWillAppear(_ animated: Bool) {
+            tableView.reloadData()
         }
         
         
@@ -64,6 +68,14 @@ extension OverviewVC: UITableViewDataSource, UITableViewDelegate {
         
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "overviewdetail") as! overviewDetailVC
+        vc.parentVC = self
+        vc.selectItem = indexPath.row
+        navigationController?.pushViewController(vc, animated: true)
+       
     }
     
     

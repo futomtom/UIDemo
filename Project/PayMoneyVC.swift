@@ -56,7 +56,8 @@ class PayMoneyVC: UIViewController {
 
   
     @IBAction func OK(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.processToHomePage()
     }
 
 }

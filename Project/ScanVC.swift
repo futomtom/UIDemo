@@ -140,10 +140,31 @@ class ScanVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate,UITableVi
         cell.displayItem(item: tableviewItems[indexPath.row])
         
         return cell
-
-        
-        
     }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            self.tableviewItems.remove(at: indexPath.row)
+            self.tableview.reloadData()
+        }
+    }
+
+    
+     func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
+        
+        
+        let call = UITableViewRowAction(style: .default, title: "\u{260F}\nRemove") { action, index in
+            self.tableviewItems.remove(at: indexPath.row)
+            self.tableview.reloadData()
+        }
+        return [call]
+    }
+
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tableviewItems.count

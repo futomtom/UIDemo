@@ -51,6 +51,7 @@
 		FAB2AF531E6235BC00EDF204 /* LeftMenuTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2AF521E6235BC00EDF204 /* LeftMenuTableVC.swift */; };
 		FAB2AF551E62373900EDF204 /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2AF541E62373900EDF204 /* MenuItemCell.swift */; };
 		FAC4729B1E87692F00AD8AF1 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC4729A1E87692F00AD8AF1 /* SignInVC.swift */; };
+		FAE7C2B71E9039DE007F2FFB /* overviewDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE7C2B61E9039DE007F2FFB /* overviewDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +103,7 @@
 		FAB2AF521E6235BC00EDF204 /* LeftMenuTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuTableVC.swift; sourceTree = "<group>"; };
 		FAB2AF541E62373900EDF204 /* MenuItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
 		FAC4729A1E87692F00AD8AF1 /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		FAE7C2B61E9039DE007F2FFB /* overviewDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = overviewDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 				8241EAE81E5AB47500D5B302 /* ScanVC.swift */,
 				FA90D5A01E62521F0068B233 /* task1 */,
 				FA90D59A1E623C100068B233 /* ProgressVC.swift */,
+				FAE7C2B61E9039DE007F2FFB /* overviewDetailVC.swift */,
 				829570D21E61452800DDB4C2 /* QuotaCell.swift */,
 				FA004F531E654DEF00BADC47 /* ListCell.swift */,
 				8207E2A11E60127B003ECD0A /* OverviewVC.swift */,
@@ -369,6 +372,7 @@
 				8207E2AF1E601592003ECD0A /* GreatVC.swift in Sources */,
 				8207E2B21E6015E3003ECD0A /* Step1VC.swift in Sources */,
 				8207E2A21E60127B003ECD0A /* OverviewVC.swift in Sources */,
+				FAE7C2B71E9039DE007F2FFB /* overviewDetailVC.swift in Sources */,
 				FA004F541E654DEF00BADC47 /* ListCell.swift in Sources */,
 				FA5BBE441E7F945E002808B1 /* ExpensePopVC.swift in Sources */,
 				8207E2B41E6016A4003ECD0A /* PaymentVC.swift in Sources */,

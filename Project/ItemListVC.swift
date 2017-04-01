@@ -11,7 +11,9 @@ import UIKit
 class ItemListVC: UITableViewController {
     var tableviewItems:[Expenses] = []
     var total = 0
+    var decresaing = true
 
+    @IBOutlet weak var SortItem: UIBarButtonItem!
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -28,6 +30,15 @@ class ItemListVC: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
+    @IBAction func sortItem(_ sender: Any) {
+        decresaing = !decresaing
+        if decresaing {
+           tableviewItems = tableviewItems.sorted{ $0.price > $1.price }
+        } else {
+            tableviewItems = tableviewItems.sorted{ $0.price < $1.price }
+        }
+        tableView.reloadData()
+    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -40,11 +51,27 @@ class ItemListVC: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+   override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            tableviewItems.remove(at: indexPath.row)
+            tableView.reloadData()
+        }
+    }
+    
+
+    
   
 
     @IBAction func done(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "paymoney") as! PayMoneyVC
-        
+        var total = 0
+        for item in tableviewItems {
+            total = total + item.price
+        }
         vc.total = total
         present(vc, animated: true, completion: nil)
     }

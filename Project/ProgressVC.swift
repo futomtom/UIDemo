@@ -27,6 +27,8 @@ import PieCharts
         fileprivate static let alpha: CGFloat = 0.5
         var itemNames = ["Eating Out", "Groceries","Entertainment","Car","Clothes & Shoes","Household" ]
         var used = ["27/100","62/150","23/120","42/100","0/50","12/50"]
+        var price = [27,62,23,42,0,12]
+        
         
 
         let colors = [
@@ -79,7 +81,7 @@ import PieCharts
             
             
             chartView.models = createModels()
-            chartView.layers = [createPlainTextLayer(), createTextWithLinesLayer()]
+            chartView.layers = [createPlainTextLayer()]
             chartView.delegate = self
         }
         
@@ -93,15 +95,12 @@ import PieCharts
         
         fileprivate func createModels() -> [PieSliceModel] {
             
-            let count = setting.expenses.count
+            let count = itemNames.count
             var models:[PieSliceModel]=[]
             
             var subtotal:[Int]=Array(repeating: 0, count: count)
             for i in 0..<count {
-                for item in setting.expenses[i] {
-                     subtotal[i] += item.price
-                }
-                models.append(PieSliceModel(value: Double(subtotal[i]), color: colors[i]))
+                models.append(PieSliceModel(value: Double(price[i]), color: colors[i]))
             }
             
             currentColorIndex = models.count
@@ -129,7 +128,7 @@ import PieCharts
             textLayer.settings = textLayerSettings
             return textLayer
         }
-        
+    /*
         fileprivate func createTextWithLinesLayer() -> PieLineTextLayer {
             let lineTextLayer = PieLineTextLayer()
             var lineTextLayerSettings = PieLineTextLayerSettings()
@@ -138,12 +137,14 @@ import PieCharts
             formatter.maximumFractionDigits = 1
             lineTextLayerSettings.label.font = UIFont.systemFont(ofSize: 14)
             lineTextLayerSettings.label.textGenerator = {slice in
+                slice.data.model.value = price
                 return formatter.string(from: slice.data.model.value as NSNumber).map{"\($0)"} ?? ""
             }
             
             lineTextLayer.settings = lineTextLayerSettings
             return lineTextLayer
         }
+ */
 }
 
 extension CGFloat {
