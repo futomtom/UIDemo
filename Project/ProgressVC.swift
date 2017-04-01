@@ -21,6 +21,8 @@ import PieCharts
         @IBOutlet weak var highConstrain: NSLayoutConstraint!
         @IBOutlet weak var tableView: UITableView!
         
+        @IBOutlet weak var progressLabel: UILabel!
+     
         
         fileprivate static let alpha: CGFloat = 0.5
         var itemNames = ["Eating Out", "Groceries","Entertainment","Car","Clothes & Shoes","Household" ]
@@ -50,6 +52,13 @@ import PieCharts
         
         override func viewWillAppear(_ animated: Bool) {
             highConstrain.constant = 70
+            
+            if setting.oldUser == false {
+                progressLabel.text = "0%"
+                maskView.isHidden = true
+                chartView.isHidden = true
+                
+            }
         }
         
 
@@ -67,6 +76,7 @@ import PieCharts
         }
         
         override func viewDidAppear(_ animated: Bool) {
+            
             
             chartView.models = createModels()
             chartView.layers = [createPlainTextLayer(), createTextWithLinesLayer()]
