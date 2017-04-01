@@ -786,7 +786,7 @@
                                                         <subviews>
                                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Esb-yh-X6o">
                                                                 <rect key="frame" x="23.5" y="0.0" width="43" height="80"/>
-                                                                <state key="normal" image="Coscume"/>
+                                                                <state key="normal" image="Costume"/>
                                                                 <connections>
                                                                     <action selector="CategoryDidSelected:" destination="GLc-IG-9Wv" eventType="touchUpInside" id="KQg-rq-NLu"/>
                                                                 </connections>
@@ -2588,8 +2588,8 @@ per month in the next 6 months.</string>
         <image name="ApplePay-1" width="107" height="51"/>
         <image name="Car" width="47" height="31"/>
         <image name="Cellphone" width="25" height="43"/>
-        <image name="Coscume" width="43" height="40"/>
         <image name="Cosmetics" width="20" height="43"/>
+        <image name="Costume" width="43" height="40"/>
         <image name="Eating Out" width="40" height="36"/>
         <image name="Fun" width="45" height="31"/>
         <image name="Gifts" width="28" height="39"/>

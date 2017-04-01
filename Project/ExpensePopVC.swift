@@ -57,6 +57,9 @@ class ExpensePopVC: UIViewController {
     @IBAction func CategoryDidSelected(_ sender: UIButton) {
         buttons.map ({ $0.isSelected = false })
         sender.isSelected = true
+        let image = UIImage(named: names[sender.tag])?.withRenderingMode(.alwaysTemplate)
+        sender.setImage(image, for: .selected)
+        sender.tintColor = UIColor.red
         name = names[sender.tag]
         
     }
