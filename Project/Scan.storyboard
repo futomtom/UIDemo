@@ -333,16 +333,16 @@
                                                     <rect key="frame" x="10" y="0.0" width="345" height="43.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uie-Za-L18" userLabel="620">
-                                                            <rect key="frame" x="0.0" y="0.0" width="60" height="43.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="100" height="43.5"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="60" id="1HA-SS-qUy"/>
+                                                                <constraint firstAttribute="width" constant="100" id="1HA-SS-qUy"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="used" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1n-8a-ZaL">
-                                                            <rect key="frame" x="154" y="0.0" width="40.5" height="43.5"/>
+                                                            <rect key="frame" x="174" y="0.0" width="40.5" height="43.5"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>

@@ -9,16 +9,18 @@
 import UIKit
 import SideMenu
 
+var date = ["4/12","4/3"]
+var eatNames = [["Cafe Medeleine", "The Bird"],["McDonald's"]]
+ var eatPrices = [[18,3],[6]]
+
     class overviewDetailVC: UIViewController {
         var parentVC: OverviewVC?
         var selectItem = 0 
          let setting = Setting.share
-        var date = ["4/12","4/3"]
-        var eatNames = [["Cafe Medeleine", "The Bird"],["McDonald's"]]
+   
         var GrocerisNames = [["shampoo", "gift card"],["blanket"]]
      
-        var eatPrices = [[18,3],[6]]
-         var GrocerisPrices = [[18,3],[6]]
+         var GrocerisPrices = [[58,9],[16]]
         
         @IBOutlet weak var tableView: UITableView!
         override func viewDidLoad() {
@@ -59,11 +61,11 @@ import SideMenu
                
                 //         print("\(quota)!")
                 if self.selectItem == 0 {
-                    self.date.insert(dateString, at: 0)
-                    self.eatNames.insert([name], at: 0)
-                    self.eatPrices.insert([quota], at: 0)
+                    date.insert(dateString, at: 0)
+                    eatNames.insert([name], at: 0)
+                    eatPrices.insert([quota], at: 0)
                 } else  {
-                    self.date.insert(dateString, at: 0)
+                    date.insert(dateString, at: 0)
                     self.GrocerisNames.insert([name], at: 0)
                     self.GrocerisPrices.insert([quota], at: 0)
                 }
