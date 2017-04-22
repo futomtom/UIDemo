@@ -149,8 +149,7 @@ extension IncomeVC: LUExpandableTableViewDataSource {
     func expandableTableView(_ expandableTableView: LUExpandableTableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let fixedQuota = setting.fixexQuota
         let discretQuota = setting.discretQuota
-
-
+        
         if indexPath.section == 1 {
             if indexPath.row == fixedQuota.count {
                 let cell = expandableTableView.dequeueReusableCell(withIdentifier: "buttoncell") as! ButtonCell
@@ -188,8 +187,11 @@ extension IncomeVC: LUExpandableTableViewDataSource {
     func expandableTableView(_ expandableTableView: LUExpandableTableView, sectionHeaderOfSection section: Int) -> LUExpandableTableViewSectionHeader {
         guard let sectionHeader = expandableTableView.dequeueReusableHeaderFooterView(withIdentifier: sectionHeaderReuseIdentifier) as? MyExpandableTableViewSectionHeader else {
             assertionFailure("Section header shouldn't be nil")
+    
             return LUExpandableTableViewSectionHeader()
         }
+        
+
 
         var amount = 0
         switch section {
@@ -206,7 +208,9 @@ extension IncomeVC: LUExpandableTableViewDataSource {
         }
         sectionHeader.label.text = sectionName[section]
         sectionHeader.expandCollapseButton.setTitle("\(amount)", for: .normal)
-
+        sectionHeader.layer.borderColor=UIColor.lightGray.cgColor
+        sectionHeader.layer.borderWidth=0.5
+        
         return sectionHeader
     }
     

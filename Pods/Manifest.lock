@@ -1,13 +1,15 @@
 PODS:
   - Alamofire (4.4.0)
+  - CustomizableActionSheet (1.0.6)
   - PieCharts (0.0.5)
-  - SideMenu (2.3.0)
+  - SideMenu (2.3.1)
   - SwiftValidator (4.0.0)
   - SwiftyJSON (3.1.4)
-  - TextFieldEffects (1.3.1)
+  - TextFieldEffects (1.3.2)
 
 DEPENDENCIES:
   - Alamofire
+  - CustomizableActionSheet
   - PieCharts
   - SideMenu
   - SwiftValidator (from `https://github.com/jpotts18/SwiftValidator.git`, branch `swift-3`)
@@ -26,12 +28,13 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  CustomizableActionSheet: 6d5a0eaa06ef3c0ecbc47be608ff79f15765894d
   PieCharts: a0fb4784a3460088c8ba7dfb00b89784ddaa7e70
-  SideMenu: 43d092cf615cf472f105c5b9867a21beff9fc269
+  SideMenu: 2a3c3da0b3d5f78a047b2271bb7398260fcd7e3d
   SwiftValidator: 25ded5ca1f10c05adf57f6ac82a72d28ac8d91af
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
-  TextFieldEffects: faa47d428ee8eafb781a8413ac4345420d2328c4
+  TextFieldEffects: 9e5cce561ea39c75b86e9d3637601727a67e8b23
 
-PODFILE CHECKSUM: 9d2039aa1dbeae47f9bccae8955df2de1bf4d15a
+PODFILE CHECKSUM: 0278c326869df01a2abf4a70be058668bad257e7
 
 COCOAPODS: 1.1.1

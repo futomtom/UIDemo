@@ -10,6 +10,7 @@ target 'Project' do
   pod 'PieCharts'
   pod 'TextFieldEffects'
   pod 'Alamofire'
+  pod 'CustomizableActionSheet'
   pod 'SwiftyJSON' 
   pod 'SwiftValidator', :git => 'https://github.com/jpotts18/SwiftValidator.git' ,:branch => 'swift-3'
 end

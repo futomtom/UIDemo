@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>CustomizableActionSheet.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>PieCharts.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,17 +47,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>072157D4187A52ED663B2AB040D3D532</key>
+		<key>17C9DCF4772FE5D7F23358E89F7A0DC1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>433B9835D84ED6033D464EEAA944668E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>56D81FE912168B5BCED5FCAE322B3073</key>
+		<key>1AE5185C6C23F01E3E27E7DB44A1F119</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,7 +62,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>84B9DFFD3CAF5B7F7803559F7C42AD16</key>
+		<key>79027B9607D9061E59FD1A1EFEF91546</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>80991B660F7854879450D8492B578BBB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>86E36F6EE18457E74B285FB00A67AB15</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,7 +82,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>95B7E9CD47B810BF176DDD88C6FDA862</key>
+		<key>EE6CF1565F913F4635A9A8E41DD8391A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
