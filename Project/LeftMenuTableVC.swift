@@ -11,7 +11,7 @@ struct menuItem {
 }
 
 class LeftMenuTableVC: UITableViewController {
-    let menuItems = [menuItem(name: "Dream Saver", iconName: "home", sequeID: "home"),
+    let menuItems = [menuItem(name: "", iconName: "cross", sequeID: "home"),
                      menuItem(name: "Overview", iconName: "overview", sequeID: "overview"),
                      menuItem(name: "Progress", iconName: "progress", sequeID: "progress"),
                      menuItem(name: "Account", iconName: "account", sequeID: "logout"),
@@ -23,7 +23,7 @@ class LeftMenuTableVC: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return indexPath.row == 0 ? 100 : 44
+        return 80 //0 ? 100 : 80
     }
 
   
