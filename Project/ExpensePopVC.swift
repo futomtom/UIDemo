@@ -59,7 +59,7 @@ class ExpensePopVC: UIViewController {
         sender.isSelected = true
         let image = UIImage(named: names[sender.tag])?.withRenderingMode(.alwaysTemplate)
         sender.setImage(image, for: .selected)
-        sender.tintColor = UIColor.red
+        sender.tintColor = UIColor(red:0.659,  green:0.792,  blue:0.812, alpha:1)
         name = names[sender.tag]
         
     }
