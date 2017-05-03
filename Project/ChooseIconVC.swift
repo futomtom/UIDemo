@@ -19,6 +19,9 @@ class ChooseIconVC: UIViewController,UIImagePickerControllerDelegate,UINavigatio
     }
 
 
+    @IBAction func BackDidTap(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 
     @IBAction func iconDidTap(_ sender: UIButton) {
       setting.icon = sender.tag

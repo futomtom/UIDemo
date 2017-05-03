@@ -262,7 +262,7 @@
 				TargetAttributes = {
 					FA26CEC21E5A9F1C00982AB5 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 6A7K9VGHXX;
+						DevelopmentTeam = 3Z72554ZF8;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -515,7 +515,7 @@
 			baseConfigurationReference = 1D726027F491EB5F94A39602 /* Pods-Project.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6A7K9VGHXX;
+				DEVELOPMENT_TEAM = 3Z72554ZF8;
 				INFOPLIST_FILE = Project/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aau.Project;
@@ -529,7 +529,7 @@
 			baseConfigurationReference = 4DB96FDB28B7143A0EC16652 /* Pods-Project.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6A7K9VGHXX;
+				DEVELOPMENT_TEAM = 3Z72554ZF8;
 				INFOPLIST_FILE = Project/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aau.Project;
