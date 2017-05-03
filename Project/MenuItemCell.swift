@@ -16,13 +16,14 @@ class MenuItemCell: UITableViewCell {
   
   func displayItem(item:menuItem)  {
     let image = UIImage(named: item.iconName)?.withRenderingMode(.alwaysTemplate)
-    
     iconV.image = image
-    
     title.text = item.name
-    
-  }
+    if item.selected {
+        backgroundColor = UIColor(red:0.61, green:0.77, blue:0.79, alpha:1.0)
+    } else {
+    backgroundColor = UIColor.white
+    }
 
-  
+    }
 
 }

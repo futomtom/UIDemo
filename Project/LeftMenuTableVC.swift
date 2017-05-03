@@ -8,13 +8,15 @@ struct menuItem {
     var name: String
     var iconName: String
     var sequeID: String
+    var selected:Bool
 }
 
 class LeftMenuTableVC: UITableViewController {
-    let menuItems = [menuItem(name: "", iconName: "cross", sequeID: "home"),
-                     menuItem(name: "Overview", iconName: "overview", sequeID: "overview"),
-                     menuItem(name: "Progress", iconName: "progress", sequeID: "progress"),
-                     menuItem(name: "Account", iconName: "account", sequeID: "logout"),
+    var previousIndex = 0
+    var menuItems = [menuItem(name: "", iconName: "cross", sequeID: "home",selected:false),
+                     menuItem(name: "Overview", iconName: "overview", sequeID: "overview",selected:false),
+                     menuItem(name: "Progress", iconName: "progress", sequeID: "progress",selected:false),
+                     menuItem(name: "Account", iconName: "account", sequeID: "logout",selected:false),
 
     ]
 
@@ -46,7 +48,11 @@ class LeftMenuTableVC: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-           
+       
+        menuItems[previousIndex].selected = false
+        menuItems[indexPath.row].selected = true
+         previousIndex = indexPath.row
+        tableView.reloadData()
         performSegue(withIdentifier: menuItems[indexPath.row].sequeID, sender: nil)
 
 
