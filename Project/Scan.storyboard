@@ -810,10 +810,10 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uwk-lt-Mat">
-                                <rect key="frame" x="30" y="537" width="100" height="100"/>
+                                <rect key="frame" x="30" y="517" width="100" height="120"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BIv-QK-02u">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="80"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                         <state key="normal" image="paybutton">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </state>
@@ -822,7 +822,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etF-Rh-Gqe">
-                                        <rect key="frame" x="36" y="80" width="28" height="20"/>
+                                        <rect key="frame" x="36" y="100" width="28" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="3me-Mt-YGb"/>
                                         </constraints>
@@ -833,14 +833,14 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="hah-Xf-YOj"/>
-                                    <constraint firstAttribute="height" constant="100" id="vqF-MO-3Ys"/>
+                                    <constraint firstAttribute="height" constant="120" id="vqF-MO-3Ys"/>
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TMP-cm-uUc">
-                                <rect key="frame" x="248" y="557" width="80" height="80"/>
+                                <rect key="frame" x="248" y="557" width="80" height="100"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ok-eI-lSc">
-                                        <rect key="frame" x="0.0" y="0.0" width="80" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                         <state key="normal" image="scan">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </state>
@@ -849,7 +849,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dP-Q7-7xI">
-                                        <rect key="frame" x="21" y="60" width="38.5" height="20"/>
+                                        <rect key="frame" x="21" y="80" width="38.5" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="bDR-1C-Twk"/>
                                         </constraints>
@@ -860,7 +860,7 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="2Kf-U0-ShI"/>
-                                    <constraint firstAttribute="height" constant="80" id="3nu-6Q-pIw"/>
+                                    <constraint firstAttribute="height" constant="100" id="3nu-6Q-pIw"/>
                                 </constraints>
                             </stackView>
                         </subviews>
