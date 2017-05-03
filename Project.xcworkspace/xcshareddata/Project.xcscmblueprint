@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "50457C1155F93698E528BDB261A0DC7C1B641F53",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "50457C1155F93698E528BDB261A0DC7C1B641F53" : 9223372036854775807,
+    "5058F0650E605FA4EF0C3C5DC3DC2ECE16D4D8DB" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "283B9E37-D299-4004-A7D1-80090226B15F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "50457C1155F93698E528BDB261A0DC7C1B641F53" : "UIDemo\/",
+    "5058F0650E605FA4EF0C3C5DC3DC2ECE16D4D8DB" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Project",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Project.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/futomtom\/UIDemo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "50457C1155F93698E528BDB261A0DC7C1B641F53"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/futomtom\/futomtom.github.io",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5058F0650E605FA4EF0C3C5DC3DC2ECE16D4D8DB"
+    }
+  ]
+}

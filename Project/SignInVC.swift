@@ -31,8 +31,8 @@ class SignInVC: UIViewController, UITextFieldDelegate {
         title = ""
    //comment this
      
-        userNameField.text = "suqi"
-        passwordField.text = "123456"
+     //   userNameField.text = "suqi"
+     //   passwordField.text = "123456"
      
     }
     
