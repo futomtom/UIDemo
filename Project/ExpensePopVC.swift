@@ -59,13 +59,15 @@ class ExpensePopVC: UIViewController {
         sender.isSelected = true
         let image = UIImage(named: names[sender.tag])?.withRenderingMode(.alwaysTemplate)
         sender.setImage(image, for: .selected)
-        sender.tintColor = UIColor(red:0.659,  green:0.792,  blue:0.812, alpha:1)
+        sender.tintColor = UIColor.black
         name = names[sender.tag]
         
     }
  
     @IBAction func closedidTapped(_ sender: Any) {
-        let quota = Int(expenseField.text!) ?? 0
+        var text = expenseField.text
+        text = text?.replacingOccurrences(of: "$", with: "")
+        let quota = Int(text!) ?? 0
         if expenseType == 1 {
             setting.fixexQuota.append(Quota(name: name, limit: quota))
         }
