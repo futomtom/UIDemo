@@ -74,11 +74,12 @@ override func viewWillAppear(_ animated: Bool) {
     title = ""
     expandableTableView.reloadData()
     if setting.fixexQuota.count > 0 {  //something
-        let income = Int(incomeField.text!)
+        let income = Int(incomeField.text!) ?? 0
         
         
-        let discrettotal = income! - setting.saving - setting.getTotal(setting.fixexQuota)
+        let discrettotal = income - setting.saving - setting.getTotal(setting.fixexQuota)
         let avg = Int(discrettotal/7)
+        let lastone = discrettotal - avg * 6
         setting.discretQuota.removeAll()
         setting.discretQuota.append(Quota(name: "Groceries", limit: avg))
         setting.discretQuota.append(Quota(name: "Gifts", limit: avg))
@@ -86,7 +87,7 @@ override func viewWillAppear(_ animated: Bool) {
         setting.discretQuota.append(Quota(name: "Fun", limit: avg))
         setting.discretQuota.append(Quota(name: "Costume", limit: avg))
         setting.discretQuota.append(Quota(name: "Household", limit: avg))
-        setting.discretQuota.append(Quota(name: "Utilities", limit: avg))
+        setting.discretQuota.append(Quota(name: "Utilities", limit: lastone))
         
     }
 
@@ -129,7 +130,18 @@ extension IncomeVC: LUExpandableTableViewDataSource {
     func expandableTableView(_ expandableTableView: LUExpandableTableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             let fee = setting.discretQuota[indexPath.row].limit
-            setting.discretQuota[indexPath.row+1].limit = setting.discretQuota[indexPath.row+1].limit + fee
+            let count =  setting.discretQuota.count
+            let remain = count - indexPath.row - 1
+            let avg = Int(fee/remain)
+            let lastone = fee - avg * (remain - 1)
+            
+            for i in indexPath.row + 1  ..< count {
+                if i == count - 1 {
+                     setting.discretQuota[i].limit = setting.discretQuota[i].limit + lastone
+                } else {
+                     setting.discretQuota[i].limit = setting.discretQuota[i].limit + avg
+                }
+            }
             setting.discretQuota.remove(at: indexPath.row)
            
             
@@ -228,6 +240,24 @@ extension IncomeVC: LUExpandableTableViewDataSource {
             }
             
             if indexPath.section == 2 {
+                let original = self.setting.discretQuota[row].limit
+                let fee = original - quota
+                let count =  self.setting.discretQuota.count
+                let remain = count - row - 1
+                let avg = Int(fee/remain)
+                let lastone = fee - avg * (remain - 1)
+                
+                for i in row + 1  ..< count {
+                    if i == count - 1 {
+                        self.setting.discretQuota[i].limit = self.setting.discretQuota[i].limit + lastone
+                    } else {
+                        self.setting.discretQuota[i].limit = self.setting.discretQuota[i].limit + avg
+                    }
+                }
+
+                
+                
+                
                 self.setting.discretQuota[row] = Quota(name: name, limit: quota)
                 
             }
