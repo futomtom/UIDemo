@@ -128,7 +128,14 @@ extension IncomeVC: LUExpandableTableViewDataSource {
     
     func expandableTableView(_ expandableTableView: LUExpandableTableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
+            let fee = setting.discretQuota[indexPath.row].limit
             setting.discretQuota.remove(at: indexPath.row)
+            let count = setting.discretQuota.count
+              let added = Int(fee / count )
+            for item in setting.discretQuota {
+                item.limit = item.limit + added
+            }
+            
             expandableTableView.reloadData()
         }
     }
