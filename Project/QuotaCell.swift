@@ -10,8 +10,8 @@ import UIKit
 
 class ExpenseCell: UITableViewCell {
 
-    @IBOutlet weak var name: UILabel!
     
+    @IBOutlet weak var name: UILabel!
     @IBOutlet weak var price: UILabel!
     
 
@@ -25,6 +25,7 @@ class ExpenseCell: UITableViewCell {
 
 class QuotaCell: UITableViewCell {
     
+    @IBOutlet weak var imageV: UIImageView!
     @IBOutlet weak var name: UILabel!
 
     @IBOutlet weak var quota: UILabel!
@@ -34,6 +35,7 @@ class QuotaCell: UITableViewCell {
     func displayItem(item:Quota) {
  //       ItemField.tag = indexPath.section*100 + indexPath.row * 10
 //        moneyField.tag = indexPath.section*100 + indexPath.row * 10 + 1
+        imageV.image = UIImage(named: item.name)
         name.text = item.name
         quota.text = "\(item.limit)"
     }

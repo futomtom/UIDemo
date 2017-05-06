@@ -19,6 +19,7 @@ class Expenses {
 }
 
 class Quota {
+    var imageName = ""
     var name: String = ""
     var limit: Int = 0
 
@@ -65,42 +66,7 @@ class IncomeVC: UIViewController , UITextFieldDelegate{
               
         present(vc, animated: true, completion: nil)
         
-  /*
-        print(sender.tag)
-        let alertPopUp = UIAlertController(title: "qouta", message: "", preferredStyle: .alert)
 
-
-        alertPopUp.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-
-
-        let okAction = UIAlertAction(title: "OK", style: .default) { action -> Void in
-            let nameField = alertPopUp.textFields![0]
-            let quotaField = alertPopUp.textFields![1]
-            
-            let name = nameField.text!
-    //        print("\(name)!")
-            let quota = Int(quotaField.text!)!
-   //         print("\(quota)!")
-            if sender.tag == 1 {
-                self.setting.fixexQuota.append(Quota(name: name, limit: quota))
-            }
-            
-            if sender.tag == 2 {
-                self.setting.discretQuota.append(Quota(name: name, limit: quota))
-               
-            }
-             self.expandableTableView.reloadData()
-        }
-        alertPopUp.addAction(okAction)
-        alertPopUp.addTextField { (textField) in
-            textField.placeholder = "name"
-        }
-        alertPopUp.addTextField { (textField) in
-            textField.placeholder = "quota"
-        }
-        alertPopUp.view.tintColor = .blue
-        self.present(alertPopUp, animated: true, completion: nil)
- */
     }
 
 

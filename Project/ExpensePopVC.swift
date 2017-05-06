@@ -68,15 +68,13 @@ class ExpensePopVC: UIViewController {
         var text = expenseField.text
         text = text?.replacingOccurrences(of: "$", with: "")
         let quota = Int(text!) ?? 0
+        let item = Quota(name: name, limit: quota)
+        item.imageName = name
         if expenseType == 1 {
-            setting.fixexQuota.append(Quota(name: name, limit: quota))
+            setting.fixexQuota.append(item)
+        } else {
+            setting.discretQuota.append(item)
         }
-        
-        if expenseType == 2 {
-            setting.discretQuota.append(Quota(name: name, limit: quota))
-            
-        }
-
         
         dismiss(animated: true, completion: nil)
     }

@@ -33,6 +33,8 @@ class SignInVC: UIViewController, UITextFieldDelegate {
      
         userNameField.text = "suqi"
         passwordField.text = "123456"
+        userNameField.delegate = self
+        passwordField.delegate = self
      
     }
     
