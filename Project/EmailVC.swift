@@ -65,10 +65,11 @@ class EmailVC: UIViewController, UITextFieldDelegate,ValidationDelegate {
     override func viewWillAppear(_ animated: Bool) {
         title = ""
    //comment this
-        emialField.text = "suqi@ii.com"
+  /*      emialField.text = "suqi@ii.com"
         userNameField.text = "suqi"
         passwordField.text = "123456"
         comfirmField.text = "123456"
+ */
     }
     
     @IBAction func okDidTap(_ sender: UIButton) {

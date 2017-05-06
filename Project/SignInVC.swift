@@ -30,11 +30,12 @@ class SignInVC: UIViewController, UITextFieldDelegate {
     override func viewWillAppear(_ animated: Bool) {
         title = ""
    //comment this
-     
-        userNameField.text = "suqi"
+/*        userNameField.text = "suqi"
         passwordField.text = "123456"
+ */
         userNameField.delegate = self
         passwordField.delegate = self
+
      
     }
     
