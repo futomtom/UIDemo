@@ -1434,7 +1434,7 @@ per month in the next 6 months.</string>
                                 <rect key="frame" x="41" y="246" width="270" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Congrets!                                                      You already have your dream!           Now let's play with your budget.</string>
+                                <string key="text">congrats!                                                      You already have your dream!           Now let's play with your budget.</string>
                                 <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
