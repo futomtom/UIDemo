@@ -24,7 +24,7 @@ class GreatVC: UIViewController {
         setting.saving = saving 
         label.numberOfLines = 6
         
-        label.text =  "Congrets! \n You already have your dream! Now let's play with your budget.You should save at least $\(saving) per month in the next \(setting.duration) months."
+        label.text =  "Congrats! \n You already have your dream! Now let's play with your budget.You should save at least $\(saving) per month in the next \(setting.duration) months."
     }
     
     override func viewWillAppear(_ animated: Bool) {
