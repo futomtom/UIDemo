@@ -40,6 +40,9 @@ public protocol LUExpandableTableViewDataSource: class {
     */
     func expandableTableView(_ expandableTableView: LUExpandableTableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     
+  
+    func expandableTableView(_ expandableTableView: LUExpandableTableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath)
+    
     /** Asks the data source for a `LUExpandableTableViewSectionHeader` object to be displayed as header of the specified section of the expandable table view
      
     - Parameters:

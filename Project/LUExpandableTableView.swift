@@ -152,9 +152,20 @@ extension LUExpandableTableView: UITableViewDataSource {
         return expandableTableViewDataSource?.numberOfSections(in: self) ?? 0
     }
     
+    public func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return expandableTableViewDataSource?.expandableTableView(self, cellForRowAt: indexPath) ?? UITableViewCell()
     }
+    
+    public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        return (expandableTableViewDataSource?.expandableTableView(self, commit: editingStyle, forRowAt: indexPath))!
+        
+    }
+    
+    
 }
 
 // MARK: - LUExpandableTableViewSectionHeaderDelegate

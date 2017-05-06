@@ -73,6 +73,23 @@ class IncomeVC: UIViewController , UITextFieldDelegate{
 override func viewWillAppear(_ animated: Bool) {
     title = ""
     expandableTableView.reloadData()
+    if setting.fixexQuota.count > 0 {  //something
+        let income = Int(incomeField.text!)
+        
+        
+        let discrettotal = income! - setting.saving - setting.getTotal(setting.fixexQuota)
+        let avg = Int(discrettotal/7)
+        setting.discretQuota.removeAll()
+        setting.discretQuota.append(Quota(name: "Groceries", limit: avg))
+        setting.discretQuota.append(Quota(name: "Gifts", limit: avg))
+        setting.discretQuota.append(Quota(name: "Eating Out", limit: avg))
+        setting.discretQuota.append(Quota(name: "Fun", limit: avg))
+        setting.discretQuota.append(Quota(name: "Costume", limit: avg))
+        setting.discretQuota.append(Quota(name: "Household", limit: avg))
+        setting.discretQuota.append(Quota(name: "Utilities", limit: avg))
+        
+    }
+
 }
     
     
@@ -82,9 +99,6 @@ override func viewWillAppear(_ animated: Bool) {
         return false
     }
     
-
-
-
 override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "flow3" {
         setting.income = Int(incomeField.text!) ?? 0
@@ -109,6 +123,13 @@ extension IncomeVC: LUExpandableTableViewDataSource {
             return setting.discretQuota.count + 1
         default:
             return 0
+        }
+    }
+    
+    func expandableTableView(_ expandableTableView: LUExpandableTableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            setting.discretQuota.remove(at: indexPath.row)
+            expandableTableView.reloadData()
         }
     }
 
@@ -230,6 +251,8 @@ extension IncomeVC: LUExpandableTableViewDataSource {
     }
     
     
+    
+    
 }
 
 // MARK: - LUExpandableTableViewDelegate
@@ -239,11 +262,18 @@ extension IncomeVC: LUExpandableTableViewDelegate {
         /// Returning `UITableViewAutomaticDimension` value on iOS 9 will cause reloading all cells due to an iOS 9 bug with automatic dimensions
         return 50
     }
+    
+    func expandableTableView(_ expandableTableView: LUExpandableTableView, didSelectSectionHeader sectionHeader: LUExpandableTableViewSectionHeader, atSection section: Int) {
+        print(section)
+    }
+    
+
 
     func expandableTableView(_ expandableTableView: LUExpandableTableView, heightForHeaderInSection section: Int) -> CGFloat {
         /// Returning `UITableViewAutomaticDimension` value on iOS 9 will cause reloading all cells due to an iOS 9 bug with automatic dimensions
         return 69
     }
-
+    
+ 
 }
 
