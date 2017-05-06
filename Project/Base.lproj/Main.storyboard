@@ -438,24 +438,24 @@
                                             <rect key="frame" x="0.0" y="0.0" width="335" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MWM-ko-tQf">
-                                                    <rect key="frame" x="0.0" y="0.0" width="315" height="51"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MWM-ko-tQf">
+                                                    <rect key="frame" x="0.0" y="0.0" width="315" height="44"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YKq-VU-mMG">
-                                                            <rect key="frame" x="0.0" y="0.0" width="40" height="51"/>
+                                                            <rect key="frame" x="0.0" y="2" width="40" height="40"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="40" id="77I-A2-bh6"/>
                                                                 <constraint firstAttribute="height" constant="40" id="9QH-ZO-XJ2"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkN-gF-d7n" userLabel="Name">
-                                                            <rect key="frame" x="50" y="0.0" width="213" height="51"/>
+                                                            <rect key="frame" x="50" y="11.5" width="213" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Mn-qz-w5O" userLabel="Qouta">
-                                                            <rect key="frame" x="273" y="0.0" width="42" height="51"/>
+                                                            <rect key="frame" x="273" y="11.5" width="42" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -1434,7 +1434,7 @@ per month in the next 6 months.</string>
                                 <rect key="frame" x="41" y="246" width="270" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">congrats!                                                      You already have your dream!           Now let's play with your budget.</string>
+                                <string key="text">Congrats!                                                      You already have your dream!           Now let's play with your budget.</string>
                                 <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>

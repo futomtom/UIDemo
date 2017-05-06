@@ -30,7 +30,7 @@ class Quota {
 }
 
 class IncomeVC: UIViewController , UITextFieldDelegate{
-    let sectionName = ["Dream Saving", "Fixed Expenses", "Discretionary Money"]
+    let sectionName = ["Dream Saving", "Fixed Expenses", "Discretionary Spending"]
     var setting = Setting.share
     var editmode = 0
 
@@ -129,12 +129,9 @@ extension IncomeVC: LUExpandableTableViewDataSource {
     func expandableTableView(_ expandableTableView: LUExpandableTableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             let fee = setting.discretQuota[indexPath.row].limit
+            setting.discretQuota[indexPath.row+1].limit = setting.discretQuota[indexPath.row+1].limit + fee
             setting.discretQuota.remove(at: indexPath.row)
-            let count = setting.discretQuota.count
-              let added = Int(fee / count )
-            for item in setting.discretQuota {
-                item.limit = item.limit + added
-            }
+           
             
             expandableTableView.reloadData()
         }
