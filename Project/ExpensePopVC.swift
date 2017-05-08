@@ -14,6 +14,8 @@ class ExpensePopVC: UIViewController {
     var expenseType = 0
     let names = ["Rent","Groceries","Eating Out","Utilities","Cellphone","Car","Fun","Costume","Travel","Household","Cosmetics","Healthcare","Gifts","Social","Investment","Other"]
     var name = ""
+    var income:Int!
+    var changeIndex = 0 
     var previousButton:UIButton?
     
     @IBOutlet weak var button0: UIButton!
@@ -36,7 +38,7 @@ class ExpensePopVC: UIViewController {
     var buttons:[UIButton] = []
     
   
-    var setting = Setting.share
+   
     override func viewDidLoad() {
         super.viewDidLoad()
          buttons = [button0,button1,button2,button3,button4,
@@ -65,6 +67,7 @@ class ExpensePopVC: UIViewController {
     }
  
     @IBAction func closedidTapped(_ sender: Any) {
+        var setting = Setting.share
         var text = expenseField.text
         text = text?.replacingOccurrences(of: "$", with: "")
         let quota = Int(text!) ?? 0
@@ -72,8 +75,37 @@ class ExpensePopVC: UIViewController {
         item.imageName = name
         if expenseType == 1 {
             setting.fixexQuota.append(item)
+            let fixtotal = setting.getTotal(setting.fixexQuota)
+            let discrettotal = income - setting.saving - fixtotal
+            let avg = Int(discrettotal/7)
+            let lastone = discrettotal - avg * 6
+            setting.discretQuota.removeAll()
+            setting.discretQuota.append(Quota(name: "Groceries", limit: avg))
+            setting.discretQuota.append(Quota(name: "Gifts", limit: avg))
+            setting.discretQuota.append(Quota(name: "Eating Out", limit: avg))
+            setting.discretQuota.append(Quota(name: "Fun", limit: avg))
+            setting.discretQuota.append(Quota(name: "Costume", limit: avg))
+            setting.discretQuota.append(Quota(name: "Household", limit: avg))
+            setting.discretQuota.append(Quota(name: "Utilities", limit: lastone))
+ 
         } else {
-            setting.discretQuota.append(item)
+            setting.discretQuota.insert(item, at: changeIndex)
+            let fee = -item.limit
+            let count =  setting.discretQuota.count
+            let remain = count - changeIndex - 1
+            print(remain)
+            let avg = Int(fee/remain)
+            let lastone = fee - avg * (remain )
+            
+            for i in changeIndex + 1  ..< count {
+                if i == count - 1 {
+                    setting.discretQuota[i].limit = setting.discretQuota[i].limit + avg //lastone
+                } else {
+                    setting.discretQuota[i].limit = setting.discretQuota[i].limit + avg
+                }
+            }
+            
+            //append(item)
         }
         
         dismiss(animated: true, completion: nil)

@@ -1596,7 +1596,7 @@ per month in the next 6 months.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="D5p-IN-zHE">
-                                <rect key="frame" x="1" y="-8" width="375" height="667"/>
+                                <rect key="frame" x="1" y="-8" width="375" height="675"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Gii-bo-nXd">
@@ -2212,6 +2212,9 @@ per month in the next 6 months.</string>
                                                 <integer key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="Be0-yc-ZK6" kind="show" id="zxE-nI-U83"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7K-Rg-dgO">
                                         <rect key="frame" x="0.0" y="124" width="116" height="115"/>
@@ -2223,9 +2226,6 @@ per month in the next 6 months.</string>
                                                 <integer key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <segue destination="Be0-yc-ZK6" kind="show" id="AYX-Sy-V6E"/>
-                                        </connections>
                                     </button>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Googlewallet" translatesAutoresizingMaskIntoConstraints="NO" id="ZA9-oZ-ZWp">
                                         <rect key="frame" x="0.0" y="249" width="116" height="114"/>

@@ -11,6 +11,7 @@ import UIKit
 class Expenses {
     var name: String = ""
     var price: Int = 0
+    var changeIndex = 0
 
     init(name: String, price: Int) {
         self.name = name
@@ -33,6 +34,10 @@ class IncomeVC: UIViewController , UITextFieldDelegate{
     let sectionName = ["Dream Saving", "Fixed Expenses", "Discretionary Spending"]
     var setting = Setting.share
     var editmode = 0
+    var fixModification = false
+    var dicretModification = false
+    var income:Int!
+    var changeIndex = 0
 
     @IBOutlet weak var incomeField: UITextField!
     // MARK: - Properties
@@ -63,6 +68,13 @@ class IncomeVC: UIViewController , UITextFieldDelegate{
     @IBAction func addNewItem(_ sender: UIButton) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "expensevc") as! ExpensePopVC
         vc.expenseType = sender.tag
+        vc.income = Int(incomeField.text!) ?? 0
+        vc.changeIndex = changeIndex
+        if sender.tag == 1 {
+            fixModification = true
+        } else {
+            dicretModification = true
+        }
               
         present(vc, animated: true, completion: nil)
         
@@ -73,24 +85,6 @@ class IncomeVC: UIViewController , UITextFieldDelegate{
 override func viewWillAppear(_ animated: Bool) {
     title = ""
     expandableTableView.reloadData()
-    if setting.fixexQuota.count > 0 {  //something
-        let income = Int(incomeField.text!) ?? 0
-        
-        
-        let discrettotal = income - setting.saving - setting.getTotal(setting.fixexQuota)
-        let avg = Int(discrettotal/7)
-        let lastone = discrettotal - avg * 6
-        setting.discretQuota.removeAll()
-        setting.discretQuota.append(Quota(name: "Groceries", limit: avg))
-        setting.discretQuota.append(Quota(name: "Gifts", limit: avg))
-        setting.discretQuota.append(Quota(name: "Eating Out", limit: avg))
-        setting.discretQuota.append(Quota(name: "Fun", limit: avg))
-        setting.discretQuota.append(Quota(name: "Costume", limit: avg))
-        setting.discretQuota.append(Quota(name: "Household", limit: avg))
-        setting.discretQuota.append(Quota(name: "Utilities", limit: lastone))
-        
-    }
-
 }
     
     
@@ -101,9 +95,9 @@ override func viewWillAppear(_ animated: Bool) {
     }
     
 override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    if segue.identifier == "flow3" {
+   
         setting.income = Int(incomeField.text!) ?? 0
-    }
+
 }
 
 }
@@ -129,17 +123,19 @@ extension IncomeVC: LUExpandableTableViewDataSource {
     
     func expandableTableView(_ expandableTableView: LUExpandableTableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            let fee = setting.discretQuota[indexPath.row].limit
+            changeIndex = indexPath.row
+            var fee = setting.discretQuota[indexPath.row].limit
             let count =  setting.discretQuota.count
             let remain = count - indexPath.row - 1
+            fee = fee + setting.discretQuota[count - 1 ].limit + setting.discretQuota[indexPath.row + 1 ].limit * (remain - 1 )
             let avg = Int(fee/remain)
             let lastone = fee - avg * (remain - 1)
             
             for i in indexPath.row + 1  ..< count {
                 if i == count - 1 {
-                     setting.discretQuota[i].limit = setting.discretQuota[i].limit + lastone
+                     setting.discretQuota[i].limit = lastone
                 } else {
-                     setting.discretQuota[i].limit = setting.discretQuota[i].limit + avg
+                     setting.discretQuota[i].limit = avg
                 }
             }
             setting.discretQuota.remove(at: indexPath.row)
